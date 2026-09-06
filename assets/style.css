@@ -361,6 +361,11 @@ footer a {
   color: rgba(255, 255, 255, 0.9);
 }
 
+footer a.accent {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 footer .wrap {
   display: flex;
   justify-content: space-between;
