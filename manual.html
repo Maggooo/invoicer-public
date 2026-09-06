@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invoice Cove — User Manual</title>
+<meta name="description" content="Complete user manual for Invoice Cove - Offline Billing.">
+<link rel="icon" href="assets/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/icon-256.png" alt=""> Invoice Cove</a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="manual.html" class="active">User Manual</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:0;">
+  <div class="wrap" style="padding-bottom:36px;">
+    <h1>User Manual</h1>
+    <p>Everything Invoice Cove can do, screen by screen.</p>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,32 C240,64 480,0 720,20 C960,40 1200,60 1440,28 L1440,60 L0,60 Z" fill="#f5f9fd"></path>
+  </svg>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <p class="lede">Invoice Cove runs entirely on your device — invoices, quotes, customers and your business profile are stored locally, not on any Invoice Cove server. <strong>We don't collect, see, or receive any data about your invoices or how you use the app</strong> — there's no analytics, no tracking, nothing sent anywhere in the background. The only time the app needs an internet connection at all is to process a one-time Invoice Cove Pro purchase through Google Play. See the full <a href="privacy.html">Privacy Policy</a> for details.</p>
+    <div class="note warn">
+      <strong>Before you uninstall the app or clear its storage:</strong> that data is not backed up anywhere by us. Uninstalling Invoice Cove, or clearing its storage from Android Settings, permanently deletes every invoice, quote, customer and setting on this device — there's no cloud copy to restore from. Export what you need as PDF, CSV or ZIP first (see <a href="#invoices">Managing invoices</a>).
+    </div>
+
+    <div class="toc">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#home">Home screen</a></li>
+        <li><a href="#customers">Customers</a></li>
+        <li><a href="#new-invoice">Creating an invoice</a></li>
+        <li><a href="#invoices">Managing invoices</a></li>
+        <li><a href="#new-quote">Creating a quote</a></li>
+        <li><a href="#quotes">Managing quotes &amp; converting to invoice</a></li>
+        <li><a href="#calendar">Calendar &amp; reminders</a></li>
+        <li><a href="#reports">Reports</a></li>
+        <li><a href="#settings">Business details &amp; settings</a></li>
+        <li><a href="#templates">PDF templates</a></li>
+        <li><a href="#free-vs-pro">Free plan vs. Invoice Cove Pro</a></li>
+      </ol>
+    </div>
+
+    <section class="section" id="home">
+      <h2><span class="num">1</span> Home screen</h2>
+      <div class="section-body">
+        <div>
+          <p>The Home screen is your starting point, with one tile for each main action: New Quote, Quotes, New Invoice, Invoices, New Customer, Customers, Calendar, and Reports. Tap any tile to jump straight there.</p>
+          <p>The gear icon (⚙️) in the top-right corner of most screens opens <a href="#settings">Business Details &amp; Settings</a>.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/home.png" alt="Invoice Cove Home screen"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="customers">
+      <h2><span class="num">2</span> Customers</h2>
+      <div class="section-body">
+        <div>
+          <p>Add a customer from the Customers tab (tap the + icon) or inline while creating an invoice/quote. Fill in a name and any of the optional fields — address, email, phone, tax ID, VAT number, and a color to tint their documents.</p>
+          <div class="note">
+            <strong>Saving works differently here than on invoices.</strong> A customer has its own <strong>"Save Customer"</strong> (or "Save Changes" when editing) button — it's saved the moment you tap it, before you even leave the sheet. If you try to close the form with unsaved changes, Invoice Cove asks you to confirm first.
+          </div>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/customers.png" alt="Invoice Cove Customers list"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="new-invoice">
+      <h2><span class="num">3</span> Creating an invoice</h2>
+      <div class="section-body">
+        <div>
+          <p>From New Invoice: pick a customer (or create one inline), set the invoice date and due date, add one or more line items (description, quantity, unit price), and optionally a tax rate, a discount, and notes.</p>
+          <p><strong>Preview</strong> renders a throwaway PDF so you can check how it looks — nothing is saved yet.</p>
+          <div class="note">
+            <strong>There's no separate "Save" button.</strong> Tapping <strong>Generate Invoice</strong> does three things at once: it saves the invoice, creates the PDF, and opens your device's share sheet so you can send it. If you leave the New Invoice screen before tapping Generate, everything you entered is discarded — Invoice Cove will ask you to confirm before discarding.
+          </div>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/new-invoice.png" alt="Invoice Cove New Invoice form"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="invoices">
+      <h2><span class="num">4</span> Managing invoices</h2>
+      <div class="section-body">
+        <div>
+          <p>The Invoices tab groups your invoices into a folder per customer. Open a folder to see, view, re-share, mark paid, void, or delete individual invoices. From the folder list you can also export invoices as a CSV spreadsheet or a ZIP of PDFs, or archive a single customer's folder as a ZIP.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/invoices-list.png" alt="Invoice Cove Invoices list"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="new-quote">
+      <h2><span class="num">5</span> Creating a quote</h2>
+      <div class="section-body">
+        <div>
+          <p>New Quote works exactly like New Invoice — same fields, same Preview button, same "Generate Quote does save + PDF + share in one tap" behavior — just with a Quote Date and a Valid Until date instead of an invoice date and due date.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/new-quote.png" alt="Invoice Cove New Quote form"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="quotes">
+      <h2><span class="num">6</span> Managing quotes &amp; converting to invoice</h2>
+      <div class="section-body">
+        <div>
+          <p>The Quotes tab lists your quotes by customer, the same way Invoices does. Open a quote to view or share it, mark it Accepted or Declined, record a deposit, or delete it.</p>
+          <p>Once a customer accepts a quote, use <strong>Convert to Invoice</strong> to turn the checked line items into a real, independently-editable invoice — the original quote is marked Converted and kept for your records.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/quotes-list.png" alt="Invoice Cove Quotes list"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="calendar">
+      <h2><span class="num">7</span> Calendar &amp; reminders</h2>
+      <div class="section-body">
+        <div>
+          <p>The Calendar tab shows due dates and any notes/reminders you've added, so you can see what's coming up at a glance. Invoice Cove can also send you a local reminder notification for invoices approaching their due date.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/calendar.png" alt="Invoice Cove Calendar screen"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="reports">
+      <h2><span class="num">8</span> Reports</h2>
+      <div class="section-body">
+        <div>
+          <p>Reports gives you a quick overview of total revenue, outstanding and overdue amounts, monthly revenue, and your top customers by billed total.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/reports.png" alt="Invoice Cove Reports screen"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="settings">
+      <h2><span class="num">9</span> Business details &amp; settings</h2>
+      <div class="section-body">
+        <div>
+          <p>Open Settings from the gear icon to set your business name, address, logo, and payment details (shown on every invoice/quote), your default due-date offset, your preferred tax label, and to clear the item-description autocomplete memory.</p>
+          <p>This is also where you'll find <strong>App Lock</strong>, if you'd like Invoice Cove to require a PIN when it's freshly launched.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/settings-business.png" alt="Invoice Cove Business Details screen"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="templates">
+      <h2><span class="num">10</span> PDF templates</h2>
+      <div class="section-body">
+        <div>
+          <p>Invoice Cove ships with a set of PDF template designs, from clean and minimal to bold and organic. Pick one from the Template Picker (in Settings) — it applies to every invoice and quote you generate from then on.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/template-picker.png" alt="Invoice Cove Template Picker screen"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="free-vs-pro">
+      <h2><span class="num">11</span> Free plan vs. Invoice Cove Pro</h2>
+      <div class="section-body">
+        <div>
+          <p>Invoice Cove is free to use, with a few sensible limits:</p>
+          <ul>
+            <li>Up to 3 invoices and 3 quotes generated per calendar month</li>
+            <li>Up to 3 customers at a time</li>
+            <li>Invoice/quote numbers are auto-assigned, not editable</li>
+            <li>CSV and ZIP export are Pro-only</li>
+          </ul>
+          <p><strong>Invoice Cove Pro</strong> is a single one-time purchase through Google Play — not a subscription — that removes every one of those limits for good. See the <a href="terms.html">Terms of Use</a> for the full details.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Invoice Cove — a Magotel app</span>
+    <span>Questions? <a href="mailto:contact@magotel.uk">contact@magotel.uk</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

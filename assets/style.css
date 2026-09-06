@@ -1,0 +1,369 @@
+:root {
+  --primary: #05509a;
+  --primary-dark: #033a70;
+  --accent: #6fc3ff;
+  --bg: #f5f9fd;
+  --surface: #ffffff;
+  --text: #142433;
+  --text-muted: #55697b;
+  --border: #dde8f2;
+  --violet: #5b4fe9;
+  --radius: 14px;
+  --shadow: 0 2px 10px rgba(5, 80, 154, 0.08), 0 1px 2px rgba(5, 80, 154, 0.06);
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Sora", "Inter", sans-serif;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin: 0 0 0.5em;
+}
+
+a {
+  color: var(--primary);
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- Top nav ---------- */
+.topnav {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: #fff;
+  padding: 18px 0;
+}
+
+.topnav .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: block;
+}
+
+.navlinks {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.navlinks a {
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.navlinks a:hover,
+.navlinks a.active {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* ---------- Wave divider (signature element) ---------- */
+.wave {
+  display: block;
+  width: 100%;
+  height: 48px;
+  margin-top: -1px;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(180deg, var(--primary-dark) 0%, var(--primary) 60%, #0a6bb8 100%);
+  color: #fff;
+  padding: 56px 0 0;
+}
+
+.hero .wrap {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.hero-icon {
+  width: 84px;
+  height: 84px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 520px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+}
+
+/* ---------- Content ---------- */
+main {
+  padding: 48px 0 80px;
+}
+
+.lede {
+  font-size: 1.08rem;
+  color: var(--text-muted);
+  max-width: 640px;
+}
+
+/* ---------- Card grid (index) ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px 22px;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  display: block;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(5, 80, 154, 0.14);
+}
+
+.card .icon {
+  font-size: 1.8rem;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.08rem;
+  margin-bottom: 6px;
+  color: var(--primary-dark);
+}
+
+.card p {
+  color: var(--text-muted);
+  font-size: 0.94rem;
+  margin: 0;
+}
+
+/* ---------- Table of contents ---------- */
+.toc {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin: 28px 0 40px;
+}
+
+.toc h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.toc ol {
+  columns: 2;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.toc a {
+  text-decoration: none;
+  font-size: 0.94rem;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Manual sections ---------- */
+.section {
+  margin: 56px 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.section:first-of-type {
+  border-top: none;
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section h2 .num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.85rem;
+  font-family: "Sora", sans-serif;
+  flex-shrink: 0;
+}
+
+.section-body {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 28px;
+  margin-top: 14px;
+  align-items: start;
+}
+
+@media (max-width: 680px) {
+  .section-body {
+    grid-template-columns: 1fr;
+  }
+  .toc ol {
+    columns: 1;
+  }
+}
+
+.section-body p,
+.section-body ul {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+}
+
+.section-body ul {
+  padding-left: 20px;
+}
+
+.section-body li {
+  margin-bottom: 6px;
+}
+
+.shot {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: var(--surface);
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+}
+
+.note {
+  background: #eef6ff;
+  border: 1px solid #cfe6fb;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 0.92rem;
+  color: var(--primary-dark);
+  margin-top: 12px;
+}
+
+.note.warn {
+  background: #fff6ec;
+  border-color: #f6ddb8;
+  color: #7a4a06;
+}
+
+/* ---------- Legal pages ---------- */
+.legal h2 {
+  font-size: 1.15rem;
+  margin-top: 34px;
+  color: var(--primary-dark);
+}
+
+.legal p,
+.legal li {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+}
+
+.legal .updated {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+.badge {
+  display: inline-block;
+  background: #eef6ff;
+  color: var(--primary-dark);
+  border: 1px solid #cfe6fb;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin: 4px 6px 4px 0;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: var(--primary-dark);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 28px 0;
+  font-size: 0.88rem;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+footer .wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
