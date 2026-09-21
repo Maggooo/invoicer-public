@@ -48,4 +48,41 @@ for code, _ in LANGS:
         if p.st or p.err: problems.append(f"unbalanced HTML in: {t[:60]}… {p.st} {p.err}")
     print(("OK   " if not problems else "FAIL ") + code, *problems[:6], sep="\n     " if problems else " ")
     bad += bool(problems)
+
+# ---- legal pages (privacy / terms): same block sequence, same links/tags, valid tokens ----
+TOKL = re.compile(r"\{\{([a-z0-9_:]+)\}\}")
+HREF = re.compile(r'href="([^"]+)"')
+TAGS = re.compile(r"</?(strong|em|a)\b")
+enL = importlib.import_module("lang.legal_en").L
+for code, _ in LANGS:
+    if code == "en": continue
+    try:
+        L = importlib.import_module(f"lang.legal_{code}").L
+    except ModuleNotFoundError:
+        print("FAIL legal", code, "(missing file)"); bad += 1; continue
+    M = importlib.import_module(f"lang.{code}").T
+    ui = json.loads((Path(__file__).parent / "ui" / f"{code}.json").read_text())
+    problems = []
+    for k in enL["common"]:
+        if not L["common"].get(k): problems.append(f"common.{k} missing")
+    for doc in ("privacy", "terms"):
+        a, b = enL[doc]["blocks"], L[doc]["blocks"]
+        for k in ("title", "subtitle", "meta_desc", "updated"):
+            if not L[doc].get(k): problems.append(f"{doc}.{k} missing")
+        if [(k, len(v) if k in ("ul", "badges") else 0) for k, v in a] != [(k, len(v) if k in ("ul", "badges") else 0) for k, v in b]:
+            problems.append(f"{doc}: block structure differs"); continue
+        for (k, va), (_, vb) in zip(a, b):
+            for x, y in zip(va if isinstance(va, list) else [va], vb if isinstance(vb, list) else [vb]):
+                if k == "badges": continue
+                if HREF.findall(x) != HREF.findall(y): problems.append(f"{doc}: links differ: {HREF.findall(x)} vs {HREF.findall(y)}")
+                if sorted(TAGS.findall(x)) != sorted(TAGS.findall(y)): problems.append(f"{doc}: tags differ in: {y[:50]}…")
+                for key in TOKL.findall(y):
+                    if key.startswith("sec:"):
+                        if key[4:] not in M["sections"]: problems.append(f"{doc}: unknown section {key}")
+                    elif key not in ui: problems.append(f"{doc}: unknown UI key {key}")
+                p = Bal(); p.feed(y)
+                if p.st or p.err: problems.append(f"{doc}: unbalanced HTML in: {y[:50]}…")
+    print(("OK   legal " if not problems else "FAIL legal ") + code, *problems[:6], sep="\n     " if problems else " ")
+    bad += bool(problems)
+
 sys.exit(1 if bad else 0)

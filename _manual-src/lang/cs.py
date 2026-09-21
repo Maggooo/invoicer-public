@@ -11,7 +11,7 @@ T = {
         "ne na žádný server Invoice Cove. <strong>Neshromažďujeme, nevidíme ani nepřijímáme žádná data o vašich fakturách ani o tom, jak aplikaci používáte</strong> "
         "— žádná analytika, žádné sledování, nic se v pozadí nikam neodesílá. "
         "Jediný okamžik, kdy samotná aplikace potřebuje internet, je zpracování jednorázového nákupu Invoice Cove Pro přes Google Play. "
-        "Podrobnosti najdete v <a href=\"privacy.html\">Zásadách ochrany osobních údajů</a> (anglicky)."
+        "Podrobnosti najdete v <a href=\"privacy.html\">Zásadách ochrany osobních údajů</a>."
     ),
     "warn": (
         "<strong>Než aplikaci odinstalujete nebo vymažete její úložiště:</strong> tato data my nikde nezálohujeme. "
@@ -202,7 +202,7 @@ T = {
             ]),
             ("p", "<strong>Invoice Cove Pro</strong> je jediný jednorázový nákup přes Google Play — ne předplatné — který všechna tato omezení navždy odstraní. "
                   "Koncepty, všechny šablony a jazyky, zámek aplikace i vytváření, náhled a sdílení dokumentů jsou zdarma pro všechny. "
-                  "Všechny podrobnosti najdete v <a href=\"terms.html\">Podmínkách užívání</a> (anglicky)."),
+                  "Všechny podrobnosti najdete v <a href=\"terms.html\">Podmínkách užívání</a>."),
         ]),
     },
 }

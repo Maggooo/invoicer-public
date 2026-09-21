@@ -11,7 +11,7 @@ T = {
         "niet op een server van Invoice Cove. <strong>Wij verzamelen, zien of ontvangen geen gegevens over uw facturen of over hoe u de app gebruikt</strong> "
         "— geen analytics, geen tracking, niets wordt op de achtergrond verzonden. "
         "Het enige moment waarop de app zelf internet nodig heeft, is bij de verwerking van de eenmalige aankoop van Invoice Cove Pro via Google Play. "
-        "Details vindt u in het <a href=\"privacy.html\">Privacybeleid</a> (in het Engels)."
+        "Details vindt u in het <a href=\"privacy.html\">Privacybeleid</a>."
     ),
     "warn": (
         "<strong>Voordat u de app verwijdert of de opslag ervan wist:</strong> wij bewaren deze gegevens nergens als back-up. "
@@ -202,7 +202,7 @@ T = {
             ]),
             ("p", "<strong>Invoice Cove Pro</strong> is één eenmalige aankoop via Google Play — geen abonnement — die al deze beperkingen voorgoed opheft. "
                   "Concepten, alle sjablonen en talen, de app-vergrendeling en het maken, bekijken en delen van documenten zijn voor iedereen gratis. "
-                  "Alle details vindt u in de <a href=\"terms.html\">Gebruiksvoorwaarden</a> (in het Engels)."),
+                  "Alle details vindt u in de <a href=\"terms.html\">Gebruiksvoorwaarden</a>."),
         ]),
     },
 }

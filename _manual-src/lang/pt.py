@@ -11,7 +11,7 @@ T = {
         "e não em qualquer servidor do Invoice Cove. <strong>Não recolhemos, não vemos nem recebemos quaisquer dados sobre as suas faturas ou sobre a forma "
         "como usa a aplicação</strong> — não há análise, não há rastreio, nada é enviado em segundo plano. "
         "A única vez que a própria aplicação precisa de ligação à internet é para processar a compra única do Invoice Cove Pro através do Google Play. "
-        "Consulte a <a href=\"privacy.html\">Política de privacidade</a> (em inglês) para mais detalhes."
+        "Consulte a <a href=\"privacy.html\">Política de privacidade</a> para mais detalhes."
     ),
     "warn": (
         "<strong>Antes de desinstalar a aplicação ou limpar o seu armazenamento:</strong> esses dados não são guardados por nós em lado nenhum. "
@@ -202,7 +202,7 @@ T = {
             ]),
             ("p", "O <strong>Invoice Cove Pro</strong> é uma única compra através do Google Play — não uma subscrição — que remove todos estes limites para sempre. "
                   "Os rascunhos, todos os modelos e idiomas, o bloqueio da aplicação e a criação, pré-visualização e partilha de documentos são gratuitos para todos. "
-                  "Consulte os <a href=\"terms.html\">Termos de utilização</a> (em inglês) para todos os detalhes."),
+                  "Consulte os <a href=\"terms.html\">Termos de utilização</a> para todos os detalhes."),
         ]),
     },
 }

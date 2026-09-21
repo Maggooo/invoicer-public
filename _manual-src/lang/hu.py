@@ -11,7 +11,7 @@ T = {
         "nem az Invoice Cove egyik szerverén sem. <strong>Nem gyűjtünk, nem látunk és nem kapunk semmilyen adatot a számláiról vagy arról, hogyan használja az alkalmazást</strong> "
         "— nincs analitika, nincs követés, a háttérben semmi sem kerül elküldésre. "
         "Az egyetlen alkalom, amikor maga az alkalmazás internetet igényel, az Invoice Cove Pro egyszeri vásárlásának feldolgozása a Google Play-en keresztül. "
-        "A részleteket az <a href=\"privacy.html\">Adatvédelmi irányelvekben</a> találja (angolul)."
+        "A részleteket az <a href=\"privacy.html\">Adatvédelmi irányelvekben</a> találja."
     ),
     "warn": (
         "<strong>Mielőtt eltávolítja az alkalmazást vagy törli a tárhelyét:</strong> ezeket az adatokat sehol nem mentjük el. "
@@ -202,7 +202,7 @@ T = {
             ]),
             ("p", "Az <strong>Invoice Cove Pro</strong> egyetlen egyszeri vásárlás a Google Play-en keresztül — nem előfizetés —, amely mindezeket a korlátokat végleg megszünteti. "
                   "A piszkozatok, az összes sablon és nyelv, az alkalmazászár, valamint a dokumentumok létrehozása, előnézete és megosztása mindenki számára ingyenes. "
-                  "Minden részletet megtalál a <a href=\"terms.html\">Felhasználási feltételekben</a> (angolul)."),
+                  "Minden részletet megtalál a <a href=\"terms.html\">Felhasználási feltételekben</a>."),
         ]),
     },
 }

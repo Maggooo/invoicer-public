@@ -41,6 +41,9 @@ ORDER = [
 def page_name(code: str) -> str:
     return "manual.html" if code == "en" else f"manual-{code}.html"
 
+def legal_page(doc: str, code: str) -> str:  # doc = "privacy" | "terms"
+    return f"{doc}.html" if code == "en" else f"{doc}-{code}.html"
+
 def build(code: str) -> None:
     T = importlib.import_module(f"lang.{code}").T
     ui = json.loads((HERE / "ui" / f"{code}.json").read_text())
@@ -52,6 +55,8 @@ def build(code: str) -> None:
         return html.escape(re.sub(r"^[^\w]+", "", ui[key]), quote=False)
 
     def u(text: str) -> str:
+        text = text.replace('href="privacy.html"', f'href="{legal_page("privacy", code)}"')
+        text = text.replace('href="terms.html"', f'href="{legal_page("terms", code)}"')
         return re.sub(r"\{\{([a-z0-9_]+)\}\}", lambda m: label(m.group(1)), text)
 
     def block(b) -> str:
@@ -177,7 +182,112 @@ def build(code: str) -> None:
     (SITE / page_name(code)).write_text(out)
     print(f"built {page_name(code)}")
 
+def build_legal(code: str, doc: str) -> None:
+    """Builds privacy-<code>.html / terms-<code>.html from lang/legal_<code>.py (English pages are hand-written)."""
+    L = importlib.import_module(f"lang.legal_{code}").L
+    M = importlib.import_module(f"lang.{code}").T
+    ui = json.loads((HERE / "ui" / f"{code}.json").read_text())
+    D, C = L[doc], L["common"]
+
+    def label(key: str) -> str:
+        if key.startswith("sec:"):
+            return html.escape(M["sections"][key[4:]][0], quote=False)
+        if key not in ui:
+            raise KeyError(f"[{code}/{doc}] unknown UI string '{key}'")
+        return html.escape(re.sub(r"^[^\w]+", "", ui[key]), quote=False)
+
+    def u(text: str) -> str:
+        text = text.replace("@manual@", page_name(code)).replace("@privacy@", legal_page("privacy", code)).replace("@terms@", legal_page("terms", code))
+        return re.sub(r"\{\{([a-z0-9_:]+)\}\}", lambda m: label(m.group(1)), text)
+
+    body = []
+    for kind, val in D["blocks"]:
+        if kind == "p":
+            body.append(f"    <p>{u(val)}</p>")
+        elif kind == "h":
+            body.append(f"    <h2>{u(val)}</h2>")
+        elif kind == "ul":
+            body.append("    <ul>\n" + "\n".join(f"      <li>{u(i)}</li>" for i in val) + "\n    </ul>")
+        elif kind == "badges":
+            body.append("    " + "\n    ".join(f'<span class="badge">{html.escape(b)}</span>' for b in val))
+        else:
+            raise ValueError(kind)
+
+    alternates = "\n".join(
+        f'<link rel="alternate" hreflang="{c}" href="{legal_page(doc, c)}">' for c, _ in LANGS
+    ) + f'\n<link rel="alternate" hreflang="x-default" href="{legal_page(doc, "en")}">'
+    langbar = " ".join(
+        f'<a href="{legal_page(doc, c)}" lang="{c}" hreflang="{c}"' + (' class="current" aria-current="page"' if c == code else "") + f">{n}</a>"
+        for c, n in LANGS
+    )
+    active = lambda d: ' class="active"' if d == doc else ""
+    out = f'''<!doctype html>
+<html lang="{code}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invoice Cove — {html.escape(D["title"])}</title>
+<meta name="description" content="{html.escape(D["meta_desc"])}">
+{alternates}
+<link rel="icon" href="assets/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/icon-256.png" alt=""> Invoice Cove</a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="manual.html">User Manual</a>
+      <a href="privacy.html"{active("privacy")}>Privacy Policy</a>
+      <a href="terms.html"{active("terms")}>Terms of Use</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:0;">
+  <div class="wrap" style="padding-bottom:36px;">
+    <h1>{html.escape(D["title"])}</h1>
+    <p>{html.escape(D["subtitle"])}</p>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,32 C240,64 480,0 720,20 C960,40 1200,60 1440,28 L1440,60 L0,60 Z" fill="#f5f9fd"></path>
+  </svg>
+</header>
+
+<main>
+  <div class="wrap legal">
+    <nav class="langbar" aria-label="{html.escape(C["lang_label"])}"><span aria-hidden="true">🌐</span> {langbar}</nav>
+
+    <div class="note">{html.escape(C["prevails"])} <a href="{legal_page(doc, "en")}" hreflang="en">{html.escape(C["read_english"])}</a>.</div>
+
+    <p class="updated">{html.escape(D["updated"])}</p>
+
+{chr(10).join(body)}
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Invoice Cove — a <a class="accent" href="https://magotel.uk" target="_blank" rel="noopener">Magotel</a> app</span>
+    <span>{html.escape(C["questions"])} <a href="mailto:contact@magotel.uk">contact@magotel.uk</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
+'''
+    (SITE / legal_page(doc, code)).write_text(out)
+    print(f"built {legal_page(doc, code)}")
+
 if __name__ == "__main__":
     only = sys.argv[1:] or [c for c, _ in LANGS]
     for c in only:
         build(c)
+        if c != "en":
+            for doc in ("privacy", "terms"):
+                build_legal(c, doc)
