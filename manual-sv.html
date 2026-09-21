@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invoice Cove — Användarhandbok</title>
+<meta name="description" content="Komplett användarhandbok för appen Invoice Cove - Offline Billing.">
+<link rel="alternate" hreflang="en" href="manual.html">
+<link rel="alternate" hreflang="ro" href="manual-ro.html">
+<link rel="alternate" hreflang="de" href="manual-de.html">
+<link rel="alternate" hreflang="fr" href="manual-fr.html">
+<link rel="alternate" hreflang="es" href="manual-es.html">
+<link rel="alternate" hreflang="it" href="manual-it.html">
+<link rel="alternate" hreflang="pt" href="manual-pt.html">
+<link rel="alternate" hreflang="pl" href="manual-pl.html">
+<link rel="alternate" hreflang="cs" href="manual-cs.html">
+<link rel="alternate" hreflang="sk" href="manual-sk.html">
+<link rel="alternate" hreflang="hu" href="manual-hu.html">
+<link rel="alternate" hreflang="nl" href="manual-nl.html">
+<link rel="alternate" hreflang="sv" href="manual-sv.html">
+<link rel="alternate" hreflang="x-default" href="manual.html">
+<link rel="icon" href="assets/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/icon-256.png" alt=""> Invoice Cove</a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="manual.html" class="active">User Manual</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:0;">
+  <div class="wrap" style="padding-bottom:36px;">
+    <h1>Användarhandbok</h1>
+    <p>Allt Invoice Cove kan göra, skärm för skärm.</p>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,32 C240,64 480,0 720,20 C960,40 1200,60 1440,28 L1440,60 L0,60 Z" fill="#f5f9fd"></path>
+  </svg>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <nav class="langbar" aria-label="Språk"><span aria-hidden="true">🌐</span> <a href="manual.html" lang="en" hreflang="en">English</a> <a href="manual-ro.html" lang="ro" hreflang="ro">Română</a> <a href="manual-de.html" lang="de" hreflang="de">Deutsch</a> <a href="manual-fr.html" lang="fr" hreflang="fr">Français</a> <a href="manual-es.html" lang="es" hreflang="es">Español</a> <a href="manual-it.html" lang="it" hreflang="it">Italiano</a> <a href="manual-pt.html" lang="pt" hreflang="pt">Português</a> <a href="manual-pl.html" lang="pl" hreflang="pl">Polski</a> <a href="manual-cs.html" lang="cs" hreflang="cs">Čeština</a> <a href="manual-sk.html" lang="sk" hreflang="sk">Slovenčina</a> <a href="manual-hu.html" lang="hu" hreflang="hu">Magyar</a> <a href="manual-nl.html" lang="nl" hreflang="nl">Nederlands</a> <a href="manual-sv.html" lang="sv" hreflang="sv" class="current" aria-current="page">Svenska</a></nav>
+
+    <p class="lede">Invoice Cove fungerar helt på din enhet — dina fakturor, offerter, kunder och företagsuppgifter lagras lokalt, inte på någon Invoice Cove-server. <strong>Vi samlar inte in, ser eller tar emot några uppgifter om dina fakturor eller om hur du använder appen</strong> — ingen analys, ingen spårning, inget skickas i bakgrunden. Den enda gången själva appen behöver internet är när engångsköpet av Invoice Cove Pro behandlas via Google Play. Detaljer finns i <a href="privacy.html">Integritetspolicyn</a> (på engelska).</p>
+    <div class="note warn">
+      <strong>Innan du avinstallerar appen eller rensar dess lagring:</strong> vi säkerhetskopierar inte dessa uppgifter någonstans. Om du avinstallerar Invoice Cove eller rensar dess lagring i Androids inställningar raderas alla fakturor, offerter, kunder och inställningar på den här enheten permanent — det finns ingen molnkopia att återställa från. Skydda dig: skapa en säkerhetskopia med Invoice Cove Pro (se <a href="#backup">Säkerhetskopiering och återställning</a>) eller exportera det du behöver till Excel, CSV eller ZIP (se <a href="#export">Exportera fakturor</a>).
+    </div>
+
+    <div class="toc">
+      <h2>Innehåll</h2>
+      <ol>
+        <li><a href="#home">Startskärm</a></li>
+        <li><a href="#customers">Kunder</a></li>
+        <li><a href="#new-invoice">Skapa en faktura</a></li>
+        <li><a href="#drafts">Utkast</a></li>
+        <li><a href="#invoices">Hantera fakturor</a></li>
+        <li><a href="#export">Exportera fakturor (Excel, CSV, ZIP)</a></li>
+        <li><a href="#new-quote">Skapa en offert</a></li>
+        <li><a href="#quotes">Hantera offerter och omvandla till faktura</a></li>
+        <li><a href="#calendar">Kalender och påminnelser</a></li>
+        <li><a href="#reports">Rapporter</a></li>
+        <li><a href="#settings">Företagsuppgifter och inställningar</a></li>
+        <li><a href="#backup">Säkerhetskopiering och återställning</a></li>
+        <li><a href="#app-lock">Applås</a></li>
+        <li><a href="#languages">Språk</a></li>
+        <li><a href="#templates">PDF-mallar</a></li>
+        <li><a href="#free-vs-pro">Gratisversion och Invoice Cove Pro</a></li>
+      </ol>
+    </div>
+
+    <section class="section" id="home">
+      <h2><span class="num">1</span> Startskärm</h2>
+      <div class="section-body">
+        <div>
+          <p>Startskärmen är din utgångspunkt, med en ruta för varje huvudåtgärd: <strong>Ny offert</strong>, <strong>Offerter</strong>, <strong>Ny faktura</strong>, <strong>Fakturor</strong>, <strong>Ny kund</strong>, <strong>Kunder</strong>, <strong>Kalender</strong> och <strong>Rapporter</strong>. Tryck på en ruta för att gå dit direkt.</p>
+          <p>Fältet längst ned ger dig alltid snabb åtkomst till <strong>Hem</strong>, <strong>Ny</strong> (ny faktura), <strong>Fakturor</strong>, <strong>Kunder</strong> och <strong>Rapporter</strong>.</p>
+          <p>Kugghjulsikonen (⚙️) uppe till höger på de flesta skärmar öppnar <a href="#settings">Företagsuppgifter och inställningar</a>.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/home.png" alt="Invoice Cove — Startskärm" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="customers">
+      <h2><span class="num">2</span> Kunder</h2>
+      <div class="section-body">
+        <div>
+          <p>Lägg till en kund på fliken <strong>Kunder</strong> (tryck på +-ikonen), med rutan <strong>Ny kund</strong> eller direkt när du skapar en faktura eller offert. Bara namnet är obligatoriskt. Valfria fält: <strong>Kundnummer</strong>, E-post, Telefon, adress, Skatte-ID, Momsregistreringsnummer, Organisationsnummer och en färg som färgsätter kundens dokument. Varje fält visar ett exempel så att det är tydligt vad som ska stå där.</p>
+          <p>Tryck på en kund för att redigera den (<strong>Redigera</strong>), öppna dess <strong>Visa historik</strong> (fakturor, offerter och utkast) eller ta bort den (<strong>Ta bort</strong>).</p>
+          <p>På dina fakturor och offerter skrivs kunduppgifterna ut under namnet i en fast ordning: kundnummer, skatte-ID, momsregistreringsnummer, handelsregisternummer, därefter adress, e-post och telefon. Det du inte fyller i skrivs helt enkelt inte ut.</p>
+          <div class="note"><strong>Sparandet fungerar annorlunda här än för fakturor.</strong> En kund har en egen knapp <strong>Spara kund</strong> (vid redigering <strong>Spara ändringar</strong>) — den sparas i samma stund som du trycker på den. Om du försöker stänga formuläret med osparade ändringar ber Invoice Cove först om bekräftelse.</div>
+          <div class="note">Att ta bort en kund tar inte bort de fakturor och offerter du redan har skapat åt kunden. Kundens ofärdiga <a href="#drafts">utkast</a> tas däremot bort tillsammans med kunden — appen frågar dig först.</div>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/customers.png" alt="Invoice Cove — Kunder" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/customer-form.png" alt="Invoice Cove — Kunder" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="new-invoice">
+      <h2><span class="num">3</span> Skapa en faktura</h2>
+      <div class="section-body">
+        <div>
+          <p>På <strong>Ny</strong> (eller via rutan <strong>Ny faktura</strong>): välj en kund — eller skapa en direkt — ange fakturadatum och förfallodatum och lägg sedan till rader.</p>
+          <p>Tryck på <strong>Lägg till artikeluppgifter</strong> och fyll i beskrivning, antal, pris per enhet och vid behov enhet (t.ex. tim, st eller kg) samt datum och tid. Enheten skrivs ut bredvid antalet i PDF:en. Med pennan (✏️) vid en rad rättar du den, med papperskorgen (🗑️) tar du bort den. Tidigare använda beskrivningar och priser föreslås medan du skriver.</p>
+          <p>Lägg sedan efter behov till en skattesats, <strong>Rabatt</strong> (procent eller fast belopp) och <strong>Anteckningar</strong>. Fakturanumret tilldelas automatiskt (med Pro kan du ändra det); välj valuta bredvid.</p>
+          <p><strong>Förhandsgranska</strong> skapar en tillfällig PDF så att du ser hur den ser ut — ingenting sparas ännu. Knappen <strong>Mall</strong> visar vilken mall som används; tryck på den för att välja en annan bara för det här dokumentet.</p>
+          <div class="note"><strong>Skapa faktura</strong> gör tre saker på en gång: sparar fakturan, skapar PDF:en och öppnar enhetens delningsmeny så att du kan skicka den. Inte klar än? Använd <strong>Spara som utkast</strong> — se <a href="#drafts">Utkast</a>.</div>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/new-invoice.png" alt="Invoice Cove — Skapa en faktura" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/new-invoice-2.png" alt="Invoice Cove — Skapa en faktura" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="drafts">
+      <h2><span class="num">4</span> Utkast</h2>
+      <div class="section-body">
+        <div>
+          <p>En faktura du fortfarande arbetar på försvinner inte. Så snart du väljer en kund och lägger till minst en rad eller anteckning behåller Invoice Cove ett <strong>utkast</strong> och uppdaterar det en stund efter att du slutat skriva — och en gång till när du lämnar appen. När du lämnar skärmen visas ingen fråga om att ”kasta ändringar?”; ett kort meddelande talar om att utkastet har sparats.</p>
+          <p>Tryck på <strong>Spara som utkast</strong> (under Skapa faktura) för att medvetet lägga en faktura åt sidan: den sparas och formuläret töms, redo för nästa faktura. Det fungerar så snart en kund är vald, även innan du lagt till rader.</p>
+          <p>Du hittar utkasten under <strong>Kunder</strong> → kund → <strong>Visa historik</strong> → <strong>Utkast</strong>. Varje utkast visar när det senast ändrades, hur många rader det har och totalbeloppet. Tryck på det för att fortsätta redigera eller skapa fakturan; papperskorgen tar bort det.</p>
+          <ul><li>Ett utkast använder aldrig ett fakturanummer och räknas inte mot den kostnadsfria månadsgränsen. Numret tilldelas först när du skapar den slutliga fakturan — utkastet ersätts då av den.</li><li>Ett utkast minns fakturadatum och förfallodatum bara om du själv valt dem; annars används dagens datum när du öppnar det igen.</li><li>Om du tar bort en kund tas även dess utkast bort (appen frågar dig först). Utkast ingår i säkerhetskopian.</li><li>Utkast finns för fakturor; offerter har inga.</li></ul>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/drafts.png" alt="Invoice Cove — Utkast" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="invoices">
+      <h2><span class="num">5</span> Hantera fakturor</h2>
+      <div class="section-body">
+        <div>
+          <p>Fliken <strong>Fakturor</strong> grupperar fakturor i en mapp per kund, som du kan sortera efter <em>Senast fakturerad</em>, <em>Alfabetiskt</em> eller <em>Antal fakturor</em>. Öppna en mapp för att se dess fakturor, sorterade efter datum, värde, nummer eller status.</p>
+          <p>Varje faktura har en status: <strong>Obetald</strong>, <strong>Förfallen</strong> (efter förfallodatum), <strong>Delvis betald</strong> (en handpenning har registrerats), <strong>Betald</strong> eller <strong>Makulerad</strong>. Tryck på en faktura för att visa den (Visa), skicka den igen (Dela), markera den som betald eller makulerad eller ta bort den.</p>
+          <ul><li><strong>Markera som betald</strong> frågar efter betalningsdatum och betalsätt (överföring, kontant, kort, PayPal eller annat). En betald faktura kan inte sättas tillbaka till obetald.</li><li><strong>Registrera förskott</strong> registrerar en förskottsbetalning. Fakturan visas då som <strong>Delvis betald</strong> och handpenningen får inte överstiga totalen.</li><li><strong>Markera som makulerad</strong> behåller fakturan i din bokföring men markerar den som annullerad. Välj hellre detta än att ta bort — en borttagen faktura kan inte återställas.</li></ul>
+          <p>Med Pro kan du också spara eller dela en kunds mapp som ZIP med PDF:erna och exportera hela listan till din revisor — se <a href="#export">Exportera fakturor</a>.</p>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/invoices-list.png" alt="Invoice Cove — Hantera fakturor" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/invoice-actions.png" alt="Invoice Cove — Hantera fakturor" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="export">
+      <h2><span class="num">6</span> Exportera fakturor (Excel, CSV, ZIP)</h2>
+      <div class="section-body">
+        <div>
+          <p>Tillgängligt med Invoice Cove Pro. Tryck på exportikonen (📄) högst upp på fliken <strong>Fakturor</strong>. Välj vilka fakturor som ska tas med med år- och månadsväljaren (<strong>Alla</strong>, ett år eller en månad i ett år — bara år och månader där det finns fakturor erbjuds) och välj sedan vad du vill göra med dem:</p>
+          <ul><li><strong>Spara som Excel</strong> / <strong>Dela Excel</strong> — ett Excel-kalkylblad (.xlsx).</li><li><strong>Spara som CSV</strong> / <strong>Dela CSV</strong> — samma tabell som en CSV-fil.</li><li><strong>Spara fakturor som ZIP</strong> / <strong>Dela fakturor som ZIP</strong> — fakturornas PDF:er i en ZIP, med en mapp per kund.</li><li><strong>Ta bort fakturor</strong> — tar permanent bort de valda fakturorna efter två bekräftelser.</li></ul>
+          <p>Med <em>Spara</em> väljer du var på enheten filen hamnar; <em>Dela</em> öppnar Androids delningsmeny så att du kan skicka den via e-post eller i en chatt.</p>
+          <p>Excel och CSV är gjorda för din revisor: <strong>en rad per fakturarad</strong>, där fakturauppgifterna upprepas på varje rad — nummer och datum, kundens namn, nummer, skatte-ID, momsregistreringsnummer, handelsregisternummer och adress, beskrivning, antal, enhet, radens pris och nettobelopp, delsumma, rabatt, momssats, momsbelopp och fakturans totalbelopp, valuta och status, betalningsdatum och betalsätt. Kolumnrubrikerna och de fasta orden (faktura, betald, obetald, betalsätt) står på det språk som appen är inställd på.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/export.png" alt="Invoice Cove — Exportera fakturor (Excel, CSV, ZIP)" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="new-quote">
+      <h2><span class="num">7</span> Skapa en offert</h2>
+      <div class="section-body">
+        <div>
+          <p><strong>Ny offert</strong> fungerar som New Invoice — samma fält, samma knappar <strong>Förhandsgranska</strong> och <strong>Mall</strong> och samma <strong>Skapa offert</strong>, som med ett tryck sparar, skapar PDF:en och öppnar delningsmenyn — med <strong>Offertdatum</strong> och ett datum <strong>Giltig till</strong> i stället för fakturadatum och förfallodatum. Offerter har inga utkast.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/new-quote.png" alt="Invoice Cove — Skapa en offert" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="quotes">
+      <h2><span class="num">8</span> Hantera offerter och omvandla till faktura</h2>
+      <div class="section-body">
+        <div>
+          <p>Skärmen <strong>Offerter</strong> (via rutan på startskärmen) listar offerter per kund, precis som fakturor. Öppna en offert för att visa eller dela den, använd <strong>Acceptera</strong> eller <strong>Avböj</strong> när kunden svarar, registrera en handpenning eller ta bort den. En handpenning får inte överstiga offertens totalbelopp.</p>
+          <p>När kunden godkänner offerten använder du <strong>Konvertera till faktura</strong> och de ikryssade raderna omvandlas till en riktig faktura, som du kan redigera separat — förfallodatum och rabatt kan fortfarande ändras, och den ursprungliga offerten markeras som <strong>Konverterad</strong> och finns kvar i din bokföring.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/quotes-list.png" alt="Invoice Cove — Hantera offerter och omvandla till faktura" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="calendar">
+      <h2><span class="num">9</span> Kalender och påminnelser</h2>
+      <div class="section-body">
+        <div>
+          <p>Skärmen <strong>Kalender</strong> är en månadsvy för dina egna anteckningar. Tryck på en dag för att se eller lägga till anteckningar; en anteckning har en titel och text och skickar dig med alternativet <strong>Påminn mig</strong> och en tid en avisering vid just det tillfället. Veckans första dag följer din inställning.</p>
+          <p>Separat skickar Invoice Cove betalningspåminnelser — lokala aviseringar om fakturor som snart förfaller eller redan har förfallit. Ingenting skickas till eller tas emot från en server.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/calendar.png" alt="Invoice Cove — Kalender och påminnelser" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="reports">
+      <h2><span class="num">10</span> Rapporter</h2>
+      <div class="section-body">
+        <div>
+          <p><strong>Rapporter</strong> ger dig en snabb överblick: beloppen <strong>Intäkter (betalt)</strong>, <strong>Utestående</strong> och <strong>Förfallet</strong>, antalet fakturor, <em>Intäkter per månad</em> och dina <em>Bästa kunder</em> efter fakturerat belopp.</p>
+          <p>Tryck på kortet <strong>Utestående</strong> eller <strong>Förfallet</strong> för att öppna en lista över exakt de fakturorna.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/reports.png" alt="Invoice Cove — Rapporter" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="settings">
+      <h2><span class="num">11</span> Företagsuppgifter och inställningar</h2>
+      <div class="section-body">
+        <div>
+          <p>Öppna inställningarna med kugghjulsikonen — skärmen heter <strong>Företagsuppgifter</strong>. Den börjar med dina preferenser: <strong>Utseende</strong> (Ljust eller Mörkt), standard-<strong>Fakturamall</strong>, <strong>Skatteetikett</strong> (moms, GST…), <strong>Första veckodagen</strong> och <strong>Standardförfallodatum</strong> (fyller i förfallodatum automatiskt, t.ex. Net 30). Under dem följer <strong>Säkerhet</strong> (se <a href="#app-lock">Applås</a>), <strong>Artikelförslag</strong> och <strong>Säkerhetskopia och återställning</strong> (se <a href="#backup">Säkerhetskopiering och återställning</a>).</p>
+          <p><strong>Minne för beskrivning &amp; pris</strong> minns radernas beskrivningar och priser för att föreslå dem medan du skriver; <em>Rensa</em> glömmer dem, utan att röra dina fakturor.</p>
+          <p>Längre ned finns ditt företags profil som skrivs ut på varje faktura och offert: <strong>Företagsnamn</strong>, <strong>Ditt namn</strong>, en kort slogan (<strong>Företagets plats</strong>), E-post, Telefon, <strong>Datumformat</strong> för datum, adress, Skatte-ID, Momsregistreringsnummer, <strong>Registreringsuppgifter</strong> (registreringsnummer, aktiekapital och liknande), <strong>Företagslogotyp</strong> och <strong>Betalningsuppgifter</strong> (IBAN, PayPal.me-länk…). Varje fält har ett exempel och <strong>varje fält du lämnar tomt visas helt enkelt inte på dina fakturor</strong>. Tryck på <strong>Klar</strong> när du är klar; om du lämnar med osparade ändringar frågar appen först.</p>
+          <p>Allra längst ned: den här <strong>Användarmanual</strong> och <strong>Dela den här appen</strong>.</p>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/settings-preferences.png" alt="Invoice Cove — Företagsuppgifter och inställningar" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/settings-business.png" alt="Invoice Cove — Företagsuppgifter och inställningar" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="backup">
+      <h2><span class="num">12</span> Säkerhetskopiering och återställning</h2>
+      <div class="section-body">
+        <div>
+          <p>Tillgängligt med Invoice Cove Pro. Under <strong>Säkerhetskopia och återställning</strong> sparar <strong>Skapa säkerhetskopia</strong> allt — fakturor, offerter, utkast, kunder, kalender, inställningar, logotyp och PDF:er — i en enda fil. Välj <strong>Spara säkerhetskopia</strong> för att spara den var du vill, eller <strong>Dela säkerhetskopia</strong> för att skicka den till en säker plats.</p>
+          <p><strong>Återställ säkerhetskopia</strong> lägger tillbaka allt — till exempel på en ny telefon. Det fungerar bara på en nyinstallation, så länge du inte lagt till några uppgifter, så det kan aldrig skriva över det du redan har. Invoice Cove kontrollerar att filen är hel och varnar dig om den är skadad, inte är en Invoice Cove-säkerhetskopia eller skapades av en nyare version av appen (uppdatera först).</p>
+          <div class="note">Säkerhetskopian är <strong>inte krypterad</strong>: den som har den kan läsa dina uppgifter. Förvara den på en privat plats. Applåsets PIN-kod ingår aldrig i den.</div>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/backup.png" alt="Invoice Cove — Säkerhetskopiering och återställning" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="app-lock">
+      <h2><span class="num">13</span> Applås</h2>
+      <div class="section-body">
+        <div>
+          <p>Under <strong>Säkerhet</strong> kan du slå på <strong>Applås</strong>: Invoice Cove ber då om en PIN-kod (eller fingeravtryck) när appen öppnas från början eller efter att telefonen startats om — inte vid varje återkomst till den.</p>
+          <ul><li><strong>Ange PIN-kod</strong>: välj en fyrsiffrig PIN-kod och bekräfta den.</li><li>Därefter får du en sexsiffrig <strong>återställningskod</strong> som bara visas en gång. Skriv ned den och förvara den på en säker plats.</li><li>Om din telefon stöder det kan du låsa upp med fingeravtryck (<strong>Använd fingeravtryck</strong>).</li><li>Glömt PIN-koden? Använd <strong>Glömt PIN-kod?</strong> och ange återställningskoden. Efter 5 felaktiga försök måste du vänta 30 sekunder; väntetiden förlängs vid fler felaktiga försök.</li></ul>
+          <div class="note">Om du tappar både PIN-koden och återställningskoden — och inte har ställt in fingeravtrycksupplåsning — går det inte att komma in igen. Vi kan inte återställa den åt dig.</div>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/pin-lock-setup.png" alt="Invoice Cove — Applås" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="languages">
+      <h2><span class="num">14</span> Språk</h2>
+      <div class="section-body">
+        <div>
+          <p>Invoice Cove talar 13 språk: English, Română, Deutsch, Français, Español, Italiano, Português, Polski, Čeština, Slovenčina, Magyar, Nederlands och Svenska. Tryck på den runda flaggikonen högst upp i inställningarna så byts språket — appen växlar direkt.</p>
+          <p>Texten i dina PDF:er och i exporterna till Excel/CSV följer det språk som appen är inställd på, och den här handboken finns på samma 13 språk (använd språkfältet högst upp på sidan).</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/language.png" alt="Invoice Cove — Språk" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="templates">
+      <h2><span class="num">15</span> PDF-mallar</h2>
+      <div class="section-body">
+        <div>
+          <p>Invoice Cove innehåller 18 PDF-design: Classic, Client Color (i kundens färg), Minimal, Bold Corporate, Classic Clean, Modern Dark Accent, Organic Flow, Modern Professional Business, Minimalist Bakery Service, Gentle Flower, Cozy Paws, Soft Elegant, Solid Craft, Crimson Frame, Blush Botanical, Vintage Garage, Sparkle Waves och Spooky Hollow.</p>
+          <p>Välj standardmall under Inställningar → <strong>Fakturamall</strong>: tryck på en design och sedan på <strong>Klar</strong>. Den gäller för allt du skapar från och med då. För en enskild faktura eller offert använder du knappen <strong>Mall</strong> i formuläret.</p>
+          <p>Varje mall skriver ut samma information — dina företagsuppgifter, kundens, rader med enhet och datum, summor, anteckningar och betalningsuppgifter — men bara det du har fyllt i. Långa fakturor fortsätter på en andra sida och totalen följer med den sista raden.</p>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/template-picker.png" alt="Invoice Cove — PDF-mallar" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/templates-1.png" alt="Invoice Cove — PDF-mallar" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/templates-2.png" alt="Invoice Cove — PDF-mallar" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="free-vs-pro">
+      <h2><span class="num">16</span> Gratisversion och Invoice Cove Pro</h2>
+      <div class="section-body">
+        <div>
+          <p>Invoice Cove är gratis, med några rimliga begränsningar:</p>
+          <ul><li>Upp till 3 fakturor och 3 offerter per kalendermånad</li><li>Upp till 3 kunder åt gången</li><li>Faktura- och offertnummer tilldelas automatiskt och kan inte ändras</li><li>Export till Excel, CSV och ZIP finns bara med Pro</li><li>Säkerhetskopiering och återställning finns bara med Pro</li></ul>
+          <p><strong>Invoice Cove Pro</strong> är ett enda engångsköp via Google Play — inte en prenumeration — som tar bort alla dessa begränsningar för alltid. Utkast, alla mallar och språk, applåset samt att skapa, förhandsvisa och dela dokument är gratis för alla. Alla detaljer finns i <a href="terms.html">Användarvillkoren</a> (på engelska).</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Invoice Cove — a <a class="accent" href="https://magotel.uk" target="_blank" rel="noopener">Magotel</a> app</span>
+    <span>Frågor? <a href="mailto:contact@magotel.uk">contact@magotel.uk</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

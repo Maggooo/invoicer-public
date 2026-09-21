@@ -37,7 +37,7 @@
 
 <main>
   <div class="wrap legal">
-    <p class="updated">Last updated: 6 September 2026</p>
+    <p class="updated">Last updated: 21 September 2026</p>
 
     <p><strong>Invoice Cove is built to run entirely on your device.</strong> There is no Invoice Cove server, no account to create, and no analytics or advertising SDK inside the app. This page explains exactly what that means in practice.</p>
 
@@ -47,37 +47,40 @@
     <span class="badge">No data sold, ever</span>
 
     <h2>1. Your business data stays on your device</h2>
-    <p>Every invoice, quote, customer record, business profile, and generated PDF you create in Invoice Cove is stored locally in the app's private storage on your phone. We — Magotel, the developer of Invoice Cove — never receive a copy of it, don't have a server it could be sent to, and can't see it.</p>
+    <p>Every invoice, quote, draft, customer record, calendar note, business profile, and generated PDF you create in Invoice Cove is stored locally in the app's private storage on your phone. We — Magotel, the developer of Invoice Cove — never receive a copy of it, don't have a server it could be sent to, and can't see it.</p>
     <p><strong>We don't collect any data about your invoices, quotes, or customers, and we don't collect any data about how you use the app either</strong> — no invoice totals, no customer names, no usage analytics, no crash reports, no device identifiers sent to us. Nothing about your activity in Invoice Cove is transmitted anywhere in the background.</p>
 
     <h2>2. We're not responsible for data that only ever existed on your device</h2>
-    <p>Because your invoices, quotes, customer records and settings are stored solely on your phone and never on any server we control, <strong>Magotel has no ability to see, back up, or recover that data</strong> — and no responsibility for it if it's lost. If you uninstall Invoice Cove, clear its storage, lose your phone, or your device is reset, that data is gone unless you personally exported or backed it up beforehand (see <a href="manual.html#invoices">Managing invoices</a> for how to export). This also means we can't restore anything on your behalf if something goes wrong locally on your device — there's simply nothing on our end to restore it from.</p>
+    <p>Because your invoices, quotes, customer records and settings are stored solely on your phone and never on any server we control, <strong>Magotel has no ability to see, back up, or recover that data</strong> — and no responsibility for it if it's lost. If you uninstall Invoice Cove, clear its storage, lose your phone, or your device is reset, that data is gone unless you personally exported or backed it up beforehand (see <a href="manual.html#backup">Backup &amp; restore</a> and <a href="manual.html#export">Exporting invoices</a> in the User Manual). This also means we can't restore anything on your behalf if something goes wrong locally on your device — there's simply nothing on our end to restore it from.</p>
 
-    <h2>3. Sharing a PDF is your choice, each time</h2>
-    <p>When you tap Share on an invoice or quote, Android's own share sheet opens and you pick the destination — email, messaging apps, cloud storage, whatever you have installed. Invoice Cove doesn't send anything automatically or in the background. Once you've shared a file with another app, that app's own privacy policy applies to what happens to it next, not this one.</p>
+    <h2>3. Sharing is your choice, each time</h2>
+    <p>When you tap Share on an invoice, a quote, an export or a backup, Android's own share sheet opens and you pick the destination — email, messaging apps, cloud storage, whatever you have installed. Invoice Cove doesn't send anything automatically or in the background. Once you've shared a file with another app, that app's own privacy policy applies to what happens to it next, not this one.</p>
 
     <h2>4. Choosing a logo image</h2>
     <p>Adding a business logo uses your device's built-in photo picker. Invoice Cove only receives the single image you explicitly select — it does not get broader access to your photo library.</p>
 
-    <h2>5. Exporting invoices as CSV or ZIP</h2>
-    <p>Exporting invoices opens Android's standard "Save As" dialog, where you choose exactly where the file is saved on your device. Invoice Cove doesn't have open-ended access to your device storage.</p>
-
-    <h2>6. Local reminders</h2>
+    <h2>5. Exports and backups</h2>
+<p>Invoice Cove can export your invoices as an Excel or CSV table or a ZIP of PDFs, and create a backup file of everything stored in the app (invoices, quotes, drafts, customers, calendar notes, settings, your logo and the PDFs). When you choose <em>Save</em>, Android's standard "Save As" dialog opens and you decide exactly where the file goes; when you choose <em>Share</em>, the Android share sheet opens (see section 3). Invoice Cove doesn't have open-ended access to your device storage. To restore a backup, you pick the file yourself with Android's file picker.</p>
+<p><strong>A backup file is not encrypted.</strong> Anyone who gets hold of it can read what is inside, so keep it somewhere private. Your App Lock PIN and recovery code are never included in it.</p>
+<h2>6. App Lock (PIN and fingerprint)</h2>
+<p>If you turn on App Lock, your PIN and the recovery code you're shown once are used only to unlock the app on your device. Neither is stored in plain text — only a salted hash of each is kept, on your device, and that data is excluded from Android backups and from Invoice Cove backup files. Fingerprint unlock uses Android's own biometric prompt: Invoice Cove is only told whether the check succeeded and never receives your fingerprint data.</p>
+<h2>7. Local reminders</h2>
     <p>Invoice Cove can remind you about upcoming due dates using local notifications scheduled on your device. These are not push notifications — nothing is sent to or received from a remote server to make them work.</p>
 
-    <h2>7. Invoice Cove Pro (one-time purchase)</h2>
-    <p>Unlocking Invoice Cove Pro is a one-time, non-subscription purchase processed entirely by Google Play. We use the Google Play Billing Library to complete and verify the purchase — this is the one feature in the app that requires an internet connection, solely to talk to Google Play's own servers. Your payment details (card number, billing address, etc.) are handled by Google, not by us; we never see or store them. Google's own Privacy Policy applies to that transaction.</p>
+    <h2>8. Invoice Cove Pro (one-time purchase)</h2>
+    <p>Unlocking Invoice Cove Pro is a one-time, non-subscription purchase processed entirely by Google Play. We use the Google Play Billing Library to complete and verify the purchase — this is the only feature of the app itself that uses the internet, and only to talk to Google Play's own servers. Your payment details (card number, billing address, etc.) are handled by Google, not by us; we never see or store them. Google's own Privacy Policy applies to that transaction.</p>
 
-    <h2>8. Android system backups</h2>
-    <p>If you have Android's built-in "Back up to Google Drive" setting turned on at the system level, your device may include Invoice Cove's local app data in that standard OS backup. That's a feature of Android itself, not something Invoice Cove initiates or has access to — we don't receive anything from it, and we can't guarantee it will restore your data correctly.</p>
-
-    <h2>9. Children's privacy</h2>
+    <h2>9. This website and links inside the app</h2>
+<p>The "User Manual" link in the app's settings, and the Magotel link, open web pages in your browser; "Share this app" shares a Google Play link through Android's share sheet. Invoice Cove itself doesn't send anything when you do this. The pages of this website are hosted on GitHub Pages and load their fonts from Google Fonts, so — as with most websites — your browser contacts those services to display them, and their own privacy policies apply to that. Nothing you enter in the app is part of it.</p>
+<h2>10. Android system backups</h2>
+<p>If you have Android's built-in "Back up to Google Drive" setting turned on at the system level, your device may include Invoice Cove's local app data in that standard OS backup (and in a device-to-device transfer). That's a feature of Android itself, not something Invoice Cove initiates or has access to — we don't receive anything from it, and we can't guarantee it will restore your data correctly. Invoice Cove excludes your App Lock data from those Android backups.</p>
+<h2>11. Children's privacy</h2>
     <p>Invoice Cove is a business tool and is not directed at children. We don't knowingly collect any data from children, in line with the rest of this policy: we don't collect data from anyone.</p>
 
-    <h2>10. Changes to this policy</h2>
+    <h2>12. Changes to this policy</h2>
     <p>If this policy changes, we'll update the "Last updated" date above and post the revised version at this same address.</p>
 
-    <h2>11. Contact</h2>
+    <h2>13. Contact</h2>
     <p>Questions about this policy? Email <a href="mailto:contact@magotel.uk">contact@magotel.uk</a>.</p>
   </div>
 </main>

@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invoice Cove — Používateľská príručka</title>
+<meta name="description" content="Kompletná používateľská príručka k aplikácii Invoice Cove - Offline Billing.">
+<link rel="alternate" hreflang="en" href="manual.html">
+<link rel="alternate" hreflang="ro" href="manual-ro.html">
+<link rel="alternate" hreflang="de" href="manual-de.html">
+<link rel="alternate" hreflang="fr" href="manual-fr.html">
+<link rel="alternate" hreflang="es" href="manual-es.html">
+<link rel="alternate" hreflang="it" href="manual-it.html">
+<link rel="alternate" hreflang="pt" href="manual-pt.html">
+<link rel="alternate" hreflang="pl" href="manual-pl.html">
+<link rel="alternate" hreflang="cs" href="manual-cs.html">
+<link rel="alternate" hreflang="sk" href="manual-sk.html">
+<link rel="alternate" hreflang="hu" href="manual-hu.html">
+<link rel="alternate" hreflang="nl" href="manual-nl.html">
+<link rel="alternate" hreflang="sv" href="manual-sv.html">
+<link rel="alternate" hreflang="x-default" href="manual.html">
+<link rel="icon" href="assets/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/icon-256.png" alt=""> Invoice Cove</a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="manual.html" class="active">User Manual</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:0;">
+  <div class="wrap" style="padding-bottom:36px;">
+    <h1>Používateľská príručka</h1>
+    <p>Všetko, čo Invoice Cove dokáže, obrazovku po obrazovke.</p>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,32 C240,64 480,0 720,20 C960,40 1200,60 1440,28 L1440,60 L0,60 Z" fill="#f5f9fd"></path>
+  </svg>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <nav class="langbar" aria-label="Jazyk"><span aria-hidden="true">🌐</span> <a href="manual.html" lang="en" hreflang="en">English</a> <a href="manual-ro.html" lang="ro" hreflang="ro">Română</a> <a href="manual-de.html" lang="de" hreflang="de">Deutsch</a> <a href="manual-fr.html" lang="fr" hreflang="fr">Français</a> <a href="manual-es.html" lang="es" hreflang="es">Español</a> <a href="manual-it.html" lang="it" hreflang="it">Italiano</a> <a href="manual-pt.html" lang="pt" hreflang="pt">Português</a> <a href="manual-pl.html" lang="pl" hreflang="pl">Polski</a> <a href="manual-cs.html" lang="cs" hreflang="cs">Čeština</a> <a href="manual-sk.html" lang="sk" hreflang="sk" class="current" aria-current="page">Slovenčina</a> <a href="manual-hu.html" lang="hu" hreflang="hu">Magyar</a> <a href="manual-nl.html" lang="nl" hreflang="nl">Nederlands</a> <a href="manual-sv.html" lang="sv" hreflang="sv">Svenska</a></nav>
+
+    <p class="lede">Invoice Cove funguje celé vo vašom zariadení — faktúry, ponuky, zákazníci aj profil vašej firmy sa ukladajú lokálne, nie na žiadny server Invoice Cove. <strong>Nezhromažďujeme, nevidíme ani neprijímame žiadne údaje o vašich faktúrach ani o tom, ako aplikáciu používate</strong> — žiadna analytika, žiadne sledovanie, nič sa na pozadí nikam neodosiela. Jediný okamih, keď samotná aplikácia potrebuje internet, je spracovanie jednorazového nákupu Invoice Cove Pro cez Google Play. Podrobnosti nájdete v <a href="privacy.html">Zásadách ochrany osobných údajov</a> (po anglicky).</p>
+    <div class="note warn">
+      <strong>Skôr než aplikáciu odinštalujete alebo vymažete jej úložisko:</strong> tieto údaje nikde nezálohujeme. Odinštalovaním Invoice Cove alebo vymazaním jeho úložiska v nastaveniach Androidu sa natrvalo zmažú všetky faktúry, ponuky, zákazníci aj nastavenia v tomto zariadení — neexistuje kópia v cloude, z ktorej by sa dalo obnoviť. Chráňte sa: vytvorte zálohu s Invoice Cove Pro (pozri <a href="#backup">Záloha a obnovenie</a>) alebo si potrebné exportujte do Excelu, CSV či ZIP (pozri <a href="#export">Export faktúr</a>).
+    </div>
+
+    <div class="toc">
+      <h2>Obsah</h2>
+      <ol>
+        <li><a href="#home">Úvodná obrazovka</a></li>
+        <li><a href="#customers">Zákazníci</a></li>
+        <li><a href="#new-invoice">Vytvorenie faktúry</a></li>
+        <li><a href="#drafts">Koncepty</a></li>
+        <li><a href="#invoices">Správa faktúr</a></li>
+        <li><a href="#export">Export faktúr (Excel, CSV, ZIP)</a></li>
+        <li><a href="#new-quote">Vytvorenie ponuky</a></li>
+        <li><a href="#quotes">Správa ponúk a prevod na faktúru</a></li>
+        <li><a href="#calendar">Kalendár a pripomienky</a></li>
+        <li><a href="#reports">Prehľady</a></li>
+        <li><a href="#settings">Údaje o firme a nastavenia</a></li>
+        <li><a href="#backup">Záloha a obnovenie</a></li>
+        <li><a href="#app-lock">Zámok aplikácie</a></li>
+        <li><a href="#languages">Jazyky</a></li>
+        <li><a href="#templates">PDF šablóny</a></li>
+        <li><a href="#free-vs-pro">Bezplatný plán a Invoice Cove Pro</a></li>
+      </ol>
+    </div>
+
+    <section class="section" id="home">
+      <h2><span class="num">1</span> Úvodná obrazovka</h2>
+      <div class="section-body">
+        <div>
+          <p>Úvodná obrazovka je váš východiskový bod, s dlaždicou pre každú hlavnú akciu: <strong>Nová ponuka</strong>, <strong>Ponuky</strong>, <strong>Nová faktúra</strong>, <strong>Faktúry</strong>, <strong>Nový zákazník</strong>, <strong>Zákazníci</strong>, <strong>Kalendár</strong> a <strong>Prehľady</strong>. Klepnutím na dlaždicu sa tam hneď dostanete.</p>
+          <p>Lišta dole vám vždy ponúka rýchly prístup k <strong>Domov</strong>, <strong>Nová</strong> (nová faktúra), <strong>Faktúry</strong>, <strong>Zákazníci</strong> a <strong>Prehľady</strong>.</p>
+          <p>Ikona ozubeného kolieska (⚙️) v pravom hornom rohu väčšiny obrazoviek otvára <a href="#settings">Údaje o firme a nastavenia</a>.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/home.png" alt="Invoice Cove — Úvodná obrazovka" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="customers">
+      <h2><span class="num">2</span> Zákazníci</h2>
+      <div class="section-body">
+        <div>
+          <p>Zákazníka pridáte na karte <strong>Zákazníci</strong> (klepnite na ikonu +), dlaždicou <strong>Nový zákazník</strong> alebo priamo pri vytváraní faktúry či ponuky. Povinné je iba meno. Nepovinné polia: <strong>Číslo zákazníka</strong>, E-mail, Telefón, adresa, DIČ, IČ DPH, Číslo obchodného registra a farba, ktorá zafarbí dokumenty zákazníka. Každé pole ukazuje príklad, aby bolo jasné, čo tam patrí.</p>
+          <p>Klepnutím na zákazníka ho môžete upraviť (<strong>Upraviť</strong>), otvoriť jeho <strong>Zobraziť históriu</strong> (faktúry, ponuky a koncepty) alebo ho zmazať (<strong>Odstrániť</strong>).</p>
+          <p>Na vašich faktúrach a ponukách sa údaje o zákazníkovi tlačia pod jeho menom v pevnom poradí: číslo zákazníka, daňové číslo, IČ DPH, číslo obchodného registra, potom adresa, e-mail a telefón. Čo nevyplníte, sa jednoducho netlačí.</p>
+          <div class="note"><strong>Ukladanie tu funguje inak ako pri faktúrach.</strong> Zákazník má vlastné tlačidlo <strong>Uložiť zákazníka</strong> (pri úpravách <strong>Uložiť zmeny</strong>) — uloží sa v okamihu, keď naň klepnete. Ak sa pokúsite zavrieť formulár s neuloženými zmenami, Invoice Cove sa najprv opýta na potvrdenie.</div>
+          <div class="note">Zmazanie zákazníka nezmaže faktúry a ponuky, ktoré ste mu už vystavili. Jeho nedokončené <a href="#drafts">koncepty</a> sa zmažú spolu s ním — predtým sa vás aplikácia opýta.</div>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/customers.png" alt="Invoice Cove — Zákazníci" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/customer-form.png" alt="Invoice Cove — Zákazníci" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="new-invoice">
+      <h2><span class="num">3</span> Vytvorenie faktúry</h2>
+      <div class="section-body">
+        <div>
+          <p>V <strong>Nová</strong> (alebo na dlaždici <strong>Nová faktúra</strong>): vyberte zákazníka — alebo ho rovno vytvorte — nastavte dátum faktúry a splatnosť a potom pridajte položky.</p>
+          <p>Klepnite na <strong>Pridať údaje o položke</strong> a vyplňte popis, množstvo, cenu za jednotku a prípadne jednotku (napr. h, ks alebo kg) a dátum a čas. Jednotka sa v PDF tlačí vedľa množstva. Klepnutím na ceruzku (✏️) pri položke ju opravíte, kôš (🗑️) ju odstráni. Skôr použité popisy a ceny sa vám ponúkajú pri písaní.</p>
+          <p>Potom podľa potreby pridajte sadzbu dane, <strong>Zľava</strong> (percento alebo pevnú sumu) a <strong>Poznámky</strong>. Číslo faktúry sa prideľuje samo (s Pro ho môžete upraviť); menu vyberiete vedľa neho.</p>
+          <p><strong>Náhľad</strong> vytvorí dočasné PDF, aby ste videli, ako vyzerá — zatiaľ sa nič neukladá. Tlačidlo <strong>Šablóna</strong> ukazuje, ktorá šablóna sa použije; klepnutím vyberiete inú len pre tento dokument.</p>
+          <div class="note"><strong>Vytvoriť faktúru</strong> urobí tri veci naraz: uloží faktúru, vytvorí PDF a otvorí ponuku zdieľania vášho zariadenia, aby ste ju mohli odoslať. Ešte nie ste hotoví? Použite <strong>Uložiť ako koncept</strong> — pozri <a href="#drafts">Koncepty</a>.</div>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/new-invoice.png" alt="Invoice Cove — Vytvorenie faktúry" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/new-invoice-2.png" alt="Invoice Cove — Vytvorenie faktúry" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="drafts">
+      <h2><span class="num">4</span> Koncepty</h2>
+      <div class="section-body">
+        <div>
+          <p>Faktúru, na ktorej ešte pracujete, nestratíte. Akonáhle vyberiete zákazníka a pridáte aspoň jednu položku alebo poznámku, Invoice Cove uchová <strong>koncept</strong> a aktualizuje ho chvíľu po tom, čo prestanete písať — a ešte raz, keď aplikáciu opustíte. Pri opustení obrazovky sa neobjaví otázka „zahodiť zmeny?“; krátka správa vám oznámi, že sa koncept uložil.</p>
+          <p>Klepnite na <strong>Uložiť ako koncept</strong> (pod Vytvoriť faktúru), aby ste faktúru zámerne odložili: uloží sa a formulár sa vyprázdni, pripravený na ďalšiu faktúru. Funguje to, akonáhle je vybraný zákazník, aj pred pridaním položiek.</p>
+          <p>Koncepty nájdete v <strong>Zákazníci</strong> → zákazník → <strong>Zobraziť históriu</strong> → <strong>Koncepty</strong>. Každý koncept ukazuje, kedy bol naposledy upravený, koľko má položiek a jeho celkovú sumu. Klepnutím v úpravách pokračujete alebo vystavíte faktúru; kôš ho zmaže.</p>
+          <ul><li>Koncept nikdy nespotrebuje číslo faktúry a nepočíta sa do bezplatného mesačného limitu. Číslo sa pridelí až pri vystavení konečnej faktúry — koncept ju potom nahradí.</li><li>Koncept si pamätá dátum faktúry a splatnosť, iba ak ste ich zvolili sami; inak pri opätovnom otvorení použije dnešný dátum.</li><li>Zmazanie zákazníka zmaže aj jeho koncepty (predtým sa vás aplikácia opýta). Koncepty sú súčasťou zálohy.</li><li>Koncepty existujú pre faktúry; ponuky ich nemajú.</li></ul>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/drafts.png" alt="Invoice Cove — Koncepty" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="invoices">
+      <h2><span class="num">5</span> Správa faktúr</h2>
+      <div class="section-body">
+        <div>
+          <p>Karta <strong>Faktúry</strong> zoskupuje faktúry do priečinka pre každého zákazníka, ktoré môžete zoradiť podľa <em>Naposledy fakturované</em>, <em>Abecedne</em> alebo <em>Počet faktúr</em>. Otvorením priečinka uvidíte jeho faktúry zoradené podľa dátumu, hodnoty, čísla alebo stavu.</p>
+          <p>Každá faktúra má stav: <strong>Nezaplatená</strong>, <strong>Po splatnosti</strong> (po splatnosti), <strong>Čiastočne zaplatená</strong> (bola zaznamenaná záloha), <strong>Zaplatená</strong> alebo <strong>Zrušená</strong>. Klepnutím na faktúru ju zobrazíte (Zobraziť), znova odošlete (Zdieľať), označíte ako zaplatenú alebo stornovanú, prípadne zmažete.</p>
+          <ul><li><strong>Označiť ako zaplatenú</strong> sa opýta na dátum platby a spôsob úhrady (prevod, hotovosť, karta, PayPal alebo iný). Zaplatenú faktúru už nemožno vrátiť späť na nezaplatenú.</li><li><strong>Zaznamenať zálohu</strong> zaznamená platbu vopred. Faktúra sa potom zobrazí ako <strong>Čiastočne zaplatená</strong> a záloha nesmie presiahnuť celkovú sumu.</li><li><strong>Označiť ako zrušenú</strong> ponechá faktúru v evidencii, ale označí ju ako zrušenú. Dajte tomu prednosť pred zmazaním — zmazanú faktúru nemožno obnoviť.</li></ul>
+          <p>S Pro možno priečinok zákazníka aj uložiť alebo zdieľať ako ZIP s PDF a celý zoznam exportovať pre vášho účtovníka — pozri <a href="#export">Export faktúr</a>.</p>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/invoices-list.png" alt="Invoice Cove — Správa faktúr" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/invoice-actions.png" alt="Invoice Cove — Správa faktúr" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="export">
+      <h2><span class="num">6</span> Export faktúr (Excel, CSV, ZIP)</h2>
+      <div class="section-body">
+        <div>
+          <p>K dispozícii s Invoice Cove Pro. Klepnite na ikonu exportu (📄) hore na karte <strong>Faktúry</strong>. Ktoré faktúry zahrnúť, vyberiete pomocou volieb roka a mesiaca (<strong>Všetky</strong>, jeden rok alebo jeden mesiac roka — ponúkajú sa len roky a mesiace, v ktorých faktúry sú), a potom vyberte, čo s nimi urobiť:</p>
+          <ul><li><strong>Uložiť ako Excel</strong> / <strong>Zdieľať Excel</strong> — tabuľka v Exceli (.xlsx).</li><li><strong>Uložiť ako CSV</strong> / <strong>Zdieľať CSV</strong> — tá istá tabuľka ako súbor CSV.</li><li><strong>Uložiť faktúry ako ZIP</strong> / <strong>Zdieľať ZIP s faktúrami</strong> — PDF faktúr v jednom ZIPe, jeden priečinok na zákazníka.</li><li><strong>Odstrániť faktúry</strong> — natrvalo zmaže vybrané faktúry po dvoch potvrdeniach.</li></ul>
+          <p><em>Uložiť</em> vám nechá vybrať, kam v zariadení súbor pôjde; <em>Zdieľať</em> otvorí zdieľaciu ponuku Androidu, aby ste ho poslali e-mailom alebo v chate.</p>
+          <p>Excel a CSV sú vytvorené pre vášho účtovníka: <strong>jeden riadok na každú položku faktúry</strong>, pričom údaje o faktúre sa opakujú na každom riadku — číslo a dátumy, meno, číslo, daňové číslo, IČ DPH, číslo obchodného registra a adresa zákazníka, popis, množstvo, jednotka, cena a čistá suma položky, medzisúčet, zľava, sadzba DPH, suma DPH a spolu faktúry, mena a stav, dátum a spôsob platby. Hlavičky stĺpcov a pevné slová (faktúra, zaplatené, nezaplatené, spôsoby platby) sú v jazyku, na ktorý je aplikácia nastavená.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/export.png" alt="Invoice Cove — Export faktúr (Excel, CSV, ZIP)" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="new-quote">
+      <h2><span class="num">7</span> Vytvorenie ponuky</h2>
+      <div class="section-body">
+        <div>
+          <p><strong>Nová ponuka</strong> funguje ako New Invoice — rovnaké polia, rovnaké tlačidlá <strong>Náhľad</strong> a <strong>Šablóna</strong> a rovnaké <strong>Vytvoriť ponuku</strong>, ktoré jedným klepnutím uloží, vytvorí PDF a otvorí ponuku zdieľania — s <strong>Dátum ponuky</strong> a dátumom <strong>Platná do</strong> namiesto dátumu faktúry a splatnosti. Ponuky nemajú koncepty.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/new-quote.png" alt="Invoice Cove — Vytvorenie ponuky" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="quotes">
+      <h2><span class="num">8</span> Správa ponúk a prevod na faktúru</h2>
+      <div class="section-body">
+        <div>
+          <p>Obrazovka <strong>Ponuky</strong> (z dlaždice na úvodnej obrazovke) uvádza ponuky podľa zákazníkov, rovnako ako faktúry. Otvorte ponuku, aby ste ju zobrazili alebo zdieľali, použite <strong>Prijať</strong> alebo <strong>Zamietnuť</strong>, keď zákazník odpovie, zaznamenajte zálohu alebo ju zmažte. Záloha nesmie presiahnuť celkovú sumu ponuky.</p>
+          <p>Keď zákazník ponuku prijme, použite <strong>Konvertovať na faktúru</strong> a zaškrtnuté položky sa prevedú na skutočnú faktúru, samostatne upraviteľnú — splatnosť a zľavu možno ešte upraviť a pôvodná ponuka sa označí ako <strong>Konvertovaná</strong> a zostane vo vašej evidencii.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/quotes-list.png" alt="Invoice Cove — Správa ponúk a prevod na faktúru" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="calendar">
+      <h2><span class="num">9</span> Kalendár a pripomienky</h2>
+      <div class="section-body">
+        <div>
+          <p>Obrazovka <strong>Kalendár</strong> je mesačný prehľad pre vaše vlastné poznámky. Klepnutím na deň poznámky zobrazíte alebo pridáte; poznámka má názov a text a s voľbou <strong>Pripomenúť mi</strong> a časom vám v daný okamih pošle oznámenie. Prvý deň týždňa sa riadi vaším nastavením.</p>
+          <p>Osobitne Invoice Cove posiela pripomienky platieb — miestne oznámenia o faktúrach, ktoré čoskoro budú splatné alebo už splatnosť prekročili. Nič sa neodosiela na server ani z neho neprijíma.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/calendar.png" alt="Invoice Cove — Kalendár a pripomienky" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="reports">
+      <h2><span class="num">10</span> Prehľady</h2>
+      <div class="section-body">
+        <div>
+          <p><strong>Prehľady</strong> vám dá rýchly prehľad: sumy <strong>Príjem (zaplatené)</strong>, <strong>Neuhradené</strong> a <strong>Po splatnosti</strong>, počet faktúr, <em>Príjem podľa mesiacov</em> a vašich <em>Najlepší zákazníci</em> podľa fakturovanej sumy.</p>
+          <p>Klepnutím na kartu <strong>Neuhradené</strong> alebo <strong>Po splatnosti</strong> otvoríte zoznam presne týchto faktúr.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/reports.png" alt="Invoice Cove — Prehľady" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="settings">
+      <h2><span class="num">11</span> Údaje o firme a nastavenia</h2>
+      <div class="section-body">
+        <div>
+          <p>Nastavenia otvoríte ikonou ozubeného kolieska — obrazovka sa volá <strong>Údaje o firme</strong>. Začína vašimi predvoľbami: <strong>Vzhľad</strong> (Svetlý alebo Tmavý), predvolená <strong>Šablóna faktúry</strong>, <strong>Označenie dane</strong> (DPH, GST…), <strong>Prvý deň týždňa</strong> a <strong>Predvolená splatnosť</strong> (automaticky vyplní splatnosť, napr. Net 30). Pod nimi nasledujú <strong>Zabezpečenie</strong> (pozri <a href="#app-lock">Zámok aplikácie</a>), <strong>Návrhy položiek</strong> a <strong>Záloha a obnovenie</strong> (pozri <a href="#backup">Záloha a obnovenie</a>).</p>
+          <p><strong>Pamäť popisov a cien</strong> si pamätá popisy a ceny položiek, aby ich ponúkala pri písaní; <em>Vymazať</em> ich zabudne, bez toho aby sa dotkla vašich faktúr.</p>
+          <p>Nižšie je profil vašej firmy, ktorý sa tlačí na každej faktúre a ponuke: <strong>Názov firmy</strong>, <strong>Vaše meno</strong>, krátke motto (<strong>Sídlo firmy</strong>), E-mail, Telefón, <strong>Formát dátumu</strong> dátumov, adresa, DIČ, IČ DPH, <strong>Registračné údaje</strong> (registračné číslo, základné imanie a podobne), <strong>Logo firmy</strong> a <strong>Platobné údaje</strong> (IBAN, odkaz PayPal.me…). Každé pole má príklad a <strong>každé pole, ktoré necháte prázdne, sa na vašich faktúrach jednoducho neobjaví</strong>. Keď skončíte, klepnite na <strong>Hotovo</strong>; ak odídete s neuloženými zmenami, aplikácia sa najprv opýta.</p>
+          <p>Úplne dole: táto <strong>Používateľská príručka</strong> a <strong>Zdieľať túto aplikáciu</strong>.</p>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/settings-preferences.png" alt="Invoice Cove — Údaje o firme a nastavenia" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/settings-business.png" alt="Invoice Cove — Údaje o firme a nastavenia" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="backup">
+      <h2><span class="num">12</span> Záloha a obnovenie</h2>
+      <div class="section-body">
+        <div>
+          <p>K dispozícii s Invoice Cove Pro. V <strong>Záloha a obnovenie</strong> uloží <strong>Vytvoriť zálohu</strong> všetko — faktúry, ponuky, koncepty, zákazníkov, kalendár, nastavenia, logo aj PDF — do jedného súboru. Zvoľte <strong>Uložiť zálohu</strong>, aby ste ho uložili, kam chcete, alebo <strong>Zdieľať zálohu</strong>, aby ste ho poslali na bezpečné miesto.</p>
+          <p><strong>Obnoviť zálohu</strong> vráti všetko späť — napríklad v novom telefóne. Funguje len na čerstvej inštalácii, kým ste nepridali žiadne údaje, takže nikdy nemôže prepísať to, čo už máte. Invoice Cove overí, že je súbor neporušený, a upozorní vás, ak je poškodený, nie je zálohou Invoice Cove alebo ho vytvorila novšia verzia aplikácie (najprv aktualizujte).</p>
+          <div class="note">Súbor zálohy <strong>nie je šifrovaný</strong>: ktokoľvek, kto ho má, môže vaše údaje čítať. Uchovajte ho na súkromnom mieste. PIN zámku aplikácie v ňom nie je nikdy obsiahnutý.</div>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/backup.png" alt="Invoice Cove — Záloha a obnovenie" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="app-lock">
+      <h2><span class="num">13</span> Zámok aplikácie</h2>
+      <div class="section-body">
+        <div>
+          <p>V <strong>Zabezpečenie</strong> môžete zapnúť <strong>Zámok aplikácie</strong>: Invoice Cove potom požiada o PIN (alebo odtlačok prsta), keď sa aplikácia otvorí znova od začiatku alebo po reštarte telefónu — nie pri každom návrate do nej.</p>
+          <ul><li><strong>Nastaviť PIN</strong>: zvoľte štvormiestny PIN a potvrďte ho.</li><li>Potom dostanete šesťmiestny <strong>obnovovací kód</strong>, ktorý sa zobrazí len raz. Zapíšte si ho a uložte na bezpečné miesto.</li><li>Ak to váš telefón podporuje, odomykajte odtlačkom prsta (<strong>Použiť odtlačok prsta</strong>).</li><li>Zabudli ste PIN? Použite <strong>Zabudli ste PIN?</strong> a zadajte obnovovací kód. Po 5 chybných pokusoch musíte počkať 30 sekúnd; čakanie sa s ďalšími chybnými pokusmi predlžuje.</li></ul>
+          <div class="note">Ak stratíte PIN aj obnovovací kód — a nemáte nastavené odomykanie odtlačkom prsta — nemožno sa vrátiť dnu. Nemôžeme ho za vás resetovať.</div>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/pin-lock-setup.png" alt="Invoice Cove — Zámok aplikácie" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="languages">
+      <h2><span class="num">14</span> Jazyky</h2>
+      <div class="section-body">
+        <div>
+          <p>Invoice Cove hovorí 13 jazykmi: English, Română, Deutsch, Français, Español, Italiano, Português, Polski, Čeština, Slovenčina, Magyar, Nederlands a Svenska. Klepnite na okrúhlu ikonu s vlajkou hore v nastaveniach a jazyk sa zmení — aplikácia sa prepne okamžite.</p>
+          <p>Text vo vašich PDF a v exportoch do Excelu/CSV sa riadi jazykom, na ktorý je aplikácia nastavená, a táto príručka je dostupná v rovnakých 13 jazykoch (použite jazykovú lištu hore na stránke).</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/language.png" alt="Invoice Cove — Jazyky" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="templates">
+      <h2><span class="num">15</span> PDF šablóny</h2>
+      <div class="section-body">
+        <div>
+          <p>Invoice Cove obsahuje 18 návrhov PDF: Classic, Client Color (vo farbe zákazníka), Minimal, Bold Corporate, Classic Clean, Modern Dark Accent, Organic Flow, Modern Professional Business, Minimalist Bakery Service, Gentle Flower, Cozy Paws, Soft Elegant, Solid Craft, Crimson Frame, Blush Botanical, Vintage Garage, Sparkle Waves a Spooky Hollow.</p>
+          <p>Predvolenú šablónu zvoľte v Nastaveniach → <strong>Šablóna faktúry</strong>: klepnite na návrh a potom na <strong>Hotovo</strong>. Platí pre všetko, čo od tej chvíle vytvoríte. Pre jednu faktúru alebo ponuku použite tlačidlo <strong>Šablóna</strong> vo formulári.</p>
+          <p>Každá šablóna tlačí rovnaké informácie — údaje o vašej firme, o zákazníkovi, položky s jednotkou a dátumom, súčty, poznámky a platobné údaje — ale len to, čo ste vyplnili. Dlhé faktúry pokračujú na druhej strane a súčet zostáva spolu s poslednou položkou.</p>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/template-picker.png" alt="Invoice Cove — PDF šablóny" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/templates-1.png" alt="Invoice Cove — PDF šablóny" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/templates-2.png" alt="Invoice Cove — PDF šablóny" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="free-vs-pro">
+      <h2><span class="num">16</span> Bezplatný plán a Invoice Cove Pro</h2>
+      <div class="section-body">
+        <div>
+          <p>Invoice Cove je zadarmo, s niekoľkými rozumnými obmedzeniami:</p>
+          <ul><li>Až 3 faktúry a 3 ponuky vystavené za kalendárny mesiac</li><li>Až 3 zákazníci naraz</li><li>Čísla faktúr a ponúk sa prideľujú automaticky a nemožno ich upraviť</li><li>Export do Excelu, CSV a ZIP je len v Pro</li><li>Záloha a obnovenie sú len v Pro</li></ul>
+          <p><strong>Invoice Cove Pro</strong> je jediný jednorazový nákup cez Google Play — nie predplatné — ktorý všetky tieto obmedzenia navždy odstráni. Koncepty, všetky šablóny a jazyky, zámok aplikácie aj vytváranie, náhľad a zdieľanie dokumentov sú zadarmo pre všetkých. Všetky podrobnosti nájdete v <a href="terms.html">Podmienkach používania</a> (po anglicky).</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Invoice Cove — a <a class="accent" href="https://magotel.uk" target="_blank" rel="noopener">Magotel</a> app</span>
+    <span>Otázky? <a href="mailto:contact@magotel.uk">contact@magotel.uk</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

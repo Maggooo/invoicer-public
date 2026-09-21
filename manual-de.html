@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invoice Cove — Benutzerhandbuch</title>
+<meta name="description" content="Vollständiges Benutzerhandbuch für Invoice Cove - Offline Billing.">
+<link rel="alternate" hreflang="en" href="manual.html">
+<link rel="alternate" hreflang="ro" href="manual-ro.html">
+<link rel="alternate" hreflang="de" href="manual-de.html">
+<link rel="alternate" hreflang="fr" href="manual-fr.html">
+<link rel="alternate" hreflang="es" href="manual-es.html">
+<link rel="alternate" hreflang="it" href="manual-it.html">
+<link rel="alternate" hreflang="pt" href="manual-pt.html">
+<link rel="alternate" hreflang="pl" href="manual-pl.html">
+<link rel="alternate" hreflang="cs" href="manual-cs.html">
+<link rel="alternate" hreflang="sk" href="manual-sk.html">
+<link rel="alternate" hreflang="hu" href="manual-hu.html">
+<link rel="alternate" hreflang="nl" href="manual-nl.html">
+<link rel="alternate" hreflang="sv" href="manual-sv.html">
+<link rel="alternate" hreflang="x-default" href="manual.html">
+<link rel="icon" href="assets/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/icon-256.png" alt=""> Invoice Cove</a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="manual.html" class="active">User Manual</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:0;">
+  <div class="wrap" style="padding-bottom:36px;">
+    <h1>Benutzerhandbuch</h1>
+    <p>Alles, was Invoice Cove kann, Bildschirm für Bildschirm.</p>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,32 C240,64 480,0 720,20 C960,40 1200,60 1440,28 L1440,60 L0,60 Z" fill="#f5f9fd"></path>
+  </svg>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <nav class="langbar" aria-label="Sprache"><span aria-hidden="true">🌐</span> <a href="manual.html" lang="en" hreflang="en">English</a> <a href="manual-ro.html" lang="ro" hreflang="ro">Română</a> <a href="manual-de.html" lang="de" hreflang="de" class="current" aria-current="page">Deutsch</a> <a href="manual-fr.html" lang="fr" hreflang="fr">Français</a> <a href="manual-es.html" lang="es" hreflang="es">Español</a> <a href="manual-it.html" lang="it" hreflang="it">Italiano</a> <a href="manual-pt.html" lang="pt" hreflang="pt">Português</a> <a href="manual-pl.html" lang="pl" hreflang="pl">Polski</a> <a href="manual-cs.html" lang="cs" hreflang="cs">Čeština</a> <a href="manual-sk.html" lang="sk" hreflang="sk">Slovenčina</a> <a href="manual-hu.html" lang="hu" hreflang="hu">Magyar</a> <a href="manual-nl.html" lang="nl" hreflang="nl">Nederlands</a> <a href="manual-sv.html" lang="sv" hreflang="sv">Svenska</a></nav>
+
+    <p class="lede">Invoice Cove läuft vollständig auf deinem Gerät — Rechnungen, Angebote, Kunden und dein Firmenprofil werden lokal gespeichert, nicht auf einem Invoice-Cove-Server. <strong>Wir erfassen, sehen oder erhalten keine Daten über deine Rechnungen oder darüber, wie du die App nutzt</strong> — es gibt keine Analyse, kein Tracking, nichts wird im Hintergrund irgendwohin gesendet. Nur für den einmaligen Kauf von Invoice Cove Pro über Google Play braucht die App selbst eine Internetverbindung. Einzelheiten findest du in der <a href="privacy.html">Datenschutzerklärung</a> (auf Englisch).</p>
+    <div class="note warn">
+      <strong>Bevor du die App deinstallierst oder ihren Speicher löschst:</strong> Diese Daten werden von uns nirgendwo gesichert. Wenn du Invoice Cove deinstallierst oder den Speicher in den Android-Einstellungen löschst, werden alle Rechnungen, Angebote, Kunden und Einstellungen auf diesem Gerät endgültig gelöscht — es gibt keine Cloud-Kopie zum Wiederherstellen. Schütze dich: Erstelle eine Sicherung mit Invoice Cove Pro (siehe <a href="#backup">Sicherung und Wiederherstellung</a>) oder exportiere, was du brauchst, als Excel, CSV oder ZIP (siehe <a href="#export">Rechnungen exportieren</a>).
+    </div>
+
+    <div class="toc">
+      <h2>Inhalt</h2>
+      <ol>
+        <li><a href="#home">Startbildschirm</a></li>
+        <li><a href="#customers">Kunden</a></li>
+        <li><a href="#new-invoice">Eine Rechnung erstellen</a></li>
+        <li><a href="#drafts">Entwürfe</a></li>
+        <li><a href="#invoices">Rechnungen verwalten</a></li>
+        <li><a href="#export">Rechnungen exportieren (Excel, CSV, ZIP)</a></li>
+        <li><a href="#new-quote">Ein Angebot erstellen</a></li>
+        <li><a href="#quotes">Angebote verwalten und in Rechnungen umwandeln</a></li>
+        <li><a href="#calendar">Kalender und Erinnerungen</a></li>
+        <li><a href="#reports">Berichte</a></li>
+        <li><a href="#settings">Firmendaten und Einstellungen</a></li>
+        <li><a href="#backup">Sicherung und Wiederherstellung</a></li>
+        <li><a href="#app-lock">App-Sperre</a></li>
+        <li><a href="#languages">Sprachen</a></li>
+        <li><a href="#templates">PDF-Vorlagen</a></li>
+        <li><a href="#free-vs-pro">Kostenloser Tarif und Invoice Cove Pro</a></li>
+      </ol>
+    </div>
+
+    <section class="section" id="home">
+      <h2><span class="num">1</span> Startbildschirm</h2>
+      <div class="section-body">
+        <div>
+          <p>Der Startbildschirm ist dein Ausgangspunkt, mit einer Kachel für jede Hauptaktion: <strong>Neues Angebot</strong>, <strong>Angebote</strong>, <strong>Neue Rechnung</strong>, <strong>Rechnungen</strong>, <strong>Neuer Kunde</strong>, <strong>Kunden</strong>, <strong>Kalender</strong> und <strong>Berichte</strong>. Tippe eine Kachel an, um direkt dorthin zu springen.</p>
+          <p>Die Leiste unten bietet dir immer schnellen Zugriff auf <strong>Start</strong>, <strong>Neu</strong> (eine neue Rechnung), <strong>Rechnungen</strong>, <strong>Kunden</strong> und <strong>Berichte</strong>.</p>
+          <p>Das Zahnrad-Symbol (⚙️) oben rechts auf den meisten Bildschirmen öffnet die <a href="#settings">Firmendaten und Einstellungen</a>.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/home.png" alt="Invoice Cove — Startbildschirm" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="customers">
+      <h2><span class="num">2</span> Kunden</h2>
+      <div class="section-body">
+        <div>
+          <p>Lege einen Kunden über den Reiter <strong>Kunden</strong> an (Plus-Symbol antippen), über die Kachel <strong>Neuer Kunde</strong> oder direkt beim Erstellen einer Rechnung oder eines Angebots. Nur der Name ist Pflicht. Optionale Felder: <strong>Kundennr.</strong>, E-Mail, Telefon, die Adresse, Steuernummer, USt-IdNr., Handelsregisternummer und eine Farbe, die die Dokumente des Kunden einfärbt. Jedes Feld zeigt ein Beispiel, damit du weißt, was hineingehört.</p>
+          <p>Tippe einen Kunden an, um ihn zu <strong>Bearbeiten</strong>, seinen <strong>Verlauf anzeigen</strong> (Rechnungen, Angebote und Entwürfe) zu öffnen oder ihn zu <strong>Löschen</strong>.</p>
+          <p>Auf deinen Rechnungen und Angeboten stehen die Kundendaten unter dem Namen in fester Reihenfolge: Kundennummer, Steuernummer, USt-IdNr., Handelsregisternummer, dann Adresse, E-Mail und Telefon. Was du leer lässt, wird einfach nicht gedruckt.</p>
+          <div class="note"><strong>Das Speichern funktioniert hier anders als bei Rechnungen.</strong> Ein Kunde hat seine eigene Schaltfläche <strong>Kunde speichern</strong> (beim Bearbeiten <strong>Änderungen speichern</strong>) — er wird gespeichert, sobald du sie antippst. Wenn du das Formular mit ungespeicherten Änderungen schließen willst, fragt Invoice Cove zuerst nach.</div>
+          <div class="note">Das Löschen eines Kunden löscht nicht die Rechnungen und Angebote, die du ihm bereits ausgestellt hast. Seine unfertigen <a href="#drafts">Entwürfe</a> werden mit ihm gelöscht — du wirst vorher gefragt.</div>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/customers.png" alt="Invoice Cove — Kunden" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/customer-form.png" alt="Invoice Cove — Kunden" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="new-invoice">
+      <h2><span class="num">3</span> Eine Rechnung erstellen</h2>
+      <div class="section-body">
+        <div>
+          <p>Über <strong>Neu</strong> (oder die Kachel <strong>Neue Rechnung</strong>): Wähle einen Kunden — oder lege ihn direkt an — lege Rechnungsdatum und Fälligkeitsdatum fest und füge dann deine Positionen hinzu.</p>
+          <p>Tippe <strong>Positionsdetails hinzufügen</strong> und gib Beschreibung, Menge, Preis pro Einheit und optional eine Einheit (z. B. h, Stk. oder kg) sowie Datum und Uhrzeit ein. Die Einheit steht im PDF neben der Menge. Tippe den Stift (✏️) bei einer Position, um sie zu korrigieren, oder den Papierkorb (🗑️), um sie zu entfernen. Bereits verwendete Beschreibungen und Preise werden dir beim Tippen vorgeschlagen.</p>
+          <p>Danach kannst du bei Bedarf einen Steuersatz, einen <strong>Rabatt</strong> (Prozentsatz oder fester Betrag) und <strong>Notizen</strong> hinzufügen. Die Rechnungsnummer wird automatisch vergeben (mit Pro kannst du sie ändern); die Währung wählst du daneben.</p>
+          <p><strong>Vorschau</strong> erzeugt ein temporäres PDF, damit du prüfen kannst, wie es aussieht — es wird noch nichts gespeichert. Die Schaltfläche <strong>Vorlage</strong> zeigt, welche Vorlage verwendet wird; tippe darauf, um nur für dieses Dokument eine andere zu wählen.</p>
+          <div class="note"><strong>Rechnung erstellen</strong> erledigt drei Dinge auf einmal: Es speichert die Rechnung, erstellt das PDF und öffnet das Teilen-Menü deines Geräts, damit du sie verschicken kannst. Noch nicht fertig? Nutze <strong>Als Entwurf speichern</strong> — siehe <a href="#drafts">Entwürfe</a>.</div>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/new-invoice.png" alt="Invoice Cove — Eine Rechnung erstellen" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/new-invoice-2.png" alt="Invoice Cove — Eine Rechnung erstellen" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="drafts">
+      <h2><span class="num">4</span> Entwürfe</h2>
+      <div class="section-body">
+        <div>
+          <p>Eine Rechnung, an der du noch arbeitest, geht nicht verloren. Sobald du einen Kunden gewählt und mindestens eine Position oder eine Notiz hinzugefügt hast, behält Invoice Cove einen <strong>Entwurf</strong> und aktualisiert ihn kurz, nachdem du aufgehört hast zu tippen — und noch einmal, wenn du die App verlässt. Beim Verlassen des Bildschirms gibt es keine Frage „Änderungen verwerfen?“; eine kurze Meldung sagt dir, dass der Entwurf gespeichert wurde.</p>
+          <p>Tippe <strong>Als Entwurf speichern</strong> (unter Rechnung erstellen), um die Rechnung bewusst beiseitezulegen: Sie wird gespeichert und das Formular geleert, bereit für die nächste Rechnung. Das geht, sobald ein Kunde gewählt ist, auch bevor du Positionen hinzufügst.</p>
+          <p>Deine Entwürfe findest du unter <strong>Kunden</strong> → Kunde → <strong>Verlauf anzeigen</strong> → <strong>Entwürfe</strong>. Jeder Entwurf zeigt, wann er zuletzt bearbeitet wurde, wie viele Positionen er hat und die Summe. Tippe ihn an, um weiterzuarbeiten oder die Rechnung zu erstellen; tippe den Papierkorb, um ihn zu löschen.</p>
+          <ul><li>Ein Entwurf verbraucht nie eine Rechnungsnummer und zählt nicht zum kostenlosen Monatslimit. Die Nummer wird erst vergeben, wenn du die endgültige Rechnung erstellst — der Entwurf wird dann durch sie ersetzt.</li><li>Ein Entwurf behält Rechnungs- und Fälligkeitsdatum nur, wenn du sie selbst gewählt hast; sonst gilt beim erneuten Öffnen das heutige Datum.</li><li>Beim Löschen eines Kunden werden auch seine Entwürfe gelöscht (du wirst vorher gefragt). Entwürfe sind in einer Sicherung enthalten.</li><li>Entwürfe gibt es für Rechnungen; Angebote haben keine.</li></ul>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/drafts.png" alt="Invoice Cove — Entwürfe" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="invoices">
+      <h2><span class="num">5</span> Rechnungen verwalten</h2>
+      <div class="section-body">
+        <div>
+          <p>Der Reiter <strong>Rechnungen</strong> gruppiert deine Rechnungen in einen Ordner pro Kunde, die du nach <em>Zuletzt fakturiert</em>, <em>Alphabetisch</em> oder <em>Anzahl Rechnungen</em> sortieren kannst. Öffne einen Ordner, um seine Rechnungen zu sehen, sortiert nach Datum, Wert, Nummer oder Status.</p>
+          <p>Jede Rechnung hat einen Status: <strong>Unbezahlt</strong>, <strong>Überfällig</strong> (Fälligkeit überschritten), <strong>Teilweise bezahlt</strong> (eine Anzahlung wurde erfasst), <strong>Bezahlt</strong> oder <strong>Storniert</strong>. Tippe eine Rechnung an, um sie anzusehen (Ansehen), erneut zu senden (Teilen), als bezahlt oder storniert zu markieren oder zu löschen.</p>
+          <ul><li><strong>Als bezahlt markieren</strong> fragt nach dem Zahlungsdatum und der Zahlungsart (Überweisung, Bargeld, Karte, PayPal oder sonstige). Eine bezahlte Rechnung lässt sich nicht mehr auf unbezahlt zurücksetzen.</li><li><strong>Anzahlung erfassen</strong> hält eine Anzahlung fest. Die Rechnung erscheint dann als <strong>Teilweise bezahlt</strong>, und die Anzahlung darf die Summe nicht übersteigen.</li><li><strong>Als storniert markieren</strong> behält die Rechnung in deinen Unterlagen, markiert sie aber als storniert. Nimm das lieber statt zu löschen — eine gelöschte Rechnung lässt sich nicht wiederherstellen.</li></ul>
+          <p>Mit Pro lässt sich der Ordner eines Kunden auch als ZIP mit PDFs speichern oder teilen, und die ganze Liste kann für deinen Steuerberater exportiert werden — siehe <a href="#export">Rechnungen exportieren</a>.</p>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/invoices-list.png" alt="Invoice Cove — Rechnungen verwalten" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/invoice-actions.png" alt="Invoice Cove — Rechnungen verwalten" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="export">
+      <h2><span class="num">6</span> Rechnungen exportieren (Excel, CSV, ZIP)</h2>
+      <div class="section-body">
+        <div>
+          <p>Mit Invoice Cove Pro verfügbar. Tippe oben im Reiter <strong>Rechnungen</strong> auf das Export-Symbol (📄). Wähle mit den Jahres- und Monatsauswahlen, welche Rechnungen enthalten sein sollen (<strong>Alle</strong>, ein Jahr oder ein Monat eines Jahres — angeboten werden nur Jahre und Monate mit Rechnungen), und entscheide dann, was passieren soll:</p>
+          <ul><li><strong>Als Excel speichern</strong> / <strong>Excel teilen</strong> — eine Excel-Tabelle (.xlsx).</li><li><strong>Als CSV speichern</strong> / <strong>CSV teilen</strong> — dieselbe Tabelle als CSV-Datei.</li><li><strong>Rechnungen als ZIP speichern</strong> / <strong>Rechnungs-ZIP teilen</strong> — die Rechnungs-PDFs in einem ZIP, ein Ordner pro Kunde.</li><li><strong>Rechnungen löschen</strong> — löscht die ausgewählten Rechnungen endgültig, nach zwei Bestätigungen.</li></ul>
+          <p><em>Speichern</em> lässt dich wählen, wo auf deinem Gerät die Datei landet; <em>Teilen</em> öffnet das Android-Teilen-Menü, damit du sie per E-Mail oder im Chat verschicken kannst.</p>
+          <p>Excel und CSV sind für deinen Steuerberater gemacht: <strong>eine Zeile pro Rechnungsposition</strong>, wobei die Rechnungsdaten in jeder Zeile wiederholt werden — Nummer und Daten, Name, Nummer, Steuernummer, USt-IdNr., Handelsregisternummer und Adresse des Kunden, Beschreibung, Menge, Einheit, Preis und Nettobetrag der Position, Zwischensumme, Rabatt, Steuersatz, Steuerbetrag und Gesamtsumme der Rechnung, die Währung sowie Zahlungsstatus, -datum und -art. Spaltenüberschriften und feste Wörter (Rechnung, bezahlt, unbezahlt, Zahlungsarten) stehen in der Sprache, auf die die App eingestellt ist.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/export.png" alt="Invoice Cove — Rechnungen exportieren (Excel, CSV, ZIP)" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="new-quote">
+      <h2><span class="num">7</span> Ein Angebot erstellen</h2>
+      <div class="section-body">
+        <div>
+          <p><strong>Neues Angebot</strong> funktioniert wie New Invoice — dieselben Felder, dieselben Schaltflächen <strong>Vorschau</strong> und <strong>Vorlage</strong> und dasselbe <strong>Angebot erstellen</strong>, das mit einem Tipp speichert, das PDF erstellt und das Teilen-Menü öffnet — mit <strong>Angebotsdatum</strong> und <strong>Gültig bis</strong> statt Rechnungs- und Fälligkeitsdatum. Angebote haben keine Entwürfe.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/new-quote.png" alt="Invoice Cove — Ein Angebot erstellen" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="quotes">
+      <h2><span class="num">8</span> Angebote verwalten und in Rechnungen umwandeln</h2>
+      <div class="section-body">
+        <div>
+          <p>Der Bildschirm <strong>Angebote</strong> (über die Kachel im Startbildschirm) listet deine Angebote nach Kunden auf, genau wie Rechnungen. Öffne ein Angebot, um es anzusehen oder zu teilen, nutze <strong>Annehmen</strong> oder <strong>Ablehnen</strong>, wenn der Kunde antwortet, erfasse eine Anzahlung oder lösche es. Die Anzahlung darf die Summe des Angebots nicht übersteigen.</p>
+          <p>Sobald ein Kunde ein Angebot annimmt, wandle mit <strong>In Rechnung umwandeln</strong> die angehakten Positionen in eine echte, unabhängig bearbeitbare Rechnung um — Fälligkeitsdatum und Rabatt lassen sich noch anpassen, das ursprüngliche Angebot wird als <strong>Umgewandelt</strong> markiert und bleibt in deinen Unterlagen.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/quotes-list.png" alt="Invoice Cove — Angebote verwalten und in Rechnungen umwandeln" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="calendar">
+      <h2><span class="num">9</span> Kalender und Erinnerungen</h2>
+      <div class="section-body">
+        <div>
+          <p>Der Bildschirm <strong>Kalender</strong> ist eine Monatsansicht für deine eigenen Notizen. Tippe einen Tag an, um Notizen zu sehen oder hinzuzufügen; eine Notiz hat einen Titel und einen Text und sendet dir mit <strong>Erinnere mich</strong> und einer Uhrzeit zu diesem Zeitpunkt eine Benachrichtigung. Der erste Wochentag folgt deiner Einstellung.</p>
+          <p>Unabhängig davon sendet Invoice Cove Zahlungserinnerungen — lokale Benachrichtigungen für bald fällige oder überfällige Rechnungen. Es wird nichts an einen Server gesendet oder von einem empfangen.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/calendar.png" alt="Invoice Cove — Kalender und Erinnerungen" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="reports">
+      <h2><span class="num">10</span> Berichte</h2>
+      <div class="section-body">
+        <div>
+          <p><strong>Berichte</strong> gibt dir einen schnellen Überblick: die Beträge <strong>Umsatz (bezahlt)</strong>, <strong>Offen</strong> und <strong>Überfällig</strong>, wie viele Rechnungen du hast, <em>Umsatz nach Monat</em> und deine <em>Top-Kunden</em> nach Rechnungssumme.</p>
+          <p>Tippe die Karte <strong>Offen</strong> oder <strong>Überfällig</strong> an, um genau diese Rechnungen als Liste zu öffnen.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/reports.png" alt="Invoice Cove — Berichte" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="settings">
+      <h2><span class="num">11</span> Firmendaten und Einstellungen</h2>
+      <div class="section-body">
+        <div>
+          <p>Öffne die Einstellungen über das Zahnrad — der Bildschirm heißt <strong>Firmendaten</strong>. Er beginnt mit deinen Voreinstellungen: <strong>Erscheinungsbild</strong> (Hell oder Dunkel), die Standard-<strong>Rechnungsvorlage</strong>, <strong>Steuerbezeichnung</strong> (USt, GST …), <strong>Erster Wochentag</strong> und <strong>Standard-Fälligkeit</strong> (füllt das Fälligkeitsdatum automatisch aus, z. B. Net 30). Darunter folgen <strong>Sicherheit</strong> (siehe <a href="#app-lock">App-Sperre</a>), <strong>Positionsvorschläge</strong> und <strong>Sicherung &amp; Wiederherstellung</strong> (siehe <a href="#backup">Sicherung und Wiederherstellung</a>).</p>
+          <p><strong>Beschreibungs- &amp; Preisgedächtnis</strong> merkt sich Positionsbeschreibungen und Preise, um sie beim Tippen vorzuschlagen; <em>Leeren</em> vergisst sie, ohne deine Rechnungen anzutasten.</p>
+          <p>Weiter unten steht dein Firmenprofil, das auf jeder Rechnung und jedem Angebot gedruckt wird: <strong>Firmenname</strong>, <strong>Dein Name</strong>, ein kurzer Slogan (<strong>Firmenstandort</strong>), E-Mail, Telefon, das <strong>Datumsformat</strong> für Datumsangaben, die Adresse, Steuernummer, USt-IdNr., <strong>Registrierungsangaben</strong> (Handelsregisternummer, Stammkapital und Ähnliches), dein <strong>Firmenlogo</strong> und deine <strong>Zahlungsdetails</strong> (IBAN, PayPal.me-Link …). Jedes Feld hat ein Beispiel, und <strong>jedes Feld, das du leer lässt, erscheint einfach nicht auf deinen Rechnungen</strong>. Tippe <strong>Fertig</strong>, wenn du fertig bist; wenn du mit ungespeicherten Änderungen gehst, wirst du zuerst gefragt.</p>
+          <p>Ganz unten: dieses <strong>Benutzerhandbuch</strong> und <strong>Diese App teilen</strong>.</p>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/settings-preferences.png" alt="Invoice Cove — Firmendaten und Einstellungen" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/settings-business.png" alt="Invoice Cove — Firmendaten und Einstellungen" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="backup">
+      <h2><span class="num">12</span> Sicherung und Wiederherstellung</h2>
+      <div class="section-body">
+        <div>
+          <p>Mit Invoice Cove Pro verfügbar. Unter <strong>Sicherung &amp; Wiederherstellung</strong> speichert <strong>Sicherung erstellen</strong> alles — Rechnungen, Angebote, Entwürfe, Kunden, Kalender, Einstellungen, dein Logo und die PDFs — in einer Datei. Wähle <strong>Sicherung speichern</strong>, um sie dort abzulegen, wo du willst, oder <strong>Sicherung teilen</strong>, um sie an einen sicheren Ort zu schicken.</p>
+          <p><strong>Sicherung wiederherstellen</strong> bringt alles zurück — zum Beispiel auf einem neuen Handy. Es funktioniert nur bei einer frischen Installation, bevor du Daten hinzugefügt hast, und kann daher nie überschreiben, was du schon hast. Invoice Cove prüft, ob die Datei unversehrt ist, und sagt dir, wenn sie beschädigt ist, keine Invoice-Cove-Sicherung ist oder von einer neueren App-Version stammt (dann zuerst aktualisieren).</p>
+          <div class="note">Eine Sicherungsdatei ist <strong>nicht verschlüsselt</strong>: Jeder, der sie hat, kann deine Daten lesen. Bewahre sie an einem privaten Ort auf. Deine App-Sperr-PIN ist nie darin enthalten.</div>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/backup.png" alt="Invoice Cove — Sicherung und Wiederherstellung" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="app-lock">
+      <h2><span class="num">13</span> App-Sperre</h2>
+      <div class="section-body">
+        <div>
+          <p>Unter <strong>Sicherheit</strong> kannst du die <strong>App-Sperre</strong> einschalten: Invoice Cove fragt dann nach deiner PIN (oder deinem Fingerabdruck), wenn die App frisch geöffnet wird oder nach einem Neustart des Handys — nicht bei jedem Zurückwechseln.</p>
+          <ul><li><strong>PIN festlegen</strong>: Wähle eine vierstellige PIN und bestätige sie.</li><li>Danach erhältst du einen sechsstelligen <strong>Wiederherstellungscode</strong>, der nur einmal angezeigt wird. Schreibe ihn auf und bewahre ihn sicher auf.</li><li>Wenn dein Handy es unterstützt, entsperre stattdessen mit dem Fingerabdruck (<strong>Fingerabdruck verwenden</strong>).</li><li>PIN vergessen? Nutze <strong>PIN vergessen?</strong> und gib den Wiederherstellungscode ein. Nach 5 falschen Versuchen musst du 30 Sekunden warten; die Wartezeit wächst mit weiteren Fehlversuchen.</li></ul>
+          <div class="note">Wenn du sowohl deine PIN als auch den Wiederherstellungscode verlierst — und keine Fingerabdruck-Entsperrung eingerichtet hast —, gibt es keinen Weg zurück. Wir können sie nicht für dich zurücksetzen.</div>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/pin-lock-setup.png" alt="Invoice Cove — App-Sperre" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="languages">
+      <h2><span class="num">14</span> Sprachen</h2>
+      <div class="section-body">
+        <div>
+          <p>Invoice Cove spricht 13 Sprachen: English, Română, Deutsch, Français, Español, Italiano, Português, Polski, Čeština, Slovenčina, Magyar, Nederlands und Svenska. Tippe oben in den Einstellungen auf das runde Flaggen-Symbol, um zu wechseln — die App ändert sich sofort.</p>
+          <p>Der Text in deinen PDFs und in Excel-/CSV-Exporten folgt der Sprache, auf die die App eingestellt ist, und dieses Handbuch gibt es in denselben 13 Sprachen (nutze die Sprachleiste oben auf der Seite).</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/language.png" alt="Invoice Cove — Sprachen" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="templates">
+      <h2><span class="num">15</span> PDF-Vorlagen</h2>
+      <div class="section-body">
+        <div>
+          <p>Invoice Cove bringt 18 PDF-Designs mit: Classic, Client Color (in der Farbe des Kunden), Minimal, Bold Corporate, Classic Clean, Modern Dark Accent, Organic Flow, Modern Professional Business, Minimalist Bakery Service, Gentle Flower, Cozy Paws, Soft Elegant, Solid Craft, Crimson Frame, Blush Botanical, Vintage Garage, Sparkle Waves und Spooky Hollow.</p>
+          <p>Wähle deinen Standard unter Einstellungen → <strong>Rechnungsvorlage</strong>: Tippe ein Design an, dann <strong>Fertig</strong>. Er gilt für alles, was du ab dann erstellst. Für eine einzelne Rechnung oder ein einzelnes Angebot nutze die Schaltfläche <strong>Vorlage</strong> im Formular.</p>
+          <p>Jede Vorlage druckt dieselben Informationen — deine Firmendaten, die Kundendaten, Positionen mit Einheit und Datum, Summen, Notizen und Zahlungsdetails —, aber nur, was du ausgefüllt hast. Lange Rechnungen gehen auf einer zweiten Seite weiter, wobei die Summen zusammen mit der letzten Position stehen.</p>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/template-picker.png" alt="Invoice Cove — PDF-Vorlagen" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/templates-1.png" alt="Invoice Cove — PDF-Vorlagen" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/templates-2.png" alt="Invoice Cove — PDF-Vorlagen" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="free-vs-pro">
+      <h2><span class="num">16</span> Kostenloser Tarif und Invoice Cove Pro</h2>
+      <div class="section-body">
+        <div>
+          <p>Invoice Cove ist kostenlos nutzbar, mit ein paar vernünftigen Grenzen:</p>
+          <ul><li>Bis zu 3 erstellte Rechnungen und 3 Angebote pro Kalendermonat</li><li>Bis zu 3 Kunden gleichzeitig</li><li>Rechnungs- und Angebotsnummern werden automatisch vergeben und sind nicht änderbar</li><li>Excel-, CSV- und ZIP-Export sind nur mit Pro möglich</li><li>Sicherung und Wiederherstellung sind nur mit Pro möglich</li></ul>
+          <p><strong>Invoice Cove Pro</strong> ist ein einmaliger Kauf über Google Play — kein Abo —, der alle diese Grenzen dauerhaft aufhebt. Entwürfe, alle Vorlagen und Sprachen, die App-Sperre sowie das Erstellen, Ansehen und Teilen von Dokumenten sind für alle kostenlos. Alle Einzelheiten stehen in den <a href="terms.html">Nutzungsbedingungen</a> (auf Englisch).</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Invoice Cove — a <a class="accent" href="https://magotel.uk" target="_blank" rel="noopener">Magotel</a> app</span>
+    <span>Fragen? <a href="mailto:contact@magotel.uk">contact@magotel.uk</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

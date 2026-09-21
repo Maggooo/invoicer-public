@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invoice Cove — Instrukcja obsługi</title>
+<meta name="description" content="Pełna instrukcja obsługi aplikacji Invoice Cove - Offline Billing.">
+<link rel="alternate" hreflang="en" href="manual.html">
+<link rel="alternate" hreflang="ro" href="manual-ro.html">
+<link rel="alternate" hreflang="de" href="manual-de.html">
+<link rel="alternate" hreflang="fr" href="manual-fr.html">
+<link rel="alternate" hreflang="es" href="manual-es.html">
+<link rel="alternate" hreflang="it" href="manual-it.html">
+<link rel="alternate" hreflang="pt" href="manual-pt.html">
+<link rel="alternate" hreflang="pl" href="manual-pl.html">
+<link rel="alternate" hreflang="cs" href="manual-cs.html">
+<link rel="alternate" hreflang="sk" href="manual-sk.html">
+<link rel="alternate" hreflang="hu" href="manual-hu.html">
+<link rel="alternate" hreflang="nl" href="manual-nl.html">
+<link rel="alternate" hreflang="sv" href="manual-sv.html">
+<link rel="alternate" hreflang="x-default" href="manual.html">
+<link rel="icon" href="assets/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/icon-256.png" alt=""> Invoice Cove</a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="manual.html" class="active">User Manual</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:0;">
+  <div class="wrap" style="padding-bottom:36px;">
+    <h1>Instrukcja obsługi</h1>
+    <p>Wszystko, co potrafi Invoice Cove, ekran po ekranie.</p>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,32 C240,64 480,0 720,20 C960,40 1200,60 1440,28 L1440,60 L0,60 Z" fill="#f5f9fd"></path>
+  </svg>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <nav class="langbar" aria-label="Język"><span aria-hidden="true">🌐</span> <a href="manual.html" lang="en" hreflang="en">English</a> <a href="manual-ro.html" lang="ro" hreflang="ro">Română</a> <a href="manual-de.html" lang="de" hreflang="de">Deutsch</a> <a href="manual-fr.html" lang="fr" hreflang="fr">Français</a> <a href="manual-es.html" lang="es" hreflang="es">Español</a> <a href="manual-it.html" lang="it" hreflang="it">Italiano</a> <a href="manual-pt.html" lang="pt" hreflang="pt">Português</a> <a href="manual-pl.html" lang="pl" hreflang="pl" class="current" aria-current="page">Polski</a> <a href="manual-cs.html" lang="cs" hreflang="cs">Čeština</a> <a href="manual-sk.html" lang="sk" hreflang="sk">Slovenčina</a> <a href="manual-hu.html" lang="hu" hreflang="hu">Magyar</a> <a href="manual-nl.html" lang="nl" hreflang="nl">Nederlands</a> <a href="manual-sv.html" lang="sv" hreflang="sv">Svenska</a></nav>
+
+    <p class="lede">Invoice Cove działa w całości na Twoim urządzeniu — faktury, oferty, klienci i profil Twojej firmy są przechowywane lokalnie, a nie na żadnym serwerze Invoice Cove. <strong>Nie zbieramy, nie widzimy i nie otrzymujemy żadnych danych o Twoich fakturach ani o tym, jak korzystasz z aplikacji</strong> — nie ma analityki, śledzenia ani niczego wysyłanego w tle. Jedyny raz, gdy sama aplikacja potrzebuje internetu, to obsługa jednorazowego zakupu Invoice Cove Pro przez Google Play. Szczegóły znajdziesz w <a href="privacy.html">Polityce prywatności</a> (po angielsku).</p>
+    <div class="note warn">
+      <strong>Zanim odinstalujesz aplikację lub wyczyścisz jej dane:</strong> my nigdzie nie przechowujemy kopii tych danych. Odinstalowanie Invoice Cove lub wyczyszczenie jego pamięci w ustawieniach Androida trwale usuwa wszystkie faktury, oferty, klientów i ustawienia z tego urządzenia — nie ma kopii w chmurze, z której można je przywrócić. Zabezpiecz się: utwórz kopię zapasową w Invoice Cove Pro (zobacz <a href="#backup">Kopia zapasowa i przywracanie</a>) albo wyeksportuj to, czego potrzebujesz, do Excela, CSV lub ZIP (zobacz <a href="#export">Eksport faktur</a>).
+    </div>
+
+    <div class="toc">
+      <h2>Spis treści</h2>
+      <ol>
+        <li><a href="#home">Ekran główny</a></li>
+        <li><a href="#customers">Klienci</a></li>
+        <li><a href="#new-invoice">Tworzenie faktury</a></li>
+        <li><a href="#drafts">Szkice</a></li>
+        <li><a href="#invoices">Zarządzanie fakturami</a></li>
+        <li><a href="#export">Eksport faktur (Excel, CSV, ZIP)</a></li>
+        <li><a href="#new-quote">Tworzenie oferty</a></li>
+        <li><a href="#quotes">Zarządzanie ofertami i zamiana na fakturę</a></li>
+        <li><a href="#calendar">Kalendarz i przypomnienia</a></li>
+        <li><a href="#reports">Raporty</a></li>
+        <li><a href="#settings">Dane firmy i ustawienia</a></li>
+        <li><a href="#backup">Kopia zapasowa i przywracanie</a></li>
+        <li><a href="#app-lock">Blokada aplikacji</a></li>
+        <li><a href="#languages">Języki</a></li>
+        <li><a href="#templates">Szablony PDF</a></li>
+        <li><a href="#free-vs-pro">Plan darmowy a Invoice Cove Pro</a></li>
+      </ol>
+    </div>
+
+    <section class="section" id="home">
+      <h2><span class="num">1</span> Ekran główny</h2>
+      <div class="section-body">
+        <div>
+          <p>Ekran główny to Twój punkt wyjścia, z kafelkiem dla każdej głównej czynności: <strong>Nowa oferta</strong>, <strong>Oferty</strong>, <strong>Nowa faktura</strong>, <strong>Faktury</strong>, <strong>Nowy klient</strong>, <strong>Klienci</strong>, <strong>Kalendarz</strong> i <strong>Raporty</strong>. Dotknij kafelka, aby przejść od razu do danej części.</p>
+          <p>Pasek na dole zawsze daje szybki dostęp do <strong>Start</strong>, <strong>Nowe</strong> (nowa faktura), <strong>Faktury</strong>, <strong>Klienci</strong> i <strong>Raporty</strong>.</p>
+          <p>Ikona koła zębatego (⚙️) w prawym górnym rogu większości ekranów otwiera <a href="#settings">Dane firmy i ustawienia</a>.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/home.png" alt="Invoice Cove — Ekran główny" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="customers">
+      <h2><span class="num">2</span> Klienci</h2>
+      <div class="section-body">
+        <div>
+          <p>Dodaj klienta z zakładki <strong>Klienci</strong> (dotknij ikony +), za pomocą kafelka <strong>Nowy klient</strong> albo od razu podczas tworzenia faktury lub oferty. Obowiązkowa jest tylko nazwa. Pola opcjonalne: <strong>Nr klienta</strong>, E-mail, Telefon, adres, NIP, Numer VAT, Numer KRS oraz kolor, który nadaje odcień dokumentom klienta. Każde pole pokazuje przykład, abyś wiedział, co w nim wpisać.</p>
+          <p>Dotknij klienta, aby go edytować (<strong>Edytuj</strong>), otworzyć jego <strong>Zobacz historię</strong> (faktury, oferty i szkice) lub usunąć (<strong>Usuń</strong>).</p>
+          <p>Na Twoich fakturach i ofertach dane klienta są drukowane pod jego nazwą w stałej kolejności: numer klienta, numer podatkowy, numer VAT, numer rejestru handlowego, a potem adres, e-mail i telefon. Czego nie wypełnisz, po prostu się nie drukuje.</p>
+          <div class="note"><strong>Zapisywanie działa tu inaczej niż przy fakturach.</strong> Klient ma własny przycisk <strong>Zapisz klienta</strong> (lub <strong>Zapisz zmiany</strong> przy edycji) — zapisuje się w chwili dotknięcia. Jeśli spróbujesz zamknąć formularz z niezapisanymi zmianami, Invoice Cove najpierw poprosi o potwierdzenie.</div>
+          <div class="note">Usunięcie klienta nie usuwa faktur i ofert, które już mu wystawiłeś. Jego niedokończone <a href="#drafts">szkice</a> są usuwane razem z nim — najpierw zostaniesz zapytany.</div>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/customers.png" alt="Invoice Cove — Klienci" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/customer-form.png" alt="Invoice Cove — Klienci" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="new-invoice">
+      <h2><span class="num">3</span> Tworzenie faktury</h2>
+      <div class="section-body">
+        <div>
+          <p>W <strong>Nowe</strong> (lub na kafelku <strong>Nowa faktura</strong>): wybierz klienta — albo utwórz go na miejscu — ustaw datę faktury i termin płatności, a potem dodaj pozycje.</p>
+          <p>Dotknij <strong>Dodaj szczegóły pozycji</strong> i wpisz opis, ilość, cenę jednostkową oraz opcjonalnie jednostkę (np. godz., szt. lub kg) i datę z godziną. Jednostka jest drukowana obok ilości w PDF-ie. Dotknij ołówka (✏️) przy pozycji, aby ją poprawić, albo kosza (🗑️), aby ją usunąć. Wcześniej używane opisy i ceny są podpowiadane podczas pisania.</p>
+          <p>Potem dodaj, jeśli potrzebujesz, stawkę podatku, <strong>Rabat</strong> (procent lub kwotę stałą) i <strong>Notatki</strong>. Numer faktury nadawany jest automatycznie (w Pro możesz go edytować); walutę wybierasz obok.</p>
+          <p><strong>Podgląd</strong> tworzy tymczasowy PDF, żebyś zobaczył, jak wygląda — nic jeszcze nie jest zapisywane. Przycisk <strong>Szablon</strong> pokazuje, który szablon zostanie użyty; dotknij go, aby wybrać inny tylko dla tego dokumentu.</p>
+          <div class="note"><strong>Generuj fakturę</strong> robi trzy rzeczy naraz: zapisuje fakturę, tworzy PDF i otwiera menu udostępniania urządzenia, abyś mógł ją wysłać. Nie jesteś jeszcze gotowy? Użyj <strong>Zapisz jako szkic</strong> — zobacz <a href="#drafts">Szkice</a>.</div>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/new-invoice.png" alt="Invoice Cove — Tworzenie faktury" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/new-invoice-2.png" alt="Invoice Cove — Tworzenie faktury" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="drafts">
+      <h2><span class="num">4</span> Szkice</h2>
+      <div class="section-body">
+        <div>
+          <p>Nie stracisz faktury, nad którą jeszcze pracujesz. Gdy tylko wybierzesz klienta i dodasz co najmniej jedną pozycję lub notatkę, Invoice Cove zachowuje <strong>szkic</strong> i aktualizuje go chwilę po tym, jak przestaniesz pisać — oraz jeszcze raz, gdy opuścisz aplikację. Przy wychodzeniu z ekranu nie ma pytania „odrzucić zmiany?”; krótki komunikat informuje, że szkic został zapisany.</p>
+          <p>Dotknij <strong>Zapisz jako szkic</strong> (pod Generuj fakturę), aby celowo odłożyć fakturę na bok: zostanie zapisana, a formularz wyczyszczony, gotowy na następną fakturę. Działa, gdy tylko wybrany jest klient, nawet przed dodaniem pozycji.</p>
+          <p>Szkice znajdziesz w <strong>Klienci</strong> → klient → <strong>Zobacz historię</strong> → <strong>Szkice</strong>. Każdy szkic pokazuje, kiedy był ostatnio edytowany, ile ma pozycji i jaką ma sumę. Dotknij go, aby kontynuować edycję lub wystawić fakturę; dotknij kosza, aby go usunąć.</p>
+          <ul><li>Szkic nigdy nie zajmuje numeru faktury i nie wlicza się do darmowego limitu miesięcznego. Numer jest nadawany dopiero wtedy, gdy wystawiasz ostateczną fakturę — szkic zostaje wtedy przez nią zastąpiony.</li><li>Szkic zachowuje datę faktury i termin płatności tylko wtedy, gdy wybrałeś je sam; w przeciwnym razie po ponownym otwarciu używa dzisiejszej daty.</li><li>Usunięcie klienta usuwa też jego szkice (najpierw zostaniesz zapytany). Szkice są uwzględniane w kopii zapasowej.</li><li>Szkice są dostępne dla faktur; oferty ich nie mają.</li></ul>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/drafts.png" alt="Invoice Cove — Szkice" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="invoices">
+      <h2><span class="num">5</span> Zarządzanie fakturami</h2>
+      <div class="section-body">
+        <div>
+          <p>Zakładka <strong>Faktury</strong> grupuje faktury w folder dla każdego klienta, który możesz sortować według <em>Ostatnio fakturowano</em>, <em>Alfabetycznie</em> lub <em>Liczba faktur</em>. Otwórz folder, aby zobaczyć jego faktury, posortowane według daty, wartości, numeru lub statusu.</p>
+          <p>Każda faktura ma status: <strong>Niezapłacona</strong>, <strong>Zaległa</strong> (po terminie), <strong>Częściowo zapłacona</strong> (zapisano zaliczkę), <strong>Zapłacona</strong> lub <strong>Anulowana</strong>. Dotknij faktury, aby ją zobaczyć (Podgląd), ponownie wysłać (Udostępnij), oznaczyć jako opłaconą lub anulowaną albo usunąć.</p>
+          <ul><li><strong>Oznacz jako zapłaconą</strong> pyta o datę płatności i sposób zapłaty (przelew, gotówka, karta, PayPal lub inny). Opłaconej faktury nie można już cofnąć do nieopłaconej.</li><li><strong>Zarejestruj zaliczkę</strong> zapisuje wpłatę z góry. Faktura pokazuje się wtedy jako <strong>Częściowo zapłacona</strong>, a zaliczka nie może przekroczyć sumy.</li><li><strong>Oznacz jako anulowaną</strong> zachowuje fakturę w ewidencji, ale oznacza ją jako anulowaną. Wybieraj to zamiast usuwania — usuniętej faktury nie da się odzyskać.</li></ul>
+          <p>W Pro folder klienta można też zapisać lub udostępnić jako ZIP z plikami PDF, a całą listę wyeksportować dla księgowego — zobacz <a href="#export">Eksport faktur</a>.</p>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/invoices-list.png" alt="Invoice Cove — Zarządzanie fakturami" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/invoice-actions.png" alt="Invoice Cove — Zarządzanie fakturami" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="export">
+      <h2><span class="num">6</span> Eksport faktur (Excel, CSV, ZIP)</h2>
+      <div class="section-body">
+        <div>
+          <p>Dostępne w Invoice Cove Pro. Dotknij ikony eksportu (📄) u góry zakładki <strong>Faktury</strong>. Wybierz, które faktury uwzględnić, za pomocą wyboru roku i miesiąca (<strong>Wszystkie</strong>, jeden rok lub jeden miesiąc danego roku — oferowane są tylko lata i miesiące, w których są faktury), a potem wybierz, co zrobić:</p>
+          <ul><li><strong>Zapisz jako Excel</strong> / <strong>Udostępnij Excel</strong> — arkusz Excela (.xlsx).</li><li><strong>Zapisz jako CSV</strong> / <strong>Udostępnij CSV</strong> — ta sama tabela jako plik CSV.</li><li><strong>Zapisz faktury jako ZIP</strong> / <strong>Udostępnij ZIP z fakturami</strong> — pliki PDF faktur w jednym ZIP-ie, po jednym folderze na klienta.</li><li><strong>Usuń faktury</strong> — trwale usuwa wybrane faktury, po dwóch potwierdzeniach.</li></ul>
+          <p><em>Zapisz</em> pozwala wybrać, gdzie w urządzeniu trafi plik; <em>Udostępnij</em> otwiera menu udostępniania Androida, aby wysłać go e-mailem lub w czacie.</p>
+          <p>Excel i CSV są przygotowane dla Twojego księgowego: <strong>jeden wiersz na każdą pozycję faktury</strong>, z danymi faktury powtórzonymi w każdym wierszu — numer i daty, nazwa, numer, numer podatkowy, numer VAT, numer rejestru handlowego i adres klienta, opis, ilość, jednostka, cena i kwota netto pozycji, suma częściowa, rabat, stawka VAT, kwota VAT i suma faktury, waluta oraz status, data i sposób płatności. Nagłówki kolumn i stałe słowa (faktura, opłacona, nieopłacona, sposoby płatności) są zapisane w języku ustawionym w aplikacji.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/export.png" alt="Invoice Cove — Eksport faktur (Excel, CSV, ZIP)" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="new-quote">
+      <h2><span class="num">7</span> Tworzenie oferty</h2>
+      <div class="section-body">
+        <div>
+          <p><strong>Nowa oferta</strong> działa jak New Invoice — te same pola, te same przyciski <strong>Podgląd</strong> i <strong>Szablon</strong> oraz ten sam <strong>Generuj ofertę</strong>, który jednym dotknięciem zapisuje, tworzy PDF i otwiera menu udostępniania — z <strong>Data oferty</strong> i datą <strong>Ważna do</strong> zamiast daty faktury i terminu płatności. Oferty nie mają szkiców.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/new-quote.png" alt="Invoice Cove — Tworzenie oferty" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="quotes">
+      <h2><span class="num">8</span> Zarządzanie ofertami i zamiana na fakturę</h2>
+      <div class="section-body">
+        <div>
+          <p>Ekran <strong>Oferty</strong> (z kafelka na ekranie głównym) wyświetla oferty pogrupowane według klientów, tak jak faktury. Otwórz ofertę, aby ją zobaczyć lub udostępnić, użyj <strong>Zaakceptuj</strong> lub <strong>Odrzuć</strong>, gdy klient odpowie, zapisz zaliczkę albo ją usuń. Zaliczka nie może przekroczyć sumy oferty.</p>
+          <p>Gdy klient zaakceptuje ofertę, użyj <strong>Przekształć w fakturę</strong>, aby zamienić zaznaczone pozycje w prawdziwą fakturę, edytowalną niezależnie — termin płatności i rabat można jeszcze zmienić, a pierwotna oferta zostaje oznaczona jako <strong>Przekształcona</strong> i zachowana w Twojej ewidencji.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/quotes-list.png" alt="Invoice Cove — Zarządzanie ofertami i zamiana na fakturę" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="calendar">
+      <h2><span class="num">9</span> Kalendarz i przypomnienia</h2>
+      <div class="section-body">
+        <div>
+          <p>Ekran <strong>Kalendarz</strong> to widok miesiąca na Twoje własne notatki. Dotknij dnia, aby zobaczyć lub dodać notatki; notatka ma tytuł i treść, a z opcją <strong>Przypomnij mi</strong> i godziną wyśle Ci powiadomienie w tej chwili. Pierwszy dzień tygodnia zależy od Twojego ustawienia.</p>
+          <p>Osobno Invoice Cove wysyła przypomnienia o płatnościach — lokalne powiadomienia o fakturach, których termin się zbliża lub minął. Nic nie jest wysyłane na serwer ani z niego odbierane.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/calendar.png" alt="Invoice Cove — Kalendarz i przypomnienia" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="reports">
+      <h2><span class="num">10</span> Raporty</h2>
+      <div class="section-body">
+        <div>
+          <p><strong>Raporty</strong> daje szybki przegląd: kwoty <strong>Przychód (opłacone)</strong>, <strong>Nierozliczone</strong> i <strong>Zaległe</strong>, liczbę faktur, <em>Przychód wg miesięcy</em> oraz Twoich <em>Najlepsi klienci</em> według zafakturowanej sumy.</p>
+          <p>Dotknij karty <strong>Nierozliczone</strong> lub <strong>Zaległe</strong>, aby otworzyć listę dokładnie tych faktur.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/reports.png" alt="Invoice Cove — Raporty" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="settings">
+      <h2><span class="num">11</span> Dane firmy i ustawienia</h2>
+      <div class="section-body">
+        <div>
+          <p>Otwórz ustawienia ikoną koła zębatego — ekran nazywa się <strong>Dane firmy</strong>. Zaczyna się od Twoich preferencji: <strong>Wygląd</strong> (Jasny lub Ciemny), domyślny <strong>Szablon faktury</strong>, <strong>Etykieta podatku</strong> (VAT, GST…), <strong>Pierwszy dzień tygodnia</strong> i <strong>Domyślny termin płatności</strong> (automatycznie uzupełnia termin płatności, np. Net 30). Poniżej znajdują się <strong>Bezpieczeństwo</strong> (zobacz <a href="#app-lock">Blokada aplikacji</a>), <strong>Sugestie pozycji</strong> i <strong>Kopia zapasowa i przywracanie</strong> (zobacz <a href="#backup">Kopia zapasowa i przywracanie</a>).</p>
+          <p><strong>Pamięć opisów i cen</strong> zapamiętuje opisy i ceny pozycji, aby podpowiadać je podczas pisania; <em>Wyczyść</em> je zapomina, nie ruszając Twoich faktur.</p>
+          <p>Niżej jest profil Twojej firmy, drukowany na każdej fakturze i ofercie: <strong>Nazwa firmy</strong>, <strong>Twoje imię i nazwisko</strong>, krótkie hasło (<strong>Lokalizacja firmy</strong>), E-mail, Telefon, <strong>Format daty</strong> dat, adres, NIP, Numer VAT, <strong>Dane rejestrowe</strong> (numer rejestrowy, kapitał zakładowy itp.), <strong>Logo firmy</strong> i <strong>Dane płatności</strong> (IBAN, link PayPal.me…). Każde pole ma przykład, a <strong>każde pole, które zostawisz puste, po prostu nie pojawia się na Twoich fakturach</strong>. Dotknij <strong>Gotowe</strong>, gdy skończysz; jeśli wyjdziesz z niezapisanymi zmianami, najpierw zostaniesz zapytany.</p>
+          <p>Na samym dole: ta <strong>Instrukcja obsługi</strong> i <strong>Udostępnij tę aplikację</strong>.</p>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/settings-preferences.png" alt="Invoice Cove — Dane firmy i ustawienia" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/settings-business.png" alt="Invoice Cove — Dane firmy i ustawienia" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="backup">
+      <h2><span class="num">12</span> Kopia zapasowa i przywracanie</h2>
+      <div class="section-body">
+        <div>
+          <p>Dostępne w Invoice Cove Pro. W <strong>Kopia zapasowa i przywracanie</strong> opcja <strong>Utwórz kopię zapasową</strong> zapisuje wszystko — faktury, oferty, szkice, klientów, kalendarz, ustawienia, logo i pliki PDF — w jednym pliku. Wybierz <strong>Zapisz kopię zapasową</strong>, aby zapisać go, gdzie chcesz, lub <strong>Udostępnij kopię zapasową</strong>, aby wysłać go w bezpieczne miejsce.</p>
+          <p><strong>Przywróć kopię zapasową</strong> przywraca wszystko — na przykład na nowym telefonie. Działa tylko na świeżej instalacji, zanim dodasz jakiekolwiek dane, więc nigdy nie może nadpisać tego, co już masz. Invoice Cove sprawdza, czy plik jest nienaruszony, i informuje, jeśli jest uszkodzony, nie jest kopią Invoice Cove albo został utworzony przez nowszą wersję aplikacji (najpierw zaktualizuj).</p>
+          <div class="note">Plik kopii zapasowej <strong>nie jest zaszyfrowany</strong>: każdy, kto go ma, może odczytać Twoje dane. Trzymaj go w prywatnym miejscu. PIN blokady aplikacji nigdy w nim nie jest zawarty.</div>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/backup.png" alt="Invoice Cove — Kopia zapasowa i przywracanie" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="app-lock">
+      <h2><span class="num">13</span> Blokada aplikacji</h2>
+      <div class="section-body">
+        <div>
+          <p>W <strong>Bezpieczeństwo</strong> możesz włączyć <strong>Blokada aplikacji</strong>: Invoice Cove poprosi wtedy o PIN (lub odcisk palca) przy świeżym uruchomieniu aplikacji lub po ponownym uruchomieniu telefonu — a nie za każdym razem, gdy do niej wracasz.</p>
+          <ul><li><strong>Ustaw PIN</strong>: wybierz 4-cyfrowy PIN i potwierdź go.</li><li>Następnie dostaniesz 6-cyfrowy <strong>kod odzyskiwania</strong>, pokazany tylko raz. Zapisz go i przechowuj w bezpiecznym miejscu.</li><li>Jeśli telefon to obsługuje, odblokowuj odciskiem palca (<strong>Użyj odcisku palca</strong>).</li><li>Zapomniałeś PIN-u? Użyj <strong>Zapomniałeś PIN-u?</strong> i wpisz kod odzyskiwania. Po 5 błędnych próbach musisz poczekać 30 sekund; czas oczekiwania rośnie przy kolejnych błędnych próbach.</li></ul>
+          <div class="note">Jeśli stracisz zarówno PIN, jak i kod odzyskiwania — a nie masz skonfigurowanego odblokowywania odciskiem palca — nie ma sposobu, by wrócić do aplikacji. Nie możemy go zresetować za Ciebie.</div>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/pin-lock-setup.png" alt="Invoice Cove — Blokada aplikacji" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="languages">
+      <h2><span class="num">14</span> Języki</h2>
+      <div class="section-body">
+        <div>
+          <p>Invoice Cove mówi w 13 językach: English, Română, Deutsch, Français, Español, Italiano, Português, Polski, Čeština, Slovenčina, Magyar, Nederlands i Svenska. Dotknij okrągłej ikony z flagą u góry ustawień, aby zmienić język — aplikacja zmienia się od razu.</p>
+          <p>Tekst w Twoich plikach PDF i eksportach Excel/CSV podąża za językiem ustawionym w aplikacji, a ta instrukcja jest dostępna w tych samych 13 językach (użyj paska języków u góry strony).</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/language.png" alt="Invoice Cove — Języki" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="templates">
+      <h2><span class="num">15</span> Szablony PDF</h2>
+      <div class="section-body">
+        <div>
+          <p>Invoice Cove ma 18 wzorów PDF: Classic, Client Color (w kolorze klienta), Minimal, Bold Corporate, Classic Clean, Modern Dark Accent, Organic Flow, Modern Professional Business, Minimalist Bakery Service, Gentle Flower, Cozy Paws, Soft Elegant, Solid Craft, Crimson Frame, Blush Botanical, Vintage Garage, Sparkle Waves i Spooky Hollow.</p>
+          <p>Wybierz domyślny szablon w Ustawienia → <strong>Szablon faktury</strong>: dotknij wzoru, a potem <strong>Gotowe</strong>. Obowiązuje wszystko, co od tej pory wystawisz. Dla pojedynczej faktury lub oferty użyj przycisku <strong>Szablon</strong> w formularzu.</p>
+          <p>Każdy szablon drukuje te same informacje — dane Twojej firmy, dane klienta, pozycje z jednostką i datą, sumy, notatki i dane do płatności — ale tylko to, co wypełniłeś. Długie faktury przechodzą na drugą stronę, a suma pozostaje razem z ostatnią pozycją.</p>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/template-picker.png" alt="Invoice Cove — Szablony PDF" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/templates-1.png" alt="Invoice Cove — Szablony PDF" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/templates-2.png" alt="Invoice Cove — Szablony PDF" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="free-vs-pro">
+      <h2><span class="num">16</span> Plan darmowy a Invoice Cove Pro</h2>
+      <div class="section-body">
+        <div>
+          <p>Invoice Cove jest darmowy, z kilkoma rozsądnymi ograniczeniami:</p>
+          <ul><li>Do 3 faktur i 3 ofert wystawionych w miesiącu kalendarzowym</li><li>Do 3 klientów jednocześnie</li><li>Numery faktur i ofert nadawane są automatycznie i nie można ich edytować</li><li>Eksport do Excela, CSV i ZIP jest tylko w Pro</li><li>Kopia zapasowa i przywracanie są tylko w Pro</li></ul>
+          <p><strong>Invoice Cove Pro</strong> to jednorazowy zakup przez Google Play — nie subskrypcja — który na stałe znosi wszystkie te ograniczenia. Szkice, wszystkie szablony i języki, blokada aplikacji oraz tworzenie, podgląd i udostępnianie dokumentów są darmowe dla wszystkich. Pełne szczegóły znajdziesz w <a href="terms.html">Warunkach korzystania</a> (po angielsku).</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Invoice Cove — a <a class="accent" href="https://magotel.uk" target="_blank" rel="noopener">Magotel</a> app</span>
+    <span>Pytania? <a href="mailto:contact@magotel.uk">contact@magotel.uk</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

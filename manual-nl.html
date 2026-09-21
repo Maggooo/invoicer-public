@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invoice Cove — Gebruikershandleiding</title>
+<meta name="description" content="Volledige gebruikershandleiding voor de app Invoice Cove - Offline Billing.">
+<link rel="alternate" hreflang="en" href="manual.html">
+<link rel="alternate" hreflang="ro" href="manual-ro.html">
+<link rel="alternate" hreflang="de" href="manual-de.html">
+<link rel="alternate" hreflang="fr" href="manual-fr.html">
+<link rel="alternate" hreflang="es" href="manual-es.html">
+<link rel="alternate" hreflang="it" href="manual-it.html">
+<link rel="alternate" hreflang="pt" href="manual-pt.html">
+<link rel="alternate" hreflang="pl" href="manual-pl.html">
+<link rel="alternate" hreflang="cs" href="manual-cs.html">
+<link rel="alternate" hreflang="sk" href="manual-sk.html">
+<link rel="alternate" hreflang="hu" href="manual-hu.html">
+<link rel="alternate" hreflang="nl" href="manual-nl.html">
+<link rel="alternate" hreflang="sv" href="manual-sv.html">
+<link rel="alternate" hreflang="x-default" href="manual.html">
+<link rel="icon" href="assets/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/icon-256.png" alt=""> Invoice Cove</a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="manual.html" class="active">User Manual</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:0;">
+  <div class="wrap" style="padding-bottom:36px;">
+    <h1>Gebruikershandleiding</h1>
+    <p>Alles wat Invoice Cove kan, scherm voor scherm.</p>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,32 C240,64 480,0 720,20 C960,40 1200,60 1440,28 L1440,60 L0,60 Z" fill="#f5f9fd"></path>
+  </svg>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <nav class="langbar" aria-label="Taal"><span aria-hidden="true">🌐</span> <a href="manual.html" lang="en" hreflang="en">English</a> <a href="manual-ro.html" lang="ro" hreflang="ro">Română</a> <a href="manual-de.html" lang="de" hreflang="de">Deutsch</a> <a href="manual-fr.html" lang="fr" hreflang="fr">Français</a> <a href="manual-es.html" lang="es" hreflang="es">Español</a> <a href="manual-it.html" lang="it" hreflang="it">Italiano</a> <a href="manual-pt.html" lang="pt" hreflang="pt">Português</a> <a href="manual-pl.html" lang="pl" hreflang="pl">Polski</a> <a href="manual-cs.html" lang="cs" hreflang="cs">Čeština</a> <a href="manual-sk.html" lang="sk" hreflang="sk">Slovenčina</a> <a href="manual-hu.html" lang="hu" hreflang="hu">Magyar</a> <a href="manual-nl.html" lang="nl" hreflang="nl" class="current" aria-current="page">Nederlands</a> <a href="manual-sv.html" lang="sv" hreflang="sv">Svenska</a></nav>
+
+    <p class="lede">Invoice Cove werkt volledig op uw apparaat — uw facturen, offertes, klanten en bedrijfsgegevens worden lokaal opgeslagen, niet op een server van Invoice Cove. <strong>Wij verzamelen, zien of ontvangen geen gegevens over uw facturen of over hoe u de app gebruikt</strong> — geen analytics, geen tracking, niets wordt op de achtergrond verzonden. Het enige moment waarop de app zelf internet nodig heeft, is bij de verwerking van de eenmalige aankoop van Invoice Cove Pro via Google Play. Details vindt u in het <a href="privacy.html">Privacybeleid</a> (in het Engels).</p>
+    <div class="note warn">
+      <strong>Voordat u de app verwijdert of de opslag ervan wist:</strong> wij bewaren deze gegevens nergens als back-up. Als u Invoice Cove verwijdert of de opslag ervan wist in de Android-instellingen, worden alle facturen, offertes, klanten en instellingen op dit apparaat definitief gewist — er is geen kopie in de cloud om uit te herstellen. Bescherm uzelf: maak een back-up met Invoice Cove Pro (zie <a href="#backup">Back-up en herstel</a>) of exporteer wat u nodig hebt naar Excel, CSV of ZIP (zie <a href="#export">Facturen exporteren</a>).
+    </div>
+
+    <div class="toc">
+      <h2>Inhoud</h2>
+      <ol>
+        <li><a href="#home">Startscherm</a></li>
+        <li><a href="#customers">Klanten</a></li>
+        <li><a href="#new-invoice">Een factuur maken</a></li>
+        <li><a href="#drafts">Concepten</a></li>
+        <li><a href="#invoices">Facturen beheren</a></li>
+        <li><a href="#export">Facturen exporteren (Excel, CSV, ZIP)</a></li>
+        <li><a href="#new-quote">Een offerte maken</a></li>
+        <li><a href="#quotes">Offertes beheren en omzetten naar een factuur</a></li>
+        <li><a href="#calendar">Agenda en herinneringen</a></li>
+        <li><a href="#reports">Rapporten</a></li>
+        <li><a href="#settings">Bedrijfsgegevens en instellingen</a></li>
+        <li><a href="#backup">Back-up en herstel</a></li>
+        <li><a href="#app-lock">App-vergrendeling</a></li>
+        <li><a href="#languages">Talen</a></li>
+        <li><a href="#templates">Pdf-sjablonen</a></li>
+        <li><a href="#free-vs-pro">Gratis abonnement en Invoice Cove Pro</a></li>
+      </ol>
+    </div>
+
+    <section class="section" id="home">
+      <h2><span class="num">1</span> Startscherm</h2>
+      <div class="section-body">
+        <div>
+          <p>Het startscherm is uw uitgangspunt, met een tegel voor elke hoofdactie: <strong>Nieuwe offerte</strong>, <strong>Offertes</strong>, <strong>Nieuwe factuur</strong>, <strong>Facturen</strong>, <strong>Nieuwe klant</strong>, <strong>Klanten</strong>, <strong>Kalender</strong> en <strong>Rapporten</strong>. Tik op een tegel om er direct naartoe te gaan.</p>
+          <p>De balk onderaan geeft u altijd snelle toegang tot <strong>Start</strong>, <strong>Nieuw</strong> (nieuwe factuur), <strong>Facturen</strong>, <strong>Klanten</strong> en <strong>Rapporten</strong>.</p>
+          <p>Het tandwielpictogram (⚙️) rechtsboven op de meeste schermen opent <a href="#settings">Bedrijfsgegevens en instellingen</a>.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/home.png" alt="Invoice Cove — Startscherm" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="customers">
+      <h2><span class="num">2</span> Klanten</h2>
+      <div class="section-body">
+        <div>
+          <p>Voeg een klant toe via het tabblad <strong>Klanten</strong> (tik op het +-pictogram), via de tegel <strong>Nieuwe klant</strong> of direct tijdens het maken van een factuur of offerte. Alleen de naam is verplicht. Optionele velden: <strong>Klantnummer</strong>, E-mail, Telefoon, adres, Fiscaal nummer, Btw-nummer, KvK-nummer en een kleur waarmee de documenten van de klant worden ingekleurd. Elk veld toont een voorbeeld, zodat duidelijk is wat erin hoort.</p>
+          <p>Tik op een klant om deze te bewerken (<strong>Bewerken</strong>), de <strong>Geschiedenis bekijken</strong> te openen (facturen, offertes en concepten) of de klant te verwijderen (<strong>Verwijderen</strong>).</p>
+          <p>Op uw facturen en offertes worden de klantgegevens onder de naam in een vaste volgorde afgedrukt: klantnummer, fiscaal nummer, btw-nummer, handelsregisternummer, daarna adres, e-mail en telefoon. Wat u niet invult, wordt gewoon niet afgedrukt.</p>
+          <div class="note"><strong>Opslaan werkt hier anders dan bij facturen.</strong> Een klant heeft een eigen knop <strong>Klant opslaan</strong> (bij bewerken <strong>Wijzigingen opslaan</strong>) — de klant wordt opgeslagen op het moment dat u erop tikt. Als u het formulier probeert te sluiten met niet-opgeslagen wijzigingen, vraagt Invoice Cove eerst om bevestiging.</div>
+          <div class="note">Als u een klant verwijdert, worden de facturen en offertes die u al voor die klant hebt gemaakt niet verwijderd. De onvoltooide <a href="#drafts">concepten</a> worden wel samen met de klant verwijderd — de app vraagt dit eerst.</div>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/customers.png" alt="Invoice Cove — Klanten" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/customer-form.png" alt="Invoice Cove — Klanten" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="new-invoice">
+      <h2><span class="num">3</span> Een factuur maken</h2>
+      <div class="section-body">
+        <div>
+          <p>Op <strong>Nieuw</strong> (of via de tegel <strong>Nieuwe factuur</strong>): kies een klant — of maak er meteen een aan — stel de factuurdatum en de vervaldatum in en voeg daarna regels toe.</p>
+          <p>Tik op <strong>Itemgegevens toevoegen</strong> en vul de omschrijving, het aantal, de prijs per eenheid en eventueel de eenheid in (bijv. u, st of kg), plus datum en tijd. De eenheid wordt in de pdf naast het aantal afgedrukt. Met het potlood (✏️) bij een regel corrigeert u die, met de prullenbak (🗑️) verwijdert u die. Eerder gebruikte omschrijvingen en prijzen worden tijdens het typen voorgesteld.</p>
+          <p>Voeg daarna naar wens een belastingtarief, <strong>Korting</strong> (percentage of vast bedrag) en <strong>Notities</strong> toe. Het factuurnummer wordt automatisch toegekend (met Pro kunt u het aanpassen); de valuta kiest u ernaast.</p>
+          <p><strong>Voorbeeld</strong> maakt een tijdelijke pdf zodat u kunt zien hoe het eruitziet — er wordt nog niets opgeslagen. De knop <strong>Sjabloon</strong> toont welke sjabloon wordt gebruikt; tik erop om alleen voor dit document een ander te kiezen.</p>
+          <div class="note"><strong>Factuur genereren</strong> doet drie dingen tegelijk: de factuur opslaan, de pdf maken en het deelmenu van uw apparaat openen zodat u de factuur kunt versturen. Nog niet klaar? Gebruik <strong>Opslaan als concept</strong> — zie <a href="#drafts">Concepten</a>.</div>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/new-invoice.png" alt="Invoice Cove — Een factuur maken" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/new-invoice-2.png" alt="Invoice Cove — Een factuur maken" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="drafts">
+      <h2><span class="num">4</span> Concepten</h2>
+      <div class="section-body">
+        <div>
+          <p>Een factuur waaraan u nog werkt, raakt u niet kwijt. Zodra u een klant kiest en minstens één regel of notitie toevoegt, bewaart Invoice Cove een <strong>concept</strong> en werkt dat kort nadat u stopt met typen bij — en nog een keer wanneer u de app verlaat. Bij het verlaten van het scherm verschijnt er geen vraag „wijzigingen negeren?”; een korte melding laat weten dat het concept is bewaard.</p>
+          <p>Tik op <strong>Opslaan als concept</strong> (onder Factuur genereren) om een factuur bewust opzij te leggen: die wordt bewaard en het formulier wordt leeggemaakt, klaar voor de volgende factuur. Dit werkt zodra een klant is gekozen, ook vóór het toevoegen van regels.</p>
+          <p>U vindt concepten onder <strong>Klanten</strong> → klant → <strong>Geschiedenis bekijken</strong> → <strong>Concepten</strong>. Elk concept toont wanneer het voor het laatst is gewijzigd, hoeveel regels het heeft en het totaalbedrag. Tik erop om verder te bewerken of de factuur uit te schrijven; de prullenbak verwijdert het.</p>
+          <ul><li>Een concept gebruikt nooit een factuurnummer en telt niet mee voor de gratis maandlimiet. Het nummer wordt pas toegekend wanneer u de definitieve factuur maakt — het concept maakt dan plaats voor die factuur.</li><li>Een concept onthoudt de factuurdatum en de vervaldatum alleen als u die zelf hebt gekozen; anders wordt bij het heropenen de datum van vandaag gebruikt.</li><li>Als u een klant verwijdert, worden ook de concepten ervan verwijderd (de app vraagt dit eerst). Concepten maken deel uit van de back-up.</li><li>Concepten bestaan voor facturen; offertes hebben ze niet.</li></ul>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/drafts.png" alt="Invoice Cove — Concepten" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="invoices">
+      <h2><span class="num">5</span> Facturen beheren</h2>
+      <div class="section-body">
+        <div>
+          <p>Het tabblad <strong>Facturen</strong> groepeert facturen in een map per klant, die u kunt sorteren op <em>Laatst gefactureerd</em>, <em>Alfabetisch</em> of <em>Aantal facturen</em>. Open een map om de facturen erin te zien, gesorteerd op datum, waarde, nummer of status.</p>
+          <p>Elke factuur heeft een status: <strong>Onbetaald</strong>, <strong>Achterstallig</strong> (na de vervaldatum), <strong>Gedeeltelijk betaald</strong> (er is een aanbetaling geregistreerd), <strong>Betaald</strong> of <strong>Geannuleerd</strong>. Tik op een factuur om die te bekijken (Bekijken), opnieuw te versturen (Delen), als betaald of vervallen te markeren of te verwijderen.</p>
+          <ul><li><strong>Markeer als betaald</strong> vraagt om de betaaldatum en de betaalwijze (overschrijving, contant, kaart, PayPal of anders). Een betaalde factuur kan niet meer worden teruggezet naar onbetaald.</li><li><strong>Aanbetaling registreren</strong> registreert een vooruitbetaling. De factuur wordt dan weergegeven als <strong>Gedeeltelijk betaald</strong> en de aanbetaling mag het totaal niet overschrijden.</li><li><strong>Markeer als geannuleerd</strong> houdt de factuur in uw administratie maar markeert die als geannuleerd. Kies dit liever dan verwijderen — een verwijderde factuur kan niet worden hersteld.</li></ul>
+          <p>Met Pro kunt u de map van een klant ook opslaan of delen als ZIP met de pdf's, en de volledige lijst exporteren voor uw boekhouder — zie <a href="#export">Facturen exporteren</a>.</p>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/invoices-list.png" alt="Invoice Cove — Facturen beheren" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/invoice-actions.png" alt="Invoice Cove — Facturen beheren" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="export">
+      <h2><span class="num">6</span> Facturen exporteren (Excel, CSV, ZIP)</h2>
+      <div class="section-body">
+        <div>
+          <p>Beschikbaar met Invoice Cove Pro. Tik op het exportpictogram (📄) bovenaan het tabblad <strong>Facturen</strong>. Kies welke facturen worden opgenomen met de jaar- en maandkeuze (<strong>Alle</strong>, één jaar of één maand van een jaar — alleen jaren en maanden waarin facturen bestaan worden aangeboden) en kies daarna wat u ermee wilt doen:</p>
+          <ul><li><strong>Opslaan als Excel</strong> / <strong>Excel delen</strong> — een Excel-spreadsheet (.xlsx).</li><li><strong>Opslaan als CSV</strong> / <strong>CSV delen</strong> — dezelfde tabel als CSV-bestand.</li><li><strong>Facturen opslaan als ZIP</strong> / <strong>Facturen-ZIP delen</strong> — de pdf's van de facturen in één ZIP, met een map per klant.</li><li><strong>Facturen verwijderen</strong> — verwijdert de gekozen facturen definitief na twee bevestigingen.</li></ul>
+          <p>Met <em>Opslaan</em> kiest u waar op het apparaat het bestand terechtkomt; <em>Delen</em> opent het deelmenu van Android zodat u het per e-mail of in een chat kunt versturen.</p>
+          <p>Excel en CSV zijn gemaakt voor uw boekhouder: <strong>één rij per factuurregel</strong>, waarbij de factuurgegevens op elke rij worden herhaald — nummer en data, naam, nummer, fiscaal nummer, btw-nummer, handelsregisternummer en adres van de klant, omschrijving, aantal, eenheid, prijs en nettobedrag van de regel, subtotaal, korting, btw-tarief, btw-bedrag en factuurtotaal, valuta en status, datum en wijze van betaling. De kolomkoppen en vaste woorden (factuur, betaald, onbetaald, betaalwijzen) staan in de taal waarop de app is ingesteld.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/export.png" alt="Invoice Cove — Facturen exporteren (Excel, CSV, ZIP)" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="new-quote">
+      <h2><span class="num">7</span> Een offerte maken</h2>
+      <div class="section-body">
+        <div>
+          <p><strong>Nieuwe offerte</strong> werkt zoals New Invoice — dezelfde velden, dezelfde knoppen <strong>Voorbeeld</strong> en <strong>Sjabloon</strong> en dezelfde <strong>Offerte genereren</strong>, die met één tik opslaat, de pdf maakt en het deelmenu opent — met <strong>Offertedatum</strong> en een datum <strong>Geldig tot</strong> in plaats van factuurdatum en vervaldatum. Offertes hebben geen concepten.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/new-quote.png" alt="Invoice Cove — Een offerte maken" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="quotes">
+      <h2><span class="num">8</span> Offertes beheren en omzetten naar een factuur</h2>
+      <div class="section-body">
+        <div>
+          <p>Het scherm <strong>Offertes</strong> (via de tegel op het startscherm) toont offertes per klant, net als facturen. Open een offerte om die te bekijken of te delen, gebruik <strong>Accepteren</strong> of <strong>Afwijzen</strong> wanneer de klant antwoordt, registreer een aanbetaling of verwijder de offerte. Een aanbetaling mag het totaal van de offerte niet overschrijden.</p>
+          <p>Wanneer de klant de offerte accepteert, gebruikt u <strong>Omzetten naar factuur</strong> en worden de aangevinkte regels omgezet in een echte factuur, die u afzonderlijk kunt aanpassen — de vervaldatum en de korting zijn nog te wijzigen en de oorspronkelijke offerte wordt gemarkeerd als <strong>Omgezet</strong> en blijft in uw administratie.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/quotes-list.png" alt="Invoice Cove — Offertes beheren en omzetten naar een factuur" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="calendar">
+      <h2><span class="num">9</span> Agenda en herinneringen</h2>
+      <div class="section-body">
+        <div>
+          <p>Het scherm <strong>Kalender</strong> is een maandoverzicht voor uw eigen notities. Tik op een dag om notities te bekijken of toe te voegen; een notitie heeft een titel en tekst en stuurt u met de optie <strong>Herinner mij</strong> en een tijd op dat moment een melding. De eerste dag van de week volgt uw instelling.</p>
+          <p>Los daarvan stuurt Invoice Cove betalingsherinneringen — lokale meldingen over facturen die bijna vervallen of al vervallen zijn. Er wordt niets naar een server verzonden of daarvan ontvangen.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/calendar.png" alt="Invoice Cove — Agenda en herinneringen" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="reports">
+      <h2><span class="num">10</span> Rapporten</h2>
+      <div class="section-body">
+        <div>
+          <p><strong>Rapporten</strong> geeft u een snel overzicht: de bedragen <strong>Omzet (betaald)</strong>, <strong>Openstaand</strong> en <strong>Achterstallig</strong>, het aantal facturen, <em>Omzet per maand</em> en uw <em>Beste klanten</em> op gefactureerd bedrag.</p>
+          <p>Tik op de kaart <strong>Openstaand</strong> of <strong>Achterstallig</strong> om precies die facturen in een lijst te openen.</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/reports.png" alt="Invoice Cove — Rapporten" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="settings">
+      <h2><span class="num">11</span> Bedrijfsgegevens en instellingen</h2>
+      <div class="section-body">
+        <div>
+          <p>Open de instellingen via het tandwielpictogram — het scherm heet <strong>Bedrijfsgegevens</strong>. Het begint met uw voorkeuren: <strong>Weergave</strong> (Licht of Donker), het standaard <strong>Factuursjabloon</strong>, <strong>Belastinglabel</strong> (btw, GST…), <strong>Eerste dag van de week</strong> en <strong>Standaard vervaldatum</strong> (vult de vervaldatum automatisch in, bijv. Net 30). Daaronder vindt u <strong>Beveiliging</strong> (zie <a href="#app-lock">App-vergrendeling</a>), <strong>Itemsuggesties</strong> en <strong>Back-up en herstel</strong> (zie <a href="#backup">Back-up en herstel</a>).</p>
+          <p><strong>Omschrijving- &amp; prijsgeheugen</strong> onthoudt omschrijvingen en prijzen van regels om ze tijdens het typen voor te stellen; <em>Wissen</em> vergeet ze, zonder uw facturen aan te raken.</p>
+          <p>Daaronder staat het profiel van uw bedrijf dat op elke factuur en offerte wordt afgedrukt: <strong>Bedrijfsnaam</strong>, <strong>Jouw naam</strong>, een korte slogan (<strong>Bedrijfslocatie</strong>), E-mail, Telefoon, de <strong>Datumnotatie</strong> van datums, adres, Fiscaal nummer, Btw-nummer, <strong>Registratiegegevens</strong> (registratienummer, maatschappelijk kapitaal en dergelijke), <strong>Bedrijfslogo</strong> en <strong>Betalingsgegevens</strong> (IBAN, PayPal.me-link…). Elk veld heeft een voorbeeld en <strong>elk veld dat u leeg laat, verschijnt gewoon niet op uw facturen</strong>. Tik op <strong>Klaar</strong> als u klaar bent; als u vertrekt met niet-opgeslagen wijzigingen, vraagt de app eerst om bevestiging.</p>
+          <p>Helemaal onderaan: deze <strong>Gebruikershandleiding</strong> en <strong>Deel deze app</strong>.</p>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/settings-preferences.png" alt="Invoice Cove — Bedrijfsgegevens en instellingen" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/settings-business.png" alt="Invoice Cove — Bedrijfsgegevens en instellingen" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="backup">
+      <h2><span class="num">12</span> Back-up en herstel</h2>
+      <div class="section-body">
+        <div>
+          <p>Beschikbaar met Invoice Cove Pro. Onder <strong>Back-up en herstel</strong> bewaart <strong>Back-up maken</strong> alles — facturen, offertes, concepten, klanten, agenda, instellingen, logo en pdf's — in één bestand. Kies <strong>Back-up opslaan</strong> om het op te slaan waar u wilt, of <strong>Back-up delen</strong> om het naar een veilige plek te sturen.</p>
+          <p><strong>Back-up herstellen</strong> zet alles terug — bijvoorbeeld op een nieuwe telefoon. Het werkt alleen op een verse installatie, zolang u nog geen gegevens hebt toegevoegd, zodat het nooit kan overschrijven wat u al hebt. Invoice Cove controleert of het bestand intact is en waarschuwt u als het beschadigd is, geen Invoice Cove-back-up is of gemaakt is door een nieuwere versie van de app (werk eerst bij).</p>
+          <div class="note">Het back-upbestand is <strong>niet versleuteld</strong>: iedereen die het heeft, kan uw gegevens lezen. Bewaar het op een privéplek. De pincode van de app-vergrendeling wordt er nooit in opgenomen.</div>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/backup.png" alt="Invoice Cove — Back-up en herstel" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="app-lock">
+      <h2><span class="num">13</span> App-vergrendeling</h2>
+      <div class="section-body">
+        <div>
+          <p>Onder <strong>Beveiliging</strong> kunt u <strong>App-vergrendeling</strong> inschakelen: Invoice Cove vraagt dan om een pincode (of vingerafdruk) wanneer de app helemaal opnieuw wordt geopend of nadat de telefoon is herstart — niet bij elke terugkeer naar de app.</p>
+          <ul><li><strong>Pincode instellen</strong>: kies een pincode van vier cijfers en bevestig die.</li><li>Daarna krijgt u een <strong>herstelcode</strong> van zes cijfers die maar één keer wordt getoond. Schrijf die op en bewaar hem op een veilige plek.</li><li>Als uw telefoon dit ondersteunt, ontgrendelt u met uw vingerafdruk (<strong>Vingerafdruk gebruiken</strong>).</li><li>Pincode vergeten? Gebruik <strong>Pincode vergeten?</strong> en voer de herstelcode in. Na 5 foute pogingen moet u 30 seconden wachten; de wachttijd wordt langer bij verdere foute pogingen.</li></ul>
+          <div class="note">Als u zowel de pincode als de herstelcode kwijtraakt — en geen ontgrendeling met vingerafdruk hebt ingesteld — kunt u niet meer naar binnen. Wij kunnen die niet voor u resetten.</div>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/pin-lock-setup.png" alt="Invoice Cove — App-vergrendeling" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="languages">
+      <h2><span class="num">14</span> Talen</h2>
+      <div class="section-body">
+        <div>
+          <p>Invoice Cove spreekt 13 talen: English, Română, Deutsch, Français, Español, Italiano, Português, Polski, Čeština, Slovenčina, Magyar, Nederlands en Svenska. Tik bovenaan de instellingen op het ronde vlagpictogram en de taal verandert — de app schakelt direct over.</p>
+          <p>De tekst in uw pdf's en in de exports naar Excel/CSV volgt de taal waarop de app is ingesteld, en deze handleiding is beschikbaar in dezelfde 13 talen (gebruik de taalbalk bovenaan de pagina).</p>
+        </div>
+        <figure class="shot"><img src="assets/screenshots/language.png" alt="Invoice Cove — Talen" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="templates">
+      <h2><span class="num">15</span> Pdf-sjablonen</h2>
+      <div class="section-body">
+        <div>
+          <p>Invoice Cove bevat 18 pdf-ontwerpen: Classic, Client Color (in de kleur van de klant), Minimal, Bold Corporate, Classic Clean, Modern Dark Accent, Organic Flow, Modern Professional Business, Minimalist Bakery Service, Gentle Flower, Cozy Paws, Soft Elegant, Solid Craft, Crimson Frame, Blush Botanical, Vintage Garage, Sparkle Waves en Spooky Hollow.</p>
+          <p>Kies het standaardsjabloon onder Instellingen → <strong>Factuursjabloon</strong>: tik op een ontwerp en daarna op <strong>Klaar</strong>. Dit geldt voor alles wat u vanaf dat moment maakt. Voor één factuur of offerte gebruikt u de knop <strong>Sjabloon</strong> in het formulier.</p>
+          <p>Elk sjabloon drukt dezelfde informatie af — uw bedrijfsgegevens, die van de klant, regels met eenheid en datum, totalen, notities en betaalgegevens — maar alleen wat u hebt ingevuld. Lange facturen lopen door op een tweede pagina en het totaal blijft bij de laatste regel staan.</p>
+        </div>
+        <div class="shots"><figure class="shot"><img src="assets/screenshots/template-picker.png" alt="Invoice Cove — Pdf-sjablonen" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/templates-1.png" alt="Invoice Cove — Pdf-sjablonen" loading="lazy"></figure><figure class="shot"><img src="assets/screenshots/templates-2.png" alt="Invoice Cove — Pdf-sjablonen" loading="lazy"></figure></div>
+      </div>
+    </section>
+
+    <section class="section" id="free-vs-pro">
+      <h2><span class="num">16</span> Gratis abonnement en Invoice Cove Pro</h2>
+      <div class="section-body">
+        <div>
+          <p>Invoice Cove is gratis, met een paar redelijke beperkingen:</p>
+          <ul><li>Maximaal 3 facturen en 3 offertes per kalendermaand</li><li>Maximaal 3 klanten tegelijk</li><li>Factuur- en offertenummers worden automatisch toegekend en kunnen niet worden aangepast</li><li>Export naar Excel, CSV en ZIP is alleen met Pro</li><li>Back-up en herstel zijn alleen met Pro</li></ul>
+          <p><strong>Invoice Cove Pro</strong> is één eenmalige aankoop via Google Play — geen abonnement — die al deze beperkingen voorgoed opheft. Concepten, alle sjablonen en talen, de app-vergrendeling en het maken, bekijken en delen van documenten zijn voor iedereen gratis. Alle details vindt u in de <a href="terms.html">Gebruiksvoorwaarden</a> (in het Engels).</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Invoice Cove — a <a class="accent" href="https://magotel.uk" target="_blank" rel="noopener">Magotel</a> app</span>
+    <span>Vragen? <a href="mailto:contact@magotel.uk">contact@magotel.uk</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
