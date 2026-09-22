@@ -104,10 +104,13 @@ T = {
             ]),
             ("p", "Met <em>Opslaan</em> kiest u waar op het apparaat het bestand terechtkomt; <em>Delen</em> opent het deelmenu van Android zodat u het "
                   "per e-mail of in een chat kunt versturen."),
-            ("p", "Excel en CSV zijn gemaakt voor uw boekhouder: <strong>één rij per factuurregel</strong>, waarbij de factuurgegevens op elke rij worden herhaald — "
-                  "nummer en data, naam, nummer, fiscaal nummer, btw-nummer, handelsregisternummer en adres van de klant, omschrijving, aantal, eenheid, "
-                  "prijs en nettobedrag van de regel, subtotaal, korting, btw-tarief, btw-bedrag en factuurtotaal, valuta en status, datum en "
-                  "wijze van betaling. De kolomkoppen en vaste woorden (factuur, betaald, onbetaald, betaalwijzen) staan in de taal waarop de app is ingesteld."),
+            ("p", "Excel en CSV zijn gemaakt voor uw boekhouder: standaard <strong>één rij per factuur</strong> — nummer en data, naam, nummer, fiscaal "
+                  "nummer, btw-nummer, handelsregisternummer en adres van de klant, subtotaal, korting, btw-tarief, btw-bedrag en factuurtotaal, valuta en "
+                  "status, datum en wijze van betaling. De kolomkoppen en vaste woorden (factuur, betaald, onbetaald, betaalwijzen) staan in de taal waarop "
+                  "de app is ingesteld."),
+            ("p", "Zet <strong>{{invoices_export_detailed_toggle}}</strong> aan in hetzelfde blad om in plaats daarvan één rij per factuurregel te krijgen, "
+                  "waarbij de factuurgegevens op elke rij worden herhaald en de omschrijving, het aantal, de eenheid, de prijs en het nettobedrag van elke "
+                  "regel worden toegevoegd."),
         ]),
         "new-quote": ("Een offerte maken", [
             ("p", "<strong>{{home_new_quote_title}}</strong> werkt zoals New Invoice — dezelfde velden, dezelfde knoppen <strong>{{common_preview_button}}</strong> en <strong>{{common_template_button}}</strong> en dezelfde "

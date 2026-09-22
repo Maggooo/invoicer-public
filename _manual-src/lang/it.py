@@ -104,10 +104,12 @@ T = {
             ]),
             ("p", "<em>Salva</em> ti lascia scegliere dove sul dispositivo va il file; <em>Condividi</em> apre il menu di condivisione di Android per inviarlo "
                   "via email o in una chat."),
-            ("p", "Excel e CSV sono pensati per il tuo commercialista: <strong>una riga per ogni voce di fattura</strong>, con i dati della fattura ripetuti su ogni riga — "
-                  "numero e date, nome, numero, codice fiscale, partita IVA, numero del registro delle imprese e indirizzo del cliente, descrizione, quantità, unità, "
-                  "prezzo e importo netto della voce, subtotale, sconto, aliquota IVA, importo IVA e totale della fattura, la valuta, e stato, data e "
-                  "metodo di pagamento. Le intestazioni delle colonne e le parole fisse (fattura, pagata, non pagata, metodi di pagamento) sono scritte nella lingua impostata nell'app."),
+            ("p", "Excel e CSV sono pensati per il tuo commercialista: per impostazione predefinita, <strong>una riga per ogni fattura</strong> — numero e date, "
+                  "nome, numero, codice fiscale, partita IVA, numero del registro delle imprese e indirizzo del cliente, subtotale, sconto, aliquota IVA, "
+                  "importo IVA e totale della fattura, la valuta, e stato, data e metodo di pagamento. Le intestazioni delle colonne e le parole fisse "
+                  "(fattura, pagata, non pagata, metodi di pagamento) sono scritte nella lingua impostata nell'app."),
+            ("p", "Attiva <strong>{{invoices_export_detailed_toggle}}</strong> nello stesso foglio per ottenere invece una riga per ogni voce di fattura, con i "
+                  "dati della fattura ripetuti su ogni riga e descrizione, quantità, unità, prezzo e importo netto di ogni voce aggiunti."),
         ]),
         "new-quote": ("Creare un preventivo", [
             ("p", "<strong>{{home_new_quote_title}}</strong> funziona come New Invoice — stessi campi, stessi pulsanti <strong>{{common_preview_button}}</strong> e <strong>{{common_template_button}}</strong> e lo stesso "

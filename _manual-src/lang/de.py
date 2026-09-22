@@ -104,10 +104,13 @@ T = {
             ]),
             ("p", "<em>Speichern</em> lässt dich wählen, wo auf deinem Gerät die Datei landet; <em>Teilen</em> öffnet das Android-Teilen-Menü, damit du sie per E-Mail oder "
                   "im Chat verschicken kannst."),
-            ("p", "Excel und CSV sind für deinen Steuerberater gemacht: <strong>eine Zeile pro Rechnungsposition</strong>, wobei die Rechnungsdaten in jeder Zeile wiederholt werden — "
-                  "Nummer und Daten, Name, Nummer, Steuernummer, USt-IdNr., Handelsregisternummer und Adresse des Kunden, Beschreibung, Menge, Einheit, "
-                  "Preis und Nettobetrag der Position, Zwischensumme, Rabatt, Steuersatz, Steuerbetrag und Gesamtsumme der Rechnung, die Währung sowie Zahlungsstatus, -datum und "
-                  "-art. Spaltenüberschriften und feste Wörter (Rechnung, bezahlt, unbezahlt, Zahlungsarten) stehen in der Sprache, auf die die App eingestellt ist."),
+            ("p", "Excel und CSV sind für deinen Steuerberater gemacht: standardmäßig <strong>eine Zeile pro Rechnung</strong> — Nummer und Daten, Name, Nummer, "
+                  "Steuernummer, USt-IdNr., Handelsregisternummer und Adresse des Kunden, Zwischensumme, Rabatt, Steuersatz, Steuerbetrag und Gesamtsumme der "
+                  "Rechnung, die Währung sowie Zahlungsstatus, -datum und -art. Spaltenüberschriften und feste Wörter (Rechnung, bezahlt, unbezahlt, Zahlungsarten) "
+                  "stehen in der Sprache, auf die die App eingestellt ist."),
+            ("p", "Aktiviere <strong>{{invoices_export_detailed_toggle}}</strong> im selben Sheet, um stattdessen eine Zeile pro Rechnungsposition zu erhalten, "
+                  "wobei die Rechnungsdaten in jeder Zeile wiederholt werden und Beschreibung, Menge, Einheit, Preis und Nettobetrag jeder Position hinzugefügt "
+                  "werden."),
         ]),
         "new-quote": ("Ein Angebot erstellen", [
             ("p", "<strong>{{home_new_quote_title}}</strong> funktioniert wie New Invoice — dieselben Felder, dieselben Schaltflächen <strong>{{common_preview_button}}</strong> und <strong>{{common_template_button}}</strong> und dasselbe "

@@ -104,10 +104,13 @@ T = {
             ]),
             ("p", "<em>Enregistrer</em> vous laisse choisir où le fichier est placé sur votre appareil ; <em>Partager</em> ouvre le menu de partage d'Android pour l'envoyer "
                   "par e-mail ou dans une discussion."),
-            ("p", "Excel et CSV sont conçus pour votre comptable : <strong>une ligne par article de facture</strong>, avec les informations de la facture répétées sur chaque ligne — "
-                  "numéro et dates, nom, numéro, numéro fiscal, numéro de TVA, numéro du registre du commerce et adresse du client, description, quantité, unité, "
-                  "prix et montant net de l'article, sous-total, remise, taux de TVA, montant de TVA et total de la facture, devise, ainsi que statut, date et "
-                  "moyen de paiement. Les en-têtes de colonnes et les mots fixes (facture, payé, impayé, moyens de paiement) sont écrits dans la langue de l'application."),
+            ("p", "Excel et CSV sont conçus pour votre comptable : par défaut, <strong>une ligne par facture</strong> — numéro et dates, nom, numéro, numéro "
+                  "fiscal, numéro de TVA, numéro du registre du commerce et adresse du client, sous-total, remise, taux de TVA, montant de TVA et total de la "
+                  "facture, devise, ainsi que statut, date et moyen de paiement. Les en-têtes de colonnes et les mots fixes (facture, payé, impayé, moyens de "
+                  "paiement) sont écrits dans la langue de l'application."),
+            ("p", "Activez <strong>{{invoices_export_detailed_toggle}}</strong> dans le même panneau pour obtenir à la place une ligne par article de facture, "
+                  "avec les informations de la facture répétées sur chaque ligne et la description, la quantité, l'unité, le prix et le montant net de chaque "
+                  "article ajoutés."),
         ]),
         "new-quote": ("Créer un devis", [
             ("p", "<strong>{{home_new_quote_title}}</strong> fonctionne comme New Invoice — mêmes champs, mêmes boutons <strong>{{common_preview_button}}</strong> et <strong>{{common_template_button}}</strong>, et le même "

@@ -104,10 +104,12 @@ T = {
             ]),
             ("p", "<em>Zapisz</em> pozwala wybrać, gdzie w urządzeniu trafi plik; <em>Udostępnij</em> otwiera menu udostępniania Androida, aby wysłać go "
                   "e-mailem lub w czacie."),
-            ("p", "Excel i CSV są przygotowane dla Twojego księgowego: <strong>jeden wiersz na każdą pozycję faktury</strong>, z danymi faktury powtórzonymi w każdym wierszu — "
-                  "numer i daty, nazwa, numer, numer podatkowy, numer VAT, numer rejestru handlowego i adres klienta, opis, ilość, jednostka, "
-                  "cena i kwota netto pozycji, suma częściowa, rabat, stawka VAT, kwota VAT i suma faktury, waluta oraz status, data i "
-                  "sposób płatności. Nagłówki kolumn i stałe słowa (faktura, opłacona, nieopłacona, sposoby płatności) są zapisane w języku ustawionym w aplikacji."),
+            ("p", "Excel i CSV są przygotowane dla Twojego księgowego: domyślnie <strong>jeden wiersz na fakturę</strong> — numer i daty, nazwa, numer, numer "
+                  "podatkowy, numer VAT, numer rejestru handlowego i adres klienta, suma częściowa, rabat, stawka VAT, kwota VAT i suma faktury, waluta oraz "
+                  "status, data i sposób płatności. Nagłówki kolumn i stałe słowa (faktura, opłacona, nieopłacona, sposoby płatności) są zapisane w języku "
+                  "ustawionym w aplikacji."),
+            ("p", "Włącz <strong>{{invoices_export_detailed_toggle}}</strong> w tym samym arkuszu, aby zamiast tego uzyskać jeden wiersz na każdą pozycję "
+                  "faktury, z danymi faktury powtórzonymi w każdym wierszu oraz dodanym opisem, ilością, jednostką, ceną i kwotą netto każdej pozycji."),
         ]),
         "new-quote": ("Tworzenie oferty", [
             ("p", "<strong>{{home_new_quote_title}}</strong> działa jak New Invoice — te same pola, te same przyciski <strong>{{common_preview_button}}</strong> i <strong>{{common_template_button}}</strong> oraz ten sam "

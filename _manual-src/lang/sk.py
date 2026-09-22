@@ -104,10 +104,13 @@ T = {
             ]),
             ("p", "<em>Uložiť</em> vám nechá vybrať, kam v zariadení súbor pôjde; <em>Zdieľať</em> otvorí zdieľaciu ponuku Androidu, aby ste ho poslali "
                   "e-mailom alebo v chate."),
-            ("p", "Excel a CSV sú vytvorené pre vášho účtovníka: <strong>jeden riadok na každú položku faktúry</strong>, pričom údaje o faktúre sa opakujú na každom riadku — "
-                  "číslo a dátumy, meno, číslo, daňové číslo, IČ DPH, číslo obchodného registra a adresa zákazníka, popis, množstvo, jednotka, "
-                  "cena a čistá suma položky, medzisúčet, zľava, sadzba DPH, suma DPH a spolu faktúry, mena a stav, dátum a "
-                  "spôsob platby. Hlavičky stĺpcov a pevné slová (faktúra, zaplatené, nezaplatené, spôsoby platby) sú v jazyku, na ktorý je aplikácia nastavená."),
+            ("p", "Excel a CSV sú vytvorené pre vášho účtovníka: predvolene <strong>jeden riadok na faktúru</strong> — číslo a dátumy, meno, číslo, daňové "
+                  "číslo, IČ DPH, číslo obchodného registra a adresa zákazníka, medzisúčet, zľava, sadzba DPH, suma DPH a spolu faktúry, mena a stav, dátum a "
+                  "spôsob platby. Hlavičky stĺpcov a pevné slová (faktúra, zaplatené, nezaplatené, spôsoby platby) sú v jazyku, na ktorý je aplikácia "
+                  "nastavená."),
+            ("p", "Zapnite <strong>{{invoices_export_detailed_toggle}}</strong> v tom istom paneli, aby ste namiesto toho získali jeden riadok na každú "
+                  "položku faktúry, pričom údaje o faktúre sa opakujú na každom riadku a pridá sa popis, množstvo, jednotka, cena a čistá suma každej "
+                  "položky."),
         ]),
         "new-quote": ("Vytvorenie ponuky", [
             ("p", "<strong>{{home_new_quote_title}}</strong> funguje ako New Invoice — rovnaké polia, rovnaké tlačidlá <strong>{{common_preview_button}}</strong> a <strong>{{common_template_button}}</strong> a rovnaké "

@@ -104,10 +104,13 @@ T = {
             ]),
             ("p", "<em>Guardar</em> te deja elegir en qué lugar del dispositivo queda el archivo; <em>Compartir</em> abre el menú de compartir de Android para enviarlo "
                   "por correo o en un chat."),
-            ("p", "Excel y CSV están pensados para tu contable: <strong>una fila por cada artículo de la factura</strong>, con los datos de la factura repetidos en cada fila: "
-                  "número y fechas, nombre, número, identificación fiscal, número de IVA, número del registro mercantil y dirección del cliente, descripción, cantidad, unidad, "
-                  "precio e importe neto del artículo, subtotal, descuento, tipo de IVA, importe de IVA y total de la factura, la moneda y el estado, la fecha y el "
-                  "método de pago. Los encabezados de columna y las palabras fijas (factura, pagada, sin pagar, métodos de pago) se escriben en el idioma configurado en la aplicación."),
+            ("p", "Excel y CSV están pensados para tu contable: por defecto, <strong>una fila por factura</strong> — número y fechas, nombre, número, "
+                  "identificación fiscal, número de IVA, número del registro mercantil y dirección del cliente, subtotal, descuento, tipo de IVA, importe de "
+                  "IVA y total de la factura, la moneda y el estado, la fecha y el método de pago. Los encabezados de columna y las palabras fijas (factura, "
+                  "pagada, sin pagar, métodos de pago) se escriben en el idioma configurado en la aplicación."),
+            ("p", "Activa <strong>{{invoices_export_detailed_toggle}}</strong> en el mismo panel para obtener en su lugar una fila por cada artículo de la "
+                  "factura, con los datos de la factura repetidos en cada fila y la descripción, cantidad, unidad, precio e importe neto de cada artículo "
+                  "añadidos."),
         ]),
         "new-quote": ("Crear un presupuesto", [
             ("p", "<strong>{{home_new_quote_title}}</strong> funciona como New Invoice: los mismos campos, los mismos botones <strong>{{common_preview_button}}</strong> y <strong>{{common_template_button}}</strong>, y el mismo "

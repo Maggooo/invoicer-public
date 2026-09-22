@@ -104,10 +104,13 @@ T = {
             ]),
             ("p", "A <em>Mentés</em> lehetővé teszi, hogy kiválassza, hová kerüljön a fájl az eszközön; a <em>Megosztás</em> megnyitja az Android megosztás menüjét, hogy "
                   "e-mailben vagy csevegésben elküldhesse."),
-            ("p", "Az Excel és a CSV a könyvelője számára készült: <strong>számlatételenként egy sor</strong>, a számla adatai minden sorban ismétlődnek — "
-                  "szám és dátumok, az ügyfél neve, száma, adószáma, közösségi adószáma, cégjegyzékszáma és címe, leírás, mennyiség, mértékegység, "
-                  "a tétel egységára és nettó összege, részösszeg, kedvezmény, ÁFA-kulcs, ÁFA-összeg és a számla végösszege, pénznem és állapot, a fizetés dátuma és "
-                  "módja. Az oszlopfejlécek és a fix szavak (számla, kifizetett, kifizetetlen, fizetési módok) az alkalmazás beállított nyelvén vannak."),
+            ("p", "Az Excel és a CSV a könyvelője számára készült: alapértelmezés szerint <strong>számlánként egy sor</strong> — szám és dátumok, az ügyfél "
+                  "neve, száma, adószáma, közösségi adószáma, cégjegyzékszáma és címe, részösszeg, kedvezmény, ÁFA-kulcs, ÁFA-összeg és a számla végösszege, "
+                  "pénznem és állapot, a fizetés dátuma és módja. Az oszlopfejlécek és a fix szavak (számla, kifizetett, kifizetetlen, fizetési módok) az "
+                  "alkalmazás beállított nyelvén vannak."),
+            ("p", "Kapcsold be a <strong>{{invoices_export_detailed_toggle}}</strong> opciót ugyanazon a panelen, hogy ehelyett számlatételenként egy sort "
+                  "kapj, ahol a számla adatai minden sorban ismétlődnek, és minden tétel leírása, mennyisége, mértékegysége, egységára és nettó összege is "
+                  "szerepel."),
         ]),
         "new-quote": ("Árajánlat készítése", [
             ("p", "A <strong>{{home_new_quote_title}}</strong> úgy működik, mint a New Invoice — ugyanazok a mezők, ugyanazok a <strong>{{common_preview_button}}</strong> és <strong>{{common_template_button}}</strong> gombok, és ugyanaz a "

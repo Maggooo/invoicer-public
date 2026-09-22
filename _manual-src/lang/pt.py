@@ -104,10 +104,12 @@ T = {
             ]),
             ("p", "<em>Guardar</em> deixa-o escolher onde no dispositivo fica o ficheiro; <em>Partilhar</em> abre o menu de partilha do Android para o enviar "
                   "por e-mail ou numa conversa."),
-            ("p", "O Excel e o CSV são feitos para o seu contabilista: <strong>uma linha por artigo da fatura</strong>, com os dados da fatura repetidos em cada linha — "
-                  "número e datas, nome, número, número fiscal, número de IVA, número do registo comercial e morada do cliente, descrição, quantidade, unidade, "
-                  "preço e valor líquido do artigo, subtotal, desconto, taxa de IVA, valor do IVA e total da fatura, a moeda, e o estado, a data e o "
-                  "método de pagamento. Os cabeçalhos das colunas e as palavras fixas (fatura, paga, não paga, métodos de pagamento) são escritos no idioma definido na aplicação."),
+            ("p", "O Excel e o CSV são feitos para o seu contabilista: por predefinição, <strong>uma linha por fatura</strong> — número e datas, nome, número, "
+                  "número fiscal, número de IVA, número do registo comercial e morada do cliente, subtotal, desconto, taxa de IVA, valor do IVA e total da "
+                  "fatura, a moeda, e o estado, a data e o método de pagamento. Os cabeçalhos das colunas e as palavras fixas (fatura, paga, não paga, métodos "
+                  "de pagamento) são escritos no idioma definido na aplicação."),
+            ("p", "Ative <strong>{{invoices_export_detailed_toggle}}</strong> na mesma folha para obter, em vez disso, uma linha por artigo da fatura, com os "
+                  "dados da fatura repetidos em cada linha e a descrição, quantidade, unidade, preço e valor líquido de cada artigo adicionados."),
         ]),
         "new-quote": ("Criar um orçamento", [
             ("p", "<strong>{{home_new_quote_title}}</strong> funciona como o New Invoice — os mesmos campos, os mesmos botões <strong>{{common_preview_button}}</strong> e <strong>{{common_template_button}}</strong> e o mesmo "

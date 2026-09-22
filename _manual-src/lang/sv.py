@@ -104,10 +104,12 @@ T = {
             ]),
             ("p", "Med <em>Spara</em> väljer du var på enheten filen hamnar; <em>Dela</em> öppnar Androids delningsmeny så att du kan skicka den "
                   "via e-post eller i en chatt."),
-            ("p", "Excel och CSV är gjorda för din revisor: <strong>en rad per fakturarad</strong>, där fakturauppgifterna upprepas på varje rad — "
-                  "nummer och datum, kundens namn, nummer, skatte-ID, momsregistreringsnummer, handelsregisternummer och adress, beskrivning, antal, enhet, "
-                  "radens pris och nettobelopp, delsumma, rabatt, momssats, momsbelopp och fakturans totalbelopp, valuta och status, betalningsdatum och "
-                  "betalsätt. Kolumnrubrikerna och de fasta orden (faktura, betald, obetald, betalsätt) står på det språk som appen är inställd på."),
+            ("p", "Excel och CSV är gjorda för din revisor: som standard <strong>en rad per faktura</strong> — nummer och datum, kundens namn, nummer, "
+                  "skatte-ID, momsregistreringsnummer, handelsregisternummer och adress, delsumma, rabatt, momssats, momsbelopp och fakturans totalbelopp, "
+                  "valuta och status, betalningsdatum och betalsätt. Kolumnrubrikerna och de fasta orden (faktura, betald, obetald, betalsätt) står på det "
+                  "språk som appen är inställd på."),
+            ("p", "Slå på <strong>{{invoices_export_detailed_toggle}}</strong> i samma blad för att i stället få en rad per fakturarad, där "
+                  "fakturauppgifterna upprepas på varje rad och beskrivning, antal, enhet, pris och nettobelopp för varje rad läggs till."),
         ]),
         "new-quote": ("Skapa en offert", [
             ("p", "<strong>{{home_new_quote_title}}</strong> fungerar som New Invoice — samma fält, samma knappar <strong>{{common_preview_button}}</strong> och <strong>{{common_template_button}}</strong> och samma "

@@ -104,10 +104,12 @@ T = {
             ]),
             ("p", "<em>Salvare</em> îți lasă alegerea locului din dispozitiv unde ajunge fișierul; <em>Partajare</em> deschide meniul de partajare Android ca să-l trimiți "
                   "prin email sau într-un chat."),
-            ("p", "Excel și CSV sunt făcute pentru contabilul tău: <strong>un rând pentru fiecare articol de pe factură</strong>, cu datele facturii repetate pe fiecare rând — "
-                  "numărul și datele, numele, numărul, codul fiscal, numărul de TVA, numărul de la registrul comerțului și adresa clientului, descrierea, cantitatea, unitatea, "
-                  "prețul și valoarea netă a articolului, subtotalul, reducerea, cota de TVA, valoarea TVA și totalul facturii, moneda, precum și starea, data și "
-                  "metoda plății. Titlurile coloanelor și cuvintele fixe (factură, plătit, neplătit, metode de plată) sunt scrise în limba în care este setată aplicația."),
+            ("p", "Excel și CSV sunt făcute pentru contabilul tău: implicit, <strong>un rând pentru fiecare factură</strong> — numărul și datele, numele, numărul, "
+                  "codul fiscal, numărul de TVA, numărul de la registrul comerțului și adresa clientului, subtotalul, reducerea, cota de TVA, valoarea TVA și totalul "
+                  "facturii, moneda, precum și starea, data și metoda plății. Titlurile coloanelor și cuvintele fixe (factură, plătit, neplătit, metode de plată) sunt "
+                  "scrise în limba în care este setată aplicația."),
+            ("p", "Activează <strong>{{invoices_export_detailed_toggle}}</strong> din același sheet ca să obții în schimb un rând pentru fiecare articol de pe "
+                  "factură, cu datele facturii repetate pe fiecare rând și descrierea, cantitatea, unitatea, prețul și valoarea netă ale fiecărui articol adăugate."),
         ]),
         "new-quote": ("Crearea unei oferte", [
             ("p", "<strong>{{home_new_quote_title}}</strong> funcționează ca New Invoice — aceleași câmpuri, aceleași butoane <strong>{{common_preview_button}}</strong> și <strong>{{common_template_button}}</strong> și același "

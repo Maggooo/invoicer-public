@@ -106,10 +106,12 @@ T = {
             ]),
             ("p", "<em>Save</em> lets you choose where on your device the file goes; <em>Share</em> opens Android's share sheet so you can email it or send it "
                   "in a chat."),
-            ("p", "Excel and CSV are made for your accountant: <strong>one row per invoice item</strong>, with the invoice details repeated on every row — "
-                  "number and dates, the customer's name, number, tax ID, VAT number, trade register number and address, the item's description, quantity, unit, "
-                  "price and net amount, the invoice's subtotal, discount, VAT rate, VAT amount and total, the currency, and the payment status, date and "
-                  "method. Column headings and fixed words (invoice, paid, unpaid, payment methods) are written in the language the app is set to."),
+            ("p", "Excel and CSV are made for your accountant: by default, <strong>one row per invoice</strong> — number and dates, the customer's name, number, "
+                  "tax ID, VAT number, trade register number and address, the invoice's subtotal, discount, VAT rate, VAT amount and total, the currency, and "
+                  "the payment status, date and method. Column headings and fixed words (invoice, paid, unpaid, payment methods) are written in the language "
+                  "the app is set to."),
+            ("p", "Turn on <strong>{{invoices_export_detailed_toggle}}</strong> in the same sheet to get one row per invoice item instead, with the invoice "
+                  "details repeated on every row and each item's description, quantity, unit, price and net amount added."),
         ]),
         "new-quote": ("Creating a quote", [
             ("p", "<strong>{{home_new_quote_title}}</strong> works like New Invoice — same fields, the same <strong>{{common_preview_button}}</strong> and <strong>{{common_template_button}}</strong> buttons, and the same "
