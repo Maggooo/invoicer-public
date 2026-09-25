@@ -131,7 +131,7 @@ def build(code: str) -> None:
     <a class="brand" href="index.html"><img src="assets/icon-256.png" alt=""> Invoice Cove</a>
     <div class="navlinks">
       <a href="index.html">Home</a>
-      <a href="manual.html" class="active">User Manual</a>
+      <a href="manual.html" class="active">User Guide</a>
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Use</a>
     </div>
@@ -242,7 +242,7 @@ def build_legal(code: str, doc: str) -> None:
     <a class="brand" href="index.html"><img src="assets/icon-256.png" alt=""> Invoice Cove</a>
     <div class="navlinks">
       <a href="index.html">Home</a>
-      <a href="manual.html">User Manual</a>
+      <a href="manual.html">User Guide</a>
       <a href="privacy.html"{active("privacy")}>Privacy Policy</a>
       <a href="terms.html"{active("terms")}>Terms of Use</a>
     </div>

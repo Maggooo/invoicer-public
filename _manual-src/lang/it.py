@@ -1,7 +1,7 @@
 T = {
-    "title": "Manuale d'uso",
+    "title": "Guida utente",
     "subtitle": "Tutto ciò che Invoice Cove sa fare, schermata per schermata.",
-    "meta_desc": "Manuale d'uso completo di Invoice Cove - Offline Billing.",
+    "meta_desc": "Guida utente completa di Invoice Cove - Offline Billing.",
     "lang_label": "Lingua",
     "brand_alt": "Invoice Cove",
     "toc": "Indice",
@@ -152,7 +152,7 @@ T = {
                   "<strong>{{settings_business_logo_label}}</strong> e i tuoi <strong>{{settings_payment_details_label}}</strong> (IBAN, link PayPal.me…). Ogni campo "
                   "ha un esempio, e <strong>qualsiasi campo lasci vuoto semplicemente non compare sulle tue fatture</strong>. Tocca <strong>{{common_done}}</strong> quando "
                   "hai finito; se esci con modifiche non salvate, ti viene chiesto prima."),
-            ("p", "In fondo: questo <strong>{{settings_user_manual}}</strong> e <strong>{{settings_share_this_app}}</strong>."),
+            ("p", "In fondo: questa <strong>{{settings_user_manual}}</strong> e <strong>{{settings_share_this_app}}</strong>."),
         ]),
         "backup": ("Backup e ripristino", [
             ("p", "Disponibile con Invoice Cove Pro. In <strong>{{settings_backup_restore_label}}</strong>, <strong>{{settings_create_backup_title}}</strong> salva "
@@ -180,7 +180,7 @@ T = {
         "languages": ("Lingue", [
             ("p", "Invoice Cove parla 13 lingue: English, Română, Deutsch, Français, Español, Italiano, Português, Polski, Čeština, Slovenčina, Magyar, "
                   "Nederlands e Svenska. Tocca l'icona rotonda con la bandiera in alto nelle impostazioni per cambiare — l'app cambia subito."),
-            ("p", "Il testo dei tuoi PDF e delle esportazioni Excel/CSV segue la lingua impostata nell'app, e questo manuale è disponibile nelle stesse 13 lingue "
+            ("p", "Il testo dei tuoi PDF e delle esportazioni Excel/CSV segue la lingua impostata nell'app, e questa guida è disponibile nelle stesse 13 lingue "
                   "(usa la barra delle lingue in alto nella pagina)."),
         ]),
         "templates": ("Modelli PDF", [

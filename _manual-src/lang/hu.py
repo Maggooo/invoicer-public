@@ -1,7 +1,7 @@
 T = {
-    "title": "Felhasználói kézikönyv",
+    "title": "Felhasználói útmutató",
     "subtitle": "Minden, amit az Invoice Cove tud, képernyőről képernyőre.",
-    "meta_desc": "Teljes felhasználói kézikönyv az Invoice Cove - Offline Billing alkalmazáshoz.",
+    "meta_desc": "Teljes felhasználói útmutató az Invoice Cove - Offline Billing alkalmazáshoz.",
     "lang_label": "Nyelv",
     "brand_alt": "Invoice Cove",
     "toc": "Tartalom",
@@ -181,7 +181,7 @@ T = {
         "languages": ("Nyelvek", [
             ("p", "Az Invoice Cove 13 nyelven beszél: English, Română, Deutsch, Français, Español, Italiano, Português, Polski, Čeština, Slovenčina, Magyar, "
                   "Nederlands és Svenska. Koppintson a beállítások tetején lévő kerek zászló ikonra, és a nyelv megváltozik — az alkalmazás azonnal átvált."),
-            ("p", "A PDF-eiben és az Excel/CSV exportokban a szöveg az alkalmazás beállított nyelvét követi, ez a kézikönyv pedig ugyanezen a 13 nyelven érhető el "
+            ("p", "A PDF-eiben és az Excel/CSV exportokban a szöveg az alkalmazás beállított nyelvét követi, ez az útmutató pedig ugyanezen a 13 nyelven érhető el "
                   "(használja az oldal tetején lévő nyelvválasztó sávot)."),
         ]),
         "templates": ("PDF-sablonok", [

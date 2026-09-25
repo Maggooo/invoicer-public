@@ -1,7 +1,7 @@
 T = {
-    "title": "Manual de usuario",
+    "title": "Guía de usuario",
     "subtitle": "Todo lo que Invoice Cove puede hacer, pantalla por pantalla.",
-    "meta_desc": "Manual de usuario completo de Invoice Cove - Offline Billing.",
+    "meta_desc": "Guía de usuario completa de Invoice Cove - Offline Billing.",
     "lang_label": "Idioma",
     "brand_alt": "Invoice Cove",
     "toc": "Contenido",
@@ -153,7 +153,7 @@ T = {
                   "<strong>{{settings_business_logo_label}}</strong> y tus <strong>{{settings_payment_details_label}}</strong> (IBAN, enlace de PayPal.me…). Cada campo "
                   "tiene un ejemplo, y <strong>cualquier campo que dejes vacío simplemente no aparece en tus facturas</strong>. Toca <strong>{{common_done}}</strong> cuando "
                   "termines; si sales con cambios sin guardar, se te pregunta antes."),
-            ("p", "Al final del todo: este <strong>{{settings_user_manual}}</strong> y <strong>{{settings_share_this_app}}</strong>."),
+            ("p", "Al final del todo: esta <strong>{{settings_user_manual}}</strong> y <strong>{{settings_share_this_app}}</strong>."),
         ]),
         "backup": ("Copia de seguridad y restauración", [
             ("p", "Disponible con Invoice Cove Pro. En <strong>{{settings_backup_restore_label}}</strong>, <strong>{{settings_create_backup_title}}</strong> guarda "
@@ -181,7 +181,7 @@ T = {
         "languages": ("Idiomas", [
             ("p", "Invoice Cove habla 13 idiomas: English, Română, Deutsch, Français, Español, Italiano, Português, Polski, Čeština, Slovenčina, Magyar, "
                   "Nederlands y Svenska. Toca el icono redondo con la bandera en la parte superior de los ajustes para cambiar; la aplicación cambia al instante."),
-            ("p", "El texto de tus PDF y de las exportaciones a Excel/CSV sigue el idioma configurado en la aplicación, y este manual está disponible en los mismos 13 idiomas "
+            ("p", "El texto de tus PDF y de las exportaciones a Excel/CSV sigue el idioma configurado en la aplicación, y esta guía está disponible en los mismos 13 idiomas "
                   "(usa la barra de idiomas de la parte superior de la página)."),
         ]),
         "templates": ("Plantillas PDF", [

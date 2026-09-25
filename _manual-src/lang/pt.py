@@ -1,7 +1,7 @@
 T = {
-    "title": "Manual do utilizador",
+    "title": "Guia do utilizador",
     "subtitle": "Tudo o que o Invoice Cove faz, ecrã a ecrã.",
-    "meta_desc": "Manual do utilizador completo do Invoice Cove - Offline Billing.",
+    "meta_desc": "Guia do utilizador completo do Invoice Cove - Offline Billing.",
     "lang_label": "Idioma",
     "brand_alt": "Invoice Cove",
     "toc": "Índice",
@@ -180,7 +180,7 @@ T = {
         "languages": ("Idiomas", [
             ("p", "O Invoice Cove fala 13 idiomas: English, Română, Deutsch, Français, Español, Italiano, Português, Polski, Čeština, Slovenčina, Magyar, "
                   "Nederlands e Svenska. Toque no ícone redondo com a bandeira no topo das definições para mudar — a aplicação muda de imediato."),
-            ("p", "O texto dos seus PDF e das exportações Excel/CSV segue o idioma definido na aplicação, e este manual está disponível nos mesmos 13 idiomas "
+            ("p", "O texto dos seus PDF e das exportações Excel/CSV segue o idioma definido na aplicação, e este guia está disponível nos mesmos 13 idiomas "
                   "(use a barra de idiomas no topo da página)."),
         ]),
         "templates": ("Modelos PDF", [

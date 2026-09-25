@@ -1,9 +1,9 @@
 # English master text. Other languages follow the same sections and blocks.
 # {{key}} = the app's own label for that button/screen (see ui/en.json).
 T = {
-    "title": "User Manual",
+    "title": "User Guide",
     "subtitle": "Everything Invoice Cove can do, screen by screen.",
-    "meta_desc": "Complete user manual for Invoice Cove - Offline Billing.",
+    "meta_desc": "Complete user guide for Invoice Cove - Offline Billing.",
     "lang_label": "Language",
     "brand_alt": "Invoice Cove",
     "toc": "Contents",
@@ -182,7 +182,7 @@ T = {
         "languages": ("Languages", [
             ("p", "Invoice Cove speaks 13 languages: English, Română, Deutsch, Français, Español, Italiano, Português, Polski, Čeština, Slovenčina, Magyar, "
                   "Nederlands and Svenska. Tap the round flag icon at the top of Settings to switch — the app changes immediately."),
-            ("p", "The text on your PDFs and on Excel/CSV exports follows the language the app is set to, and this manual is available in the same 13 languages "
+            ("p", "The text on your PDFs and on Excel/CSV exports follows the language the app is set to, and this guide is available in the same 13 languages "
                   "(use the language bar at the top of the page)."),
         ]),
         "templates": ("PDF templates", [

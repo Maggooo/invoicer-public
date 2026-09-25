@@ -1,7 +1,7 @@
 T = {
-    "title": "Användarhandbok",
+    "title": "Användarguide",
     "subtitle": "Allt Invoice Cove kan göra, skärm för skärm.",
-    "meta_desc": "Komplett användarhandbok för appen Invoice Cove - Offline Billing.",
+    "meta_desc": "Komplett användarguide för appen Invoice Cove - Offline Billing.",
     "lang_label": "Språk",
     "brand_alt": "Invoice Cove",
     "toc": "Innehåll",
@@ -180,7 +180,7 @@ T = {
         "languages": ("Språk", [
             ("p", "Invoice Cove talar 13 språk: English, Română, Deutsch, Français, Español, Italiano, Português, Polski, Čeština, Slovenčina, Magyar, "
                   "Nederlands och Svenska. Tryck på den runda flaggikonen högst upp i inställningarna så byts språket — appen växlar direkt."),
-            ("p", "Texten i dina PDF:er och i exporterna till Excel/CSV följer det språk som appen är inställd på, och den här handboken finns på samma 13 språk "
+            ("p", "Texten i dina PDF:er och i exporterna till Excel/CSV följer det språk som appen är inställd på, och den här guiden finns på samma 13 språk "
                   "(använd språkfältet högst upp på sidan)."),
         ]),
         "templates": ("PDF-mallar", [

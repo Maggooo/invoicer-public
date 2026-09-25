@@ -341,7 +341,7 @@
 "settings_close_desc": "Zavrieť",
 "settings_create_backup_desc": "Uloží všetko — faktúry, ponuky, zákazníkov, kalendár a nastavenia — do jedného súboru.",
 "settings_create_backup_title": "Vytvoriť zálohu",
-"settings_credit_created_by": "Vytvoril Magotel",
+"settings_credit_created_by": "Vyvinul Magotel",
 "settings_date_format_label": "Formát dátumu",
 "settings_discard_message": "Máte neuložené firemné údaje. Ak teraz odídete, stratia sa.",
 "settings_due_date_default_desc": "Automaticky vyplní dátum splatnosti o toľko dní po dátume faktúry — pri Novej faktúre a pri konvertovaní ponuky na faktúru.",

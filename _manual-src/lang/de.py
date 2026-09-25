@@ -1,7 +1,7 @@
 T = {
-    "title": "Benutzerhandbuch",
+    "title": "Bedienungsanleitung",
     "subtitle": "Alles, was Invoice Cove kann, Bildschirm für Bildschirm.",
-    "meta_desc": "Vollständiges Benutzerhandbuch für Invoice Cove - Offline Billing.",
+    "meta_desc": "Vollständige Bedienungsanleitung für Invoice Cove - Offline Billing.",
     "lang_label": "Sprache",
     "brand_alt": "Invoice Cove",
     "toc": "Inhalt",
@@ -153,7 +153,7 @@ T = {
                   "<strong>{{settings_business_logo_label}}</strong> und deine <strong>{{settings_payment_details_label}}</strong> (IBAN, PayPal.me-Link …). Jedes Feld "
                   "hat ein Beispiel, und <strong>jedes Feld, das du leer lässt, erscheint einfach nicht auf deinen Rechnungen</strong>. Tippe <strong>{{common_done}}</strong>, wenn du "
                   "fertig bist; wenn du mit ungespeicherten Änderungen gehst, wirst du zuerst gefragt."),
-            ("p", "Ganz unten: dieses <strong>{{settings_user_manual}}</strong> und <strong>{{settings_share_this_app}}</strong>."),
+            ("p", "Ganz unten: diese <strong>{{settings_user_manual}}</strong> und <strong>{{settings_share_this_app}}</strong>."),
         ]),
         "backup": ("Sicherung und Wiederherstellung", [
             ("p", "Mit Invoice Cove Pro verfügbar. Unter <strong>{{settings_backup_restore_label}}</strong> speichert <strong>{{settings_create_backup_title}}</strong> "
@@ -181,7 +181,7 @@ T = {
         "languages": ("Sprachen", [
             ("p", "Invoice Cove spricht 13 Sprachen: English, Română, Deutsch, Français, Español, Italiano, Português, Polski, Čeština, Slovenčina, Magyar, "
                   "Nederlands und Svenska. Tippe oben in den Einstellungen auf das runde Flaggen-Symbol, um zu wechseln — die App ändert sich sofort."),
-            ("p", "Der Text in deinen PDFs und in Excel-/CSV-Exporten folgt der Sprache, auf die die App eingestellt ist, und dieses Handbuch gibt es in denselben 13 Sprachen "
+            ("p", "Der Text in deinen PDFs und in Excel-/CSV-Exporten folgt der Sprache, auf die die App eingestellt ist, und diese Bedienungsanleitung gibt es in denselben 13 Sprachen "
                   "(nutze die Sprachleiste oben auf der Seite)."),
         ]),
         "templates": ("PDF-Vorlagen", [

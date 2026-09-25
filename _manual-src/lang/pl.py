@@ -1,7 +1,7 @@
 T = {
-    "title": "Instrukcja obsługi",
+    "title": "Przewodnik użytkownika",
     "subtitle": "Wszystko, co potrafi Invoice Cove, ekran po ekranie.",
-    "meta_desc": "Pełna instrukcja obsługi aplikacji Invoice Cove - Offline Billing.",
+    "meta_desc": "Pełny przewodnik użytkownika aplikacji Invoice Cove - Offline Billing.",
     "lang_label": "Język",
     "brand_alt": "Invoice Cove",
     "toc": "Spis treści",
@@ -152,7 +152,7 @@ T = {
                   "<strong>{{settings_business_logo_label}}</strong> i <strong>{{settings_payment_details_label}}</strong> (IBAN, link PayPal.me…). Każde pole "
                   "ma przykład, a <strong>każde pole, które zostawisz puste, po prostu nie pojawia się na Twoich fakturach</strong>. Dotknij <strong>{{common_done}}</strong>, gdy "
                   "skończysz; jeśli wyjdziesz z niezapisanymi zmianami, najpierw zostaniesz zapytany."),
-            ("p", "Na samym dole: ta <strong>{{settings_user_manual}}</strong> i <strong>{{settings_share_this_app}}</strong>."),
+            ("p", "Na samym dole: ten <strong>{{settings_user_manual}}</strong> i <strong>{{settings_share_this_app}}</strong>."),
         ]),
         "backup": ("Kopia zapasowa i przywracanie", [
             ("p", "Dostępne w Invoice Cove Pro. W <strong>{{settings_backup_restore_label}}</strong> opcja <strong>{{settings_create_backup_title}}</strong> zapisuje "
@@ -180,7 +180,7 @@ T = {
         "languages": ("Języki", [
             ("p", "Invoice Cove mówi w 13 językach: English, Română, Deutsch, Français, Español, Italiano, Português, Polski, Čeština, Slovenčina, Magyar, "
                   "Nederlands i Svenska. Dotknij okrągłej ikony z flagą u góry ustawień, aby zmienić język — aplikacja zmienia się od razu."),
-            ("p", "Tekst w Twoich plikach PDF i eksportach Excel/CSV podąża za językiem ustawionym w aplikacji, a ta instrukcja jest dostępna w tych samych 13 językach "
+            ("p", "Tekst w Twoich plikach PDF i eksportach Excel/CSV podąża za językiem ustawionym w aplikacji, a ten przewodnik jest dostępny w tych samych 13 językach "
                   "(użyj paska języków u góry strony)."),
         ]),
         "templates": ("Szablony PDF", [
