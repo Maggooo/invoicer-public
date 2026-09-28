@@ -178,23 +178,24 @@
     display: block;
   }
 
-  .lp-gallery {
+  /* Endless strip: the set is repeated twice and the track slides by exactly one set. */
+  .lp-gallery { overflow: hidden; padding: 28px 0 24px; }
+  .lp-track {
     display: flex;
-    gap: 18px;
-    overflow-x: auto;
-    --edge: max(24px, calc((100vw - 1032px) / 2));
-    scroll-snap-type: x mandatory;
-    scroll-padding-inline: var(--edge);
-    padding: 28px var(--edge) 24px;
-    scrollbar-width: thin;
+    width: max-content;
+    animation: lp-marquee 45s linear infinite;
   }
-  .lp-gallery:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
+  .lp-gallery:hover .lp-track { animation-play-state: paused; }
+  .lp-set { display: flex; gap: 18px; padding-right: 18px; }
+  @keyframes lp-marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
   .lp-gallery img {
     flex: 0 0 auto;
     width: 240px;
     height: auto;
     aspect-ratio: 919 / 1298;
-    scroll-snap-align: start;
     border-radius: 10px;
     border: 1px solid var(--border);
     box-shadow: 0 12px 28px rgba(5, 80, 154, 0.14), 0 2px 6px rgba(5, 80, 154, 0.08);
@@ -260,6 +261,9 @@
   @media (prefers-reduced-motion: reduce) {
     .lp-btn { transition: none; }
     .lp-btn:hover { transform: none; }
+    .lp-gallery { overflow-x: auto; }
+    .lp-track { animation: none; padding-left: 24px; }
+    .lp-set[aria-hidden="true"] { display: none; }
   }
 </style>
 </head>
@@ -333,7 +337,7 @@
         </div>
         <div class="lp-feature">
           <div>
-            <h3>18 PDF templates</h3>
+            <h3>Many PDF templates</h3>
             <p>From Classic and Minimal to Vintage Garage and Blush Botanical. Set a default, or choose a different one for a single document.</p>
           </div>
           <img src="assets/screenshots/template-picker.png" alt="PDF template picker" loading="lazy">
@@ -366,16 +370,30 @@
   <section class="lp-section lp-gallery-section" style="padding-top:0;">
     <div class="lp-wide">
       <h2 class="lp-title">A look for every kind of business</h2>
-      <p class="lp-intro">A few of the 18 PDF templates, all showing the same invoice. Every template prints only the details you filled in.</p>
+      <p class="lp-intro">A few of the PDF templates, all showing the same invoice. Every template prints only the details you filled in.</p>
     </div>
-    <div class="lp-gallery" tabindex="0" aria-label="PDF template examples">
-      <img src="assets/landing/template-1.jpg" alt="Invoice PDF, classic template with a red frame" loading="lazy">
-      <img src="assets/landing/template-2.jpg" alt="Invoice PDF, cream template with a dog illustration" loading="lazy">
-      <img src="assets/landing/template-3.jpg" alt="Invoice PDF, soft template with flowers" loading="lazy">
-      <img src="assets/landing/template-4.jpg" alt="Invoice PDF, minimal template with red accents" loading="lazy">
-      <img src="assets/landing/template-5.jpg" alt="Invoice PDF, bold black corporate template" loading="lazy">
-      <img src="assets/landing/template-6.jpg" alt="Invoice PDF, modern teal template" loading="lazy">
-      <img src="assets/landing/template-7.jpg" alt="Invoice PDF, Halloween template with pumpkins and bats" loading="lazy">
+    <div class="lp-gallery" aria-label="PDF template examples">
+      <div class="lp-track">
+        <div class="lp-set">
+          <img src="assets/landing/template-1.jpg" alt="Invoice PDF, classic template with a red frame" loading="lazy">
+          <img src="assets/landing/template-2.jpg" alt="Invoice PDF, cream template with a dog illustration" loading="lazy">
+          <img src="assets/landing/template-3.jpg" alt="Invoice PDF, soft template with flowers" loading="lazy">
+          <img src="assets/landing/template-4.jpg" alt="Invoice PDF, minimal template with red accents" loading="lazy">
+          <img src="assets/landing/template-5.jpg" alt="Invoice PDF, bold black corporate template" loading="lazy">
+          <img src="assets/landing/template-6.jpg" alt="Invoice PDF, modern teal template" loading="lazy">
+          <img src="assets/landing/template-7.jpg" alt="Invoice PDF, Halloween template with pumpkins and bats" loading="lazy">
+        </div>
+        <!-- Same images again so the loop has no gap -->
+        <div class="lp-set" aria-hidden="true">
+          <img src="assets/landing/template-1.jpg" alt="" loading="lazy">
+          <img src="assets/landing/template-2.jpg" alt="" loading="lazy">
+          <img src="assets/landing/template-3.jpg" alt="" loading="lazy">
+          <img src="assets/landing/template-4.jpg" alt="" loading="lazy">
+          <img src="assets/landing/template-5.jpg" alt="" loading="lazy">
+          <img src="assets/landing/template-6.jpg" alt="" loading="lazy">
+          <img src="assets/landing/template-7.jpg" alt="" loading="lazy">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -403,7 +421,7 @@
           <ul>
             <li>3 invoices and 3 quotes per month</li>
             <li>Up to 3 customers at a time</li>
-            <li>All 18 templates and 13 languages</li>
+            <li>All templates and all 13 languages</li>
             <li>Drafts, previews and sharing PDFs</li>
             <li>App Lock</li>
           </ul>
