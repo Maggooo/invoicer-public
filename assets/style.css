@@ -407,3 +407,41 @@ footer .wrap {
   display: grid;
   gap: 14px;
 }
+
+/* ---------- Topic pages: button + closing call to action ---------- */
+.btn {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 12px 22px;
+  border-radius: 12px;
+  background: #fff;
+  color: var(--primary-dark);
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(3, 58, 112, 0.35);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.cta {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px 24px;
+  margin-top: 44px;
+  text-align: center;
+}
+
+.cta h2 {
+  margin-top: 0;
+}
+
+.cta .btn {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(5, 80, 154, 0.25);
+}
