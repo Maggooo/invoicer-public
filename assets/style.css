@@ -445,3 +445,41 @@ footer .wrap {
   color: #fff;
   box-shadow: 0 8px 20px rgba(5, 80, 154, 0.25);
 }
+
+/* ---------- Comparison table ---------- */
+.compare-wrap {
+  overflow-x: auto;
+  margin-top: 16px;
+}
+
+.compare {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  font-size: 0.94rem;
+}
+
+.compare th,
+.compare td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.compare thead th {
+  background: #eef6ff;
+  color: var(--primary-dark);
+  font-family: "Sora", sans-serif;
+}
+
+.compare tbody th {
+  color: var(--text);
+  font-weight: 600;
+  width: 28%;
+}
+
+.compare td {
+  color: var(--text-muted);
+}
