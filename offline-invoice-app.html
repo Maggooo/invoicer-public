@@ -19,30 +19,35 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Article",
-      "headline": "An offline invoice app with no account",
+      "@type": "WebPage",
+      "@id": "https://invoicecove.co.uk/offline-invoice-app.html#webpage",
+      "name": "An offline invoice app with no account",
       "description": "Create invoices and quotes with no internet connection and no account. Invoice Cove stores everything on your Android phone, with no cloud and no tracking.",
       "url": "https://invoicecove.co.uk/offline-invoice-app.html",
       "inLanguage": "en",
-      "author": {
-        "@type": "Organization",
-        "name": "Magotel",
-        "url": "https://magotel.uk"
+      "isPartOf": {
+        "@id": "https://invoicecove.co.uk/#website"
       },
       "publisher": {
+        "@id": "https://magotel.uk/#organization",
         "@type": "Organization",
         "name": "Magotel",
         "url": "https://magotel.uk"
       },
-      "about": {
+      "mainEntity": {
+        "@id": "https://invoicecove.co.uk/#app",
         "@type": "MobileApplication",
         "name": "Invoice Cove: Invoice Maker",
         "operatingSystem": "Android",
         "url": "https://invoicecove.co.uk/"
+      },
+      "breadcrumb": {
+        "@id": "https://invoicecove.co.uk/offline-invoice-app.html#breadcrumb"
       }
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://invoicecove.co.uk/offline-invoice-app.html#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",

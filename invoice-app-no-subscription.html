@@ -19,30 +19,35 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Article",
-      "headline": "An invoice app with no subscription",
+      "@type": "WebPage",
+      "@id": "https://invoicecove.co.uk/invoice-app-no-subscription.html#webpage",
+      "name": "An invoice app with no subscription",
       "description": "An invoice app for Android with no subscription. Use it free, or unlock Pro with a single one-time purchase. No monthly fees, no account, no cloud.",
       "url": "https://invoicecove.co.uk/invoice-app-no-subscription.html",
       "inLanguage": "en",
-      "author": {
-        "@type": "Organization",
-        "name": "Magotel",
-        "url": "https://magotel.uk"
+      "isPartOf": {
+        "@id": "https://invoicecove.co.uk/#website"
       },
       "publisher": {
+        "@id": "https://magotel.uk/#organization",
         "@type": "Organization",
         "name": "Magotel",
         "url": "https://magotel.uk"
       },
-      "about": {
+      "mainEntity": {
+        "@id": "https://invoicecove.co.uk/#app",
         "@type": "MobileApplication",
         "name": "Invoice Cove: Invoice Maker",
         "operatingSystem": "Android",
         "url": "https://invoicecove.co.uk/"
+      },
+      "breadcrumb": {
+        "@id": "https://invoicecove.co.uk/invoice-app-no-subscription.html#breadcrumb"
       }
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://invoicecove.co.uk/invoice-app-no-subscription.html#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
