@@ -116,7 +116,8 @@
     right: -72px;
     bottom: -44px;
     width: 176px;
-    background: var(--surface);
+    /* stops 2px short so the rotated mask leaves no hairline at the bottom */
+    background: linear-gradient(var(--surface), var(--surface)) top / 100% calc(100% - 2px) no-repeat;
     color: var(--text);
     border-radius: 6px 6px 0 0;
     padding: 12px 12px 16px;
